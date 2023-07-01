@@ -1,15 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './style/index.css';
+import './style/style.css';
 import reportWebVitals from './reportWebVitals';
+import Card from './components/card';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.js';
+import X from './test.json';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+var X1 = X.clauses.slice(0, 2)
+
 root.render(
   <React.StrictMode>
-    <App />
+    {
+      X1.map((x, pos) => { console.log("This is x", x); return <Card key={pos} p={x} /> })
+    }
   </React.StrictMode>
 );
 

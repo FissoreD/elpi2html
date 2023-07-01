@@ -1,0 +1,71 @@
+{
+  "clauses": [
+    {
+      "title": "XXX",
+      "id": "clause",
+      "cnt":{
+        "name": "remove-eta",
+        "args": [{"id": "arg", "cnt":"[X | XS]"}, {"id": "arg", "cnt": "F"}, {"id": "arg", "cnt":"[Y | YS]"}],
+        "hyp": [
+          {"id": "clause", "cnt": {"name": "F", "args": [{"id": "arg", "cnt":"X A A_1"}], "hyp": []}},
+          {"id": "clause", "cnt": {"name": "std.fold", "args": [{"id": "arg", "cnt":"XS A_1 F R"}], "hyp": [
+            {"id": "clause", "cnt": {"name": "std.map", "args": [{"id": "arg", "cnt":"this is a test"}], "hyp": []}},
+            {"id": "clause", "cnt": {"name": "test2", "args": [{"id": "arg", "cnt":"p1 p2"}], "hyp": []}}
+          ]}}]
+      }
+    },
+    {
+      "title": "XXX",
+      "id": "clause",
+      "cnt":{
+        "name": "remove-eta",
+        "args": [{"id": "arg", "cnt":"[X | XS]"}, {"id": "arg", "cnt": "F"}, {"id": "arg", "cnt":"[Y | YS]"}],
+        "hyp": [
+          {"id": "clause", "cnt": {"name": "F", "args": [{"id": "arg", "cnt":"X A A_1"}], "hyp": []}},
+          {"id": "clause", "cnt": {"name": "std.fold", "args": [{"id": "arg", "cnt":"XS A_1 F R"}], "hyp": [
+            {"id": "clause", "cnt": {"name": "std.map", "args": [{"id": "arg", "cnt":"this is a test"}], "hyp": []}},
+            {"id": "clause", "cnt": {"name": "std.map", "args": [{"id": "arg", "cnt":"this is a test"}], "hyp": []}},
+            {"id": "clause", "cnt": {"name": "std.map", "args": [{"id": "arg", "cnt":"this is a test"}], "hyp": []}},
+            {"id": "clause", "cnt": {"name": "std.map", "args": [{"id": "arg", "cnt":"this is a test"}], "hyp": []}},
+            {"id": "clause", "cnt": {"name": "test2", "args": [{"id": "arg", "cnt":"p1 p2"}], "hyp": []}}
+          ]}}]
+      }
+    },
+    {
+      "title": "YYY",
+      "id":"clause",
+      "cnt":{
+      "name": "fold-map",
+      "args": [
+        {
+          "id": "prod", "name": "N", "type": "T", "body": "F"
+        },
+        {
+          "id":"arg", "cnt":"F"
+        },
+        {
+          "id": "prod", "name": "N", "type": "T1", "body": "F1"
+        },
+        {
+          "id":"arg", "cnt":"A2"          
+        }
+      ],
+      "hyp":[
+        {
+          "id": "clause", 
+          "name": "fold-map",
+          "args": [{"id": "arg", "cnt":"T"},{"id": "arg", "cnt":"A"},{"id": "arg", "cnt":"T1"}, {"id": "arg", "cnt":"A1"}]
+        },
+        {
+          "id": "forall",
+          "names": ["x1"],
+          "cnt": {
+            "id": "clause", 
+            "name": "fold-map",
+            "args": [{"id": "arg", "cnt":"(T x1)"},{"id": "arg", "cnt":"A1"},{"id": "arg", "cnt":"(F1 x1)"}, {"id": "arg", "cnt":"A2"}]
+          }
+        }
+      ]
+    }}
+  ]
+}

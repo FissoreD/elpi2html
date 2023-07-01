@@ -1,0 +1,73 @@
+.compound {
+  /* display: flex; */
+  /* vertical-align: top; */
+  /* padding-left: 1em; */
+  /* text-indent: -1em; */
+  border: 3px solid transparent;
+  margin: 0 0.4rem;
+  text-align: center;
+}
+
+.hover {
+  border: 1px dotted grey;
+  transition: border 0.5s;
+  color: #22aD22;
+  transition: color 0.5s;
+  border: 1px dotted #22aD22;
+}
+
+.clause {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: center;
+}
+
+.concl {
+  /* display: block; */
+  border-top: 1px solid black;
+}
+
+.neckcut {
+  border-top: 2px solid red;
+}
+
+.cut {
+  color: red;
+}
+
+.loc {
+  display: block;
+  background-color: #ecebeb;
+}
+
+.card {
+  width: 30em;
+  margin: 3pt;
+}
+
+.card * {
+  justify-content: center;
+}
+
+
+body {
+  padding: 7pt;
+}
+
+.hyps {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.card-body {
+  display: flex;
+}
+
+#root {
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
