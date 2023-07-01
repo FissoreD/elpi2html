@@ -33,15 +33,13 @@ function Card(p: any) {
   var p1 = p.p;
   const hiddenDivRef = useRef<HTMLDivElement>(null);
 
-  let card =
-    <C border="primary resizable" ref={hiddenDivRef}>
-      <C.Header>{p1.title}</C.Header>
-      <C.Body><Clause p={p1.cnt} /></C.Body>
-      <div className='resizer' onMouseDown={e => { cardHook = hiddenDivRef.current!; initDrag(e) }}></div>
-    </C>
   return (
     <div>
-      {card}
+      <C border="primary resizable overflow-auto" ref={hiddenDivRef}>
+        <C.Header>{p1.title}</C.Header>
+        <C.Body><Clause p={p1.cnt} /></C.Body>
+        <div className='resizer' onMouseDown={e => { cardHook = hiddenDivRef.current!; initDrag(e) }}></div>
+      </C>
     </div >
   )
 }
