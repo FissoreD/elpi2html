@@ -1,11 +1,9 @@
-import React from 'react';
+import { ProdType } from './types';
+import Dispatch from '../dispatch';
 
 
-function Fun(p: any) {
-
-  return (
-    <span>{p.l}</span>
-  )
+function Fun(p: ProdType) {
+  return <span>(fun {p.name} {Dispatch(p.type)}, {Dispatch(p.body)})</span>
 }
 
 export default Fun;

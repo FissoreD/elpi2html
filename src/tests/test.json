@@ -5,12 +5,12 @@
       "id": "clause",
       "cnt":{
         "name": "remove-eta",
-        "args": [{"id": "arg", "cnt":"[X | XS]"}, {"id": "arg", "cnt": "F"}, {"id": "arg", "cnt":"[Y | YS]"}],
+        "args": [{"id": "var", "cnt":"[X | XS]"}, {"id": "var", "cnt": "F"}, {"id": "var", "cnt":"[Y | YS]"}],
         "hyp": [
-          {"id": "clause", "cnt": {"name": "F", "args": [{"id": "arg", "cnt":"X A A_1"}], "hyp": []}},
-          {"id": "clause", "cnt": {"name": "std.fold", "args": [{"id": "arg", "cnt":"XS A_1 F R"}], "hyp": [
-            {"id": "clause", "cnt": {"name": "std.map", "args": [{"id": "arg", "cnt":"this is a test"}], "hyp": []}},
-            {"id": "clause", "cnt": {"name": "test2", "args": [{"id": "arg", "cnt":"p1 p2"}], "hyp": []}}
+          {"id": "clause", "cnt": {"name": "F", "args": [{"id": "var", "cnt":"X A A_1"}], "hyp": []}},
+          {"id": "clause", "cnt": {"name": "std.fold", "args": [{"id": "var", "cnt":"XS A_1 F R"}], "hyp": [
+            {"id": "clause", "cnt": {"name": "std.map", "args": [{"id": "var", "cnt":"this is a test"}], "hyp": []}},
+            {"id": "clause", "cnt": {"name": "test2", "args": [{"id": "var", "cnt":"p1 p2"}], "hyp": []}}
           ]}}]
       }
     },
@@ -19,15 +19,15 @@
       "id": "clause",
       "cnt":{
         "name": "remove-eta",
-        "args": [{"id": "arg", "cnt":"[X | XS]"}, {"id": "arg", "cnt": "F"}, {"id": "arg", "cnt":"[Y | YS]"}],
+        "args": [{"id": "var", "cnt":"[X | XS]"}, {"id": "var", "cnt": "F"}, {"id": "var", "cnt":"[Y | YS]"}],
         "hyp": [
-          {"id": "clause", "cnt": {"name": "F", "args": [{"id": "arg", "cnt":"X A A_1"}], "hyp": []}},
-          {"id": "clause", "cnt": {"name": "std.fold", "args": [{"id": "arg", "cnt":"XS A_1 F R"}], "hyp": [
-            {"id": "clause", "cnt": {"name": "std.map", "args": [{"id": "arg", "cnt":"this is a test"}], "hyp": []}},
-            {"id": "clause", "cnt": {"name": "std.map", "args": [{"id": "arg", "cnt":"this is a test"}], "hyp": []}},
-            {"id": "clause", "cnt": {"name": "std.map", "args": [{"id": "arg", "cnt":"this is a test"}], "hyp": []}},
-            {"id": "clause", "cnt": {"name": "std.map", "args": [{"id": "arg", "cnt":"this is a test"}], "hyp": []}},
-            {"id": "clause", "cnt": {"name": "test2", "args": [{"id": "arg", "cnt":"p1 p2"}], "hyp": []}}
+          {"id": "clause", "cnt": {"name": "F", "args": [{"id": "var", "cnt":"X A A_1"}], "hyp": []}},
+          {"id": "clause", "cnt": {"name": "std.fold", "args": [{"id": "var", "cnt":"XS A_1 F R"}], "hyp": [
+            {"id": "clause", "cnt": {"name": "std.map", "args": [{"id": "var", "cnt":"this is a test"}], "hyp": []}},
+            {"id": "clause", "cnt": {"name": "std.map", "args": [{"id": "var", "cnt":"this is a test"}], "hyp": []}},
+            {"id": "clause", "cnt": {"name": "std.map", "args": [{"id": "var", "cnt":"this is a test"}], "hyp": []}},
+            {"id": "clause", "cnt": {"name": "std.map", "args": [{"id": "var", "cnt":"this is a test"}], "hyp": []}},
+            {"id": "clause", "cnt": {"name": "test2", "args": [{"id": "var", "cnt":"p1 p2"}], "hyp": []}}
           ]}}]
       }
     },
@@ -35,37 +35,53 @@
       "title": "YYY",
       "id":"clause",
       "cnt":{
-      "name": "fold-map",
+        "name": "fold-map",
+        "args": [
+          {"id":"var", "cnt":"F"},
+          {"id": "prod", "cnt":{"name": "N", "type": {"id":"var", "cnt":"T1"}, "body": {"id":"var", "cnt": "F1"}}},
+          {"id":"var", "cnt":"A2"}
+        ]
+    }},
+   {
+    "title": "ZZZ",
+    "id":"clause",
+    "cnt": {
+      "name": "compile-aux",
       "args": [
-        {
-          "id": "prod", "name": "N", "type": "T", "body": "F"
-        },
-        {
-          "id":"arg", "cnt":"F"
-        },
-        {
-          "id": "prod", "name": "N", "type": "T1", "body": "F1"
-        },
-        {
-          "id":"arg", "cnt":"A2"          
-        }
-      ],
-      "hyp":[
-        {
-          "id": "clause", 
-          "name": "fold-map",
-          "args": [{"id": "arg", "cnt":"T"},{"id": "arg", "cnt":"A"},{"id": "arg", "cnt":"T1"}, {"id": "arg", "cnt":"A1"}]
-        },
-        {
-          "id": "forall",
-          "names": ["x1"],
-          "cnt": {
-            "id": "clause", 
-            "name": "fold-map",
-            "args": [{"id": "arg", "cnt":"(T x1)"},{"id": "arg", "cnt":"A1"},{"id": "arg", "cnt":"(F1 x1)"}, {"id": "arg", "cnt":"A2"}]
-          }
-        }
+          {"id":"var", "cnt":"F"},
+          {"id": "list", "cnt":[]}
+        ],
+        "hyp":[
+          {"id": "clause", "cnt": {"name": "std.rev", "args":[{"id": "var", "cnt":"ListRHS"},{"id": "var", "cnt":"RevList"}]}},
+          {"id": "clause", "cnt": {"name": "std.fold", "args":[
+            {"id": "var", "cnt":"Term-to-be-fixed"},
+            {"id": "num", "cnt":0},
+            {"id": "quantification", "cnt":{"type": "anonymousForall", "names": ["x2", "x3"], "body":{
+                "id": "quantification", "cnt":{"type": "exists", "names": ["X4", "X5"], "body":{
+                  "id":"prop", "cnt":{
+                    "name": "=",
+                    "isInfix":true,
+                    "args":[
+                      {"id":"var", "cnt":"x1"},
+                      {"id": "app", "cnt":{"name": "X5", "args":[]}}
+                      ]
+                  }
+                }
+              }
+            }}}
+            ]}}
+        ]
+    }
+   },
+   {
+    "id":"clause",
+    "name": "Coq clause",
+    "cnt":{
+      "name": "tc",
+      "args": [
+        {"id": "gref", "cnt":{"type":"const", "name":"subrealation"}}
       ]
-    }}
-  ]
+    }
+   }
+  ] 
 }

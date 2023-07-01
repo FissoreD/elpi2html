@@ -1,15 +1,14 @@
 import React from 'react';
-import { VarType } from '../types';
+import { IntType } from '../types';
 
 
-function Var(p: VarType) {
-  let name = p.name;
+function Int({ num }: IntType) {
   return (
     <span className='var'>
       {/* x<sub>{p.index}</sub> */}
-      {name}
+      {num}
     </span>
   )
 }
 
-export default Var;
+export default Int;
