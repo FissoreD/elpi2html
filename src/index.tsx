@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Card from './components/card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
-import X from './test.json';
+import X from './tests/test.json';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
