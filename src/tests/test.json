@@ -5,7 +5,11 @@
       "id": "clause",
       "cnt":{
         "name": "remove-eta",
-        "args": [{"id": "var", "cnt":"[X | XS]"}, {"id": "var", "cnt": "F"}, {"id": "var", "cnt":"[Y | YS]"}],
+        "args": [{"id": "list", "cnt":{
+            "l":[{"id": "var","cnt": "X"}],
+            "tl":{"id": "var","cnt": "XS"}
+          }}, 
+        {"id": "var", "cnt": "F"}, {"id": "var", "cnt":"[Y | YS]"}],
         "hyp": [
           {"id": "clause", "cnt": {"name": "F", "args": [{"id": "var", "cnt":"X A A_1"}], "hyp": []}},
           {"id": "clause", "cnt": {"name": "std.fold", "args": [{"id": "var", "cnt":"XS A_1 F R"}], "hyp": [
@@ -49,7 +53,7 @@
       "name": "compile-aux",
       "args": [
           {"id":"var", "cnt":"F"},
-          {"id": "list", "cnt":[]}
+          {"id": "list", "cnt":{"l":[]}}
         ],
         "hyp":[
           {"id": "clause", "cnt": {"name": "std.rev", "args":[{"id": "var", "cnt":"ListRHS"},{"id": "var", "cnt":"RevList"}]}},
