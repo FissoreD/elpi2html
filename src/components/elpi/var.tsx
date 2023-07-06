@@ -1,13 +1,11 @@
-import React from 'react';
 import { VarType } from '../types';
 
 
-function Var(p: VarType) {
-  let name = p.name;
+function Var({ name }: VarType) {
+  let [name1, index] = name.split(" ");
   return (
     <span className='var'>
-      {/* x<sub>{p.index}</sub> */}
-      {name}
+      {name1}<sub>{index}</sub>
     </span>
   )
 }

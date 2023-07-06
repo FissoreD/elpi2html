@@ -5,7 +5,7 @@
   /* text-indent: -1em; */
   border: 3px solid transparent;
   margin: 0 0.4rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .hover {
@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   width: fit-content;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .concl {
@@ -46,11 +46,6 @@
   margin: 3pt;
 }
 
-.card * {
-  justify-content: center;
-}
-
-
 body {
   padding: 7pt;
 }
@@ -59,11 +54,15 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
+}
+
+.card-body, .list {
+  display: flex;
 }
 
 .card-body {
-  display: flex;
+  justify-content: center;
 }
 
 #root {
@@ -73,8 +72,16 @@ body {
   flex-direction: row;
 }
 
-.var {
+.var, .const, .cut, .discard , .parens{
   padding: 0 2pt;
+}
+
+.cut {
+  color: red;
+}
+
+.cut, .parens, .infix {
+  font-weight: bold;
 }
 
 resizable {

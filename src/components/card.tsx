@@ -2,6 +2,7 @@
 import { Card as C } from 'react-bootstrap';
 import Clause from './elpi/clause';
 import { useRef } from 'react';
+import Dispatch from './dispatch';
 
 var cardHook: HTMLElement;
 
@@ -24,7 +25,6 @@ const doDrag = (e: MouseEvent) => {
 }
 
 const stopDrag = (e: MouseEvent) => {
-  console.log("Removed??")
   document.documentElement.removeEventListener('mousemove', doDrag, false);
   document.documentElement.removeEventListener('mouseup', stopDrag, false);
 }
@@ -32,12 +32,12 @@ const stopDrag = (e: MouseEvent) => {
 function Card(p: any) {
   var p1 = p.p;
   const hiddenDivRef = useRef<HTMLDivElement>(null);
-
+  console.log(p)
   return (
     <div>
       <C border="primary resizable overflow-auto" ref={hiddenDivRef}>
         <C.Header>{p1.title}</C.Header>
-        <C.Body><Clause p={p1.cnt} /></C.Body>
+        <C.Body><Dispatch {...p1.cnt} /></C.Body>
         <div className='resizer' onMouseDown={e => { cardHook = hiddenDivRef.current!; initDrag(e) }}></div>
       </C>
     </div >

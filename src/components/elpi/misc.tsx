@@ -1,9 +1,20 @@
 import React from "react";
+import { ParensType, StringType } from "../types";
 
-export function Int() {
-  return (<React.Fragment>!</React.Fragment>)
+export function Cut() {
+  return (<span className="cut">!</span>)
 }
 
 export function Discard() {
-  return (<React.Fragment>_</React.Fragment>)
+  return (<span className="discard">_</span>)
+}
+
+export function Parens({ shape }: ParensType) {
+  return <span className="parens">{shape}</span>
+}
+
+export function String({name}: StringType) {
+  return (
+    <span className='string'>{name}</span>
+  )
 }

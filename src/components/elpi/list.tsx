@@ -1,20 +1,24 @@
-import React from 'react';
-import { DispatchProp, ListType } from '../types';
-import Dispatch from '../dispatch';
-
-let printHyp = (len: number) => (e: DispatchProp, pos: number) =>
-  <React.Fragment key={pos}><Dispatch {...e} key={pos} /> {len - 1 !== pos ? ',' : ''} </React.Fragment>
+import { ListType } from '../types';
+import { Parens } from './misc';
+import { displayHyp } from '../tools';
 
 let printTl = (tl?: any) => {
   if (tl) {
-    return <>|<Dispatch {...tl} /></>
+    console.log("THIS IS TL : ", tl)
+    return <> <Parens shape="|" /> { displayHyp(0)(tl,0) } </>
   }
   return <></>
 }
 
 function List({ l, tl }: ListType) {
+  
   return (
-    <span>[{l.map(printHyp(l.length))}{printTl(tl)}]</span>
+    <div className='list'>
+      <Parens shape='[' />
+      {l.map(displayHyp(l.length))}
+      {printTl(tl)}
+      <Parens shape=']' />
+    </div>
   )
 }
 

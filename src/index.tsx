@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-var X1 = X.clauses
+var X1 = X.clauses//.slice(pos, pos2)
 
 root.render(
   <React.StrictMode>

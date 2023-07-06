@@ -1,7 +1,5 @@
-import Dispatch from '../dispatch';
+import { displayHyp } from '../tools';
 import { QuantificationType } from '../types';
-import Var from './var';
-
 
 export function Quantification({ body, names, type }: QuantificationType) {
   let symbol: string;
@@ -10,11 +8,13 @@ export function Quantification({ body, names, type }: QuantificationType) {
     case "exists": symbol = "∃"; break;
     case "forall": symbol = "∀";
   }
-  let cnt = <>{symbol} {names.map((name, pos) => <Var name={name} key={pos} />)}.{<Dispatch {...body} />}</>
-  if (type === "anonymousForall") {
-    return <span>({cnt})</span>
-  }
-  return <span>{cnt}</span>
+  return (
+    <>
+      {symbol}
+      {displayHyp(0)(names, 0)}.
+      {displayHyp(0)(body, 0)}
+    </>
+  )
 }
 
 
