@@ -1,8 +1,9 @@
 import { displayHyp } from '../tools';
-import { QuantificationType } from '../types';
+import { SymbolsList, QuantificationType } from '../types';
+import { Symbol } from './misc';
 
 export function Quantification({ body, names, type }: QuantificationType) {
-  let symbol: string;
+  let symbol: SymbolsList;
   switch (type) {
     case "anonymousForall": symbol = "λ"; break;
     case "sigma": symbol = "∃"; break;
@@ -10,9 +11,9 @@ export function Quantification({ body, names, type }: QuantificationType) {
   }
   return (
     <>
-      {symbol}
-      {displayHyp(0)(names, 0)}.
-      {displayHyp(0)(body, 0)}
+      <Symbol shape={symbol}  /> 
+      {displayHyp(0)(names)}.
+      {displayHyp(0)(body)}
     </>
   )
 }

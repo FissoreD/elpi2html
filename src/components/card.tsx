@@ -1,6 +1,4 @@
-// import React, { useState } from 'react';
 import { Card as C } from 'react-bootstrap';
-import Clause from './elpi/clause';
 import { useRef } from 'react';
 import Dispatch from './dispatch';
 

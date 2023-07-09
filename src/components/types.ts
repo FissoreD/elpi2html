@@ -12,5 +12,6 @@ export interface StringType { name: string }
 
 export interface QuantificationType { type: "sigma" | "pi" | "anonymousForall", names: any[], body: any }
 
-export type ParensSymbols = "[" | "]" | ")" | "(" | "|"
-export interface ParensType { shape: ParensSymbols }
+export enum ParensMode { round, square, curly }
+export type SymbolsList = "[" | "]" | ")" | "{" | "}" | "(" | "|" | "λ" | "∃" | "∀";
+export interface SymbolType { shape: SymbolsList }

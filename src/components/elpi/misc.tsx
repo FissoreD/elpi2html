@@ -1,5 +1,6 @@
 import React from "react";
-import { ParensType, StringType } from "../types";
+import { SymbolType, StringType } from "../types";
+import IntGenerator from "../../generator";
 
 export function Cut() {
   return (<span className="cut">!</span>)
@@ -9,8 +10,8 @@ export function Discard() {
   return (<span className="discard">_</span>)
 }
 
-export function Parens({ shape }: ParensType) {
-  return <span className="parens">{shape}</span>
+export function Symbol({ shape }: SymbolType) {
+  return <span className={"parens" + (["]", ")", "}"].includes(shape) ? " flex-end" : "")}>{shape}</span>
 }
 
 export function String({name}: StringType) {
@@ -18,3 +19,6 @@ export function String({name}: StringType) {
     <span className='string'>{name}</span>
   )
 }
+
+export const putInFragment = (e: React.ReactNode) => 
+  <React.Fragment key={IntGenerator.next().value!}>{e}</React.Fragment>

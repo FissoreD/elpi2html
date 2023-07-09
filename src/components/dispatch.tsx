@@ -9,6 +9,8 @@ import Const from './elpi/const';
 import { Gref, Global, App, Prod, Fun } from './coq_terms/term';
 import PropInfix from './elpi/propInfix';
 import { Cut, Discard , String } from './elpi/misc';
+import Prop from './elpi/prop';
+import Comma from './elpi/commas';
 
 
 function Dispatch({ id, cnt }: DispatchProp) {
@@ -19,6 +21,8 @@ function Dispatch({ id, cnt }: DispatchProp) {
     case "var": return <Var name={cnt} />
     case "const": return <Const name={cnt} />
     case "propInfix": return <PropInfix {...cnt} />
+    case "prop": return <Prop cnt={cnt} />
+    case "comma": return <Comma cnt={cnt} />
     case "cut": return <Cut />
     case "discard": return <Discard />
     case "string": return <String name={cnt} />

@@ -5,7 +5,7 @@ const displayHyps = (hyp: any[]) => {
   if (hyp.length === 0) return <></>
   else return (
     <div className='hyps'>
-      {displayHyp(0)(hyp, 0)}
+      {displayHyp(-1)(hyp)}
     </div>
   )
 }
@@ -15,7 +15,7 @@ function Clause({ hyp, args }: ClauseType) {
     <div className='clause'>
       {displayHyps(hyp)}
       <div className={'compound concl'}>
-        {displayHyps(args)}
+        {displayHyp(-1)(args)}
       </div>
     </div>
   )

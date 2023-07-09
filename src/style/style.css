@@ -11,9 +11,6 @@
 .hover {
   border: 1px dotted grey;
   transition: border 0.5s;
-  color: #22aD22;
-  transition: color 0.5s;
-  border: 1px dotted #22aD22;
 }
 
 .clause {
@@ -55,10 +52,20 @@ body {
   flex-direction: row;
   align-items: flex-end;
   flex-wrap: wrap;
+  margin: 0 0.4rem;
 }
 
-.card-body, .list {
+.flex-end {
   display: flex;
+  align-items: flex-end;
+}
+
+.card-body, .list, .prop, .concl, .comma {
+  display: flex;
+}
+
+.prop, .comma {
+  flex-wrap: wrap;
 }
 
 .card-body {
@@ -98,3 +105,9 @@ resizable {
   bottom: 0;
   cursor: se-resize;
 }
+/* 
+.prop {
+  padding-left: 2em;
+  text-indent: -2em;
+  display: flow-root;
+} */

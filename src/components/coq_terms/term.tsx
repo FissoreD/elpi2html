@@ -2,6 +2,7 @@ import React from 'react';
 import { AppType, GlobalType, GrefType, ProdType } from './types';
 import Dispatch from '../dispatch';
 import { DispatchProp } from '../types';
+import { putInFragment } from '../elpi/misc';
 
 export function Gref({ type, name }: GrefType) {
   return <span>({type} «{name}»)</span>
@@ -20,7 +21,7 @@ export function Fun(p: ProdType) {
 }
 
 let printArgs = (len: number) => (e: DispatchProp, pos: number) =>
-  <React.Fragment key={pos}><Dispatch {...e} key={pos} /> {len - 1 !== pos ? ',' : ''} </React.Fragment>
+  putInFragment(<><Dispatch {...e} key={pos} /> {len - 1 !== pos ? ',' : ''}</>)
 
 
 export function App(p: AppType) {

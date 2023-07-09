@@ -1,22 +1,24 @@
-import React from "react"
-import IntGenerator from "../generator"
 import Dispatch from "./dispatch"
-import { Parens } from "./elpi/misc"
-import { ParensSymbols } from "./types"
+import { Symbol, putInFragment } from "./elpi/misc"
+import { SymbolsList } from "./types"
 
-const displayParens = (height: number, shape: ParensSymbols) => {
-  if (height > 1) return <Parens shape={shape} />
+const displayParens = (height: number, shape: SymbolsList) => {
+  if (height > 0) return <Symbol shape={shape} />
   return <></>
 }
 
-export const displayHyp = (height: number) => (hyp: any, pos: number): JSX.Element => {
+const displayHypList = (commas: boolean, height: number, len: number) => (hyp: any, pos:number): JSX.Element => {
+  return putInFragment(<>{displayHyp(height + 1, commas)(hyp)} {commas && pos + 1 < len ? "," : ""}</>)
+}
+
+export const displayHyp = (height: number, commas = true) => (hyp: any): JSX.Element => {
   if (Array.isArray(hyp)) {
     if (hyp.length === 0) return <></>
-    return <React.Fragment key={IntGenerator.next().value!}>
-      {displayParens(height, "(")}
-        {hyp.map(displayHyp(height + 1))}
-      {displayParens(height, ")")},
-    </React.Fragment>
+    return putInFragment(<>
+        {displayParens(height, "(")}
+        {hyp.map(displayHypList(commas, height, hyp.length))}
+        {displayParens(height, ")")}
+      </>)
   }
-  return <React.Fragment key={IntGenerator.next().value!} > <Dispatch {...hyp} /> </React.Fragment>
+  return putInFragment(<Dispatch {...hyp} />)
 }
