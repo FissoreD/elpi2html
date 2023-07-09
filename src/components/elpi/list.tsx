@@ -4,7 +4,6 @@ import { displayHyp } from '../tools';
 
 let printTl = (tl?: any) => {
   if (tl) {
-    console.log("THIS IS TL : ", tl)
     return <> <Parens shape="|" /> { displayHyp(0)(tl,0) } </>
   }
   return <></>

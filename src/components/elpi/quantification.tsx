@@ -5,8 +5,8 @@ export function Quantification({ body, names, type }: QuantificationType) {
   let symbol: string;
   switch (type) {
     case "anonymousForall": symbol = "λ"; break;
-    case "exists": symbol = "∃"; break;
-    case "forall": symbol = "∀";
+    case "sigma": symbol = "∃"; break;
+    case "pi": symbol = "∀";
   }
   return (
     <>

@@ -12,7 +12,6 @@ import { Cut, Discard , String } from './elpi/misc';
 
 
 function Dispatch({ id, cnt }: DispatchProp) {
-  console.log(id, cnt)
   switch (id) {
     case "clause": return <Clause {...cnt} />
     case "list": return <List {...cnt} />

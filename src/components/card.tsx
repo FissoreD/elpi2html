@@ -32,15 +32,14 @@ const stopDrag = (e: MouseEvent) => {
 function Card(p: any) {
   var p1 = p.p;
   const hiddenDivRef = useRef<HTMLDivElement>(null);
-  console.log(p)
   return (
-    <div>
-      <C border="primary resizable overflow-auto" ref={hiddenDivRef}>
-        <C.Header>{p1.title}</C.Header>
-        <C.Body><Dispatch {...p1.cnt} /></C.Body>
-        <div className='resizer' onMouseDown={e => { cardHook = hiddenDivRef.current!; initDrag(e) }}></div>
-      </C>
-    </div >
+      <div>
+        <C border="primary resizable overflow-auto" ref={hiddenDivRef}>
+          <C.Header>{p1.title}</C.Header>
+          <C.Body><Dispatch {...p1.cnt} /></C.Body>
+          <div className='resizer' onMouseDown={e => { cardHook = hiddenDivRef.current!; initDrag(e) }}></div>
+        </C>
+      </div>
   )
 }
 

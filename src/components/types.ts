@@ -10,6 +10,7 @@ export interface ClauseType { hyp: any[], args: any[] }
 export interface PropType { name: string }
 export interface StringType { name: string }
 
-export interface QuantificationType { type: "exists" | "forall" | "anonymousForall", names: any[], body: any }
+export interface QuantificationType { type: "sigma" | "pi" | "anonymousForall", names: any[], body: any }
 
-export interface ParensType { shape: "[" | "]" | ")" | "(" | "|" }
+export type ParensSymbols = "[" | "]" | ")" | "(" | "|"
+export interface ParensType { shape: ParensSymbols }
