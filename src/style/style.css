@@ -25,12 +25,9 @@ body * {
 }
 
 .prop, .quantification, .list {
-  text-indent: -2em;
-  padding-left: 2em;
-}
-
-.parens {
-  display: contents;
+  text-indent: -0.7em;
+  padding-left: 0.7em;
+  /* margin-left: 0.5em; */
 }
 
 .card-body {
@@ -84,4 +81,9 @@ resizable {
 .neckcut {
   border-top-color: red;
   border-top-width: 2pt;
+}
+
+.clause {
+  padding-left: 0.7em;
+  border: 1px dotted grey;
 }
