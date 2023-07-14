@@ -12,14 +12,14 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-var pos = 1
-var pos2 = pos + 1
+var pos = 0
+var pos2 = pos + 4
 var X1 = X.clauses//.slice(pos, pos2)
 
 root.render(
   <React.StrictMode>
     {
-      X1.map((x, pos) => <Card key={pos} p={x} />)
+      X1.map((x, pos) => <Card key={pos} {...x} />)
     }
   </React.StrictMode>
 );

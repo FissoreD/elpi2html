@@ -1,11 +1,7 @@
-.hover {
-  border: 1px dotted grey;
+/* .prop, .block, .quantification, .parens {
+  margin: 0 3px;
   transition: border 0.5s;
-}
-
-.neckcut {
-  border-top: 2px solid red;
-}
+} */
 
 .cut {
   color: red;
@@ -20,11 +16,22 @@ body {
   padding: 7pt;
 }
 
-.card-body, .list, .prop, .concl, .comma, .parens, .string {
+body * {
+  font-family: 'Times New Roman', serif;
+}
+
+.list, .prop, .quantification {
   display: inline-block;
 }
 
+.prop, .quantification, .list {
+  text-indent: -2em;
+  padding-left: 2em;
+}
 
+.parens {
+  display: contents;
+}
 
 .card-body {
   justify-content: center;
@@ -38,7 +45,7 @@ body {
 }
 
 /* .var:not(:last-child), .const:not(:last-child), .cut, .discard, .parens{ */
-.var, .const, .cut, .discard, .symbol{
+.var, .const, .cut, .discard, .symbol, .string {
   padding: 0 2pt;
 }
 
@@ -65,13 +72,6 @@ resizable {
   cursor: se-resize;
 }
 
-
- 
-/* .prop {
-  padding-left: 2em;
-  text-indent: -2em;
-}  */
-
 .hyps, .concl {
   margin: 0 0.4rem;
 }
@@ -79,4 +79,9 @@ resizable {
 .concl {
   border-top: 1px solid black;
   display: flex;
+}
+
+.neckcut {
+  border-top-color: red;
+  border-top-width: 2pt;
 }

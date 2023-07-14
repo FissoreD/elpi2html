@@ -1,6 +1,16 @@
-import { displayHyp } from '../tools';
-import { SymbolsList, QuantificationType } from '../types';
+import { displayList, displayParenthesis } from '../tools';
+import { SymbolsList, QuantificationType, ParensMode } from '../types';
 import { Symbol } from './misc';
+
+// for 9823 in json
+const accumulateSameSymbol = (type: string, body: any, names: any[]) : any => {
+  if (body.length === 1 && body[0].id === "quantification" && body[0].cnt.type === type) {
+    names.push(...body[0].cnt.names)
+    return accumulateSameSymbol(type, body[0].cnt.body, names)
+  } else {
+    return body
+  }
+}
 
 export function Quantification({ body, names, type }: QuantificationType) {
   let symbol: SymbolsList;
@@ -9,11 +19,16 @@ export function Quantification({ body, names, type }: QuantificationType) {
     case "sigma": symbol = "∃"; break;
     case "pi": symbol = "∀";
   }
+  var names1 = [...names];
+  var body1 = accumulateSameSymbol(type, body, names1);
   return (
-    <span>
-      <Symbol shape={symbol} /> 
-      {displayHyp(0)(names)}.
-      {displayHyp(0)(body)}
+    <span className='quantification'>
+      {displayParenthesis(ParensMode.round,
+        [<span className='symbolName'>
+          <Symbol shape={symbol} />
+          {displayList(0, false)(names1)}.
+        </span>, displayList(-1)(body1)],
+        type === "binder")}
     </span>
   )
 }

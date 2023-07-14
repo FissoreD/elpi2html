@@ -1,6 +1,7 @@
 import { Card as C } from 'react-bootstrap';
 import { useRef } from 'react';
 import Dispatch from './dispatch';
+import { CardType } from './types';
 
 var cardHook: HTMLElement;
 
@@ -27,14 +28,13 @@ const stopDrag = (e: MouseEvent) => {
   document.documentElement.removeEventListener('mouseup', stopDrag, false);
 }
 
-function Card(p: any) {
-  var p1 = p.p;
+function Card({ title, cnt}: CardType) {
   const hiddenDivRef = useRef<HTMLDivElement>(null);
   return (
       <div>
         <C border="primary resizable overflow-auto" ref={hiddenDivRef}>
-          <C.Header>{p1.title}</C.Header>
-          <C.Body><Dispatch {...p1.cnt} /></C.Body>
+          <C.Header>{title}</C.Header>
+          <C.Body><Dispatch {...cnt} /></C.Body>
           <div className='resizer' onMouseDown={e => { cardHook = hiddenDivRef.current!; initDrag(e) }}></div>
         </C>
       </div>

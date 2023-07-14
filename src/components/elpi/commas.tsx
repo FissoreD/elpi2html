@@ -1,13 +1,9 @@
-import { displayHyp } from '../tools';
+import { displayList } from '../tools';
 
 interface CommaType { cnt: any[] }
 
 function Comma({ cnt }: CommaType) {
-  return (
-    <span className='comma'>
-      {displayHyp(-1, true)(cnt)}
-    </span>
-  )
+  return <>{displayList(-1, true)(cnt)}</>
 }
 
 export default Comma;
