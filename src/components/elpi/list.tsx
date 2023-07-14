@@ -1,6 +1,6 @@
-import { ListType } from '../types';
+import { ListType, ParensMode } from '../types';
 import { Symbol } from './misc';
-import { displayHyp } from '../tools';
+import { displayHyp, displayParenthesis } from '../tools';
 
 let printTl = (tl?: any) => {
   if (tl) {
@@ -10,16 +10,7 @@ let printTl = (tl?: any) => {
 }
 
 function List({ l, tl }: ListType) {
-  
-  return (
-    <div className='list'>
-      <Symbol shape='[' />
-        {/* TODO: HERE WE TO A MAP : Keep attention on commas... */}
-        {displayHyp(0, true)(l)}
-      {printTl(tl)}
-      <Symbol shape=']' />
-    </div>
-  )
+  return (displayParenthesis(ParensMode.square, [displayHyp(0, true)(l), printTl(tl)]))
 }
 
 export default List;

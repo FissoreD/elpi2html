@@ -2,15 +2,13 @@ import Clause from './elpi/clause';
 import List from './elpi/list';
 import Var from './elpi/var';
 import { DispatchProp, QuantificationType } from './types';
-import { AppType, GlobalType, GrefType, ProdType } from './coq_terms/types';
 import { Quantification } from './elpi/quantification';
 import Int from './elpi/int';
 import Const from './elpi/const';
-import { Gref, Global, App, Prod, Fun } from './coq_terms/term';
-import PropInfix from './elpi/propInfix';
 import { Cut, Discard , String } from './elpi/misc';
 import Prop from './elpi/prop';
 import Comma from './elpi/commas';
+import PropInfix from './elpi/propInfix';
 
 
 function Dispatch({ id, cnt }: DispatchProp) {
@@ -27,15 +25,6 @@ function Dispatch({ id, cnt }: DispatchProp) {
     case "discard": return <Discard />
     case "string": return <String name={cnt} />
     case "quantification": return <Quantification {...cnt as QuantificationType} />
-
-    // COQ
-    case "gref": return <Gref {...cnt as GrefType} />
-    case "global": return <Global {...cnt as GlobalType} />
-    case "app": return <App {...cnt as AppType} />
-    case "prod": return <Prod {...cnt as ProdType} />
-    case "fun": return <Fun {...cnt as ProdType} />
-
-    // default: return <></>
     default: throw Error("No implementation for " + id)
   }
 }

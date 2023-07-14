@@ -1,24 +1,31 @@
 import Dispatch from "./dispatch"
 import { Symbol, putInFragment } from "./elpi/misc"
-import { SymbolsList } from "./types"
+import { ParensMode, SymbolsList } from "./types"
 
-const displayParens = (height: number, shape: SymbolsList) => {
-  if (height > 0) return <Symbol shape={shape} />
-  return <></>
+export const displayParenthesis = (type: ParensMode, cnt: JSX.Element[], cond=true) => {
+  let dict : {[x in ParensMode] : SymbolsList[]} = {
+    [ParensMode.round]: ["(", ")"],
+    [ParensMode.square]: ["[", "]"],
+    [ParensMode.curly]: ["{", "}"]
+  }
+  return <span className="parens">
+    {cond ? <Symbol shape={dict[type][0]} /> : <></>}
+      {cnt.map(putInFragment)}
+    {cond ? <Symbol shape={dict[type][1]} /> : <></>}
+  </span>
 }
 
 const displayHypList = (commas: boolean, height: number, len: number) => (hyp: any, pos:number): JSX.Element => {
-  return putInFragment(<>{displayHyp(height + 1, commas)(hyp)} {commas && pos + 1 < len ? "," : ""}</>)
+  return putInFragment(
+    <span className="block">
+      {displayHyp(height + 1, commas)(hyp)} {commas && pos + 1 < len ? <Symbol shape="," /> : ""}
+    </span>)
 }
 
 export const displayHyp = (height: number, commas = true) => (hyp: any): JSX.Element => {
   if (Array.isArray(hyp)) {
     if (hyp.length === 0) return <></>
-    return putInFragment(<>
-        {displayParens(height, "(")}
-        {hyp.map(displayHypList(commas, height, hyp.length))}
-        {displayParens(height, ")")}
-      </>)
+    return putInFragment(displayParenthesis(ParensMode.round, hyp.map(displayHypList(commas, height, hyp.length)), height > 0))
   }
   return putInFragment(<Dispatch {...hyp} />)
 }

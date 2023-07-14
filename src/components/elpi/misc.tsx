@@ -11,7 +11,7 @@ export function Discard() {
 }
 
 export function Symbol({ shape }: SymbolType) {
-  return <span className={"parens" + (["]", ")", "}"].includes(shape) ? " flex-end" : "")}>{shape}</span>
+  return <span className={"symbol" + (["]", ")", "}"].includes(shape) ? " flex-end" : "")}>{shape}</span>
 }
 
 export function String({name}: StringType) {

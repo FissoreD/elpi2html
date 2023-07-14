@@ -1,12 +1,13 @@
 import { useState } from 'react';
-import { displayHyp } from '../tools';
+import { displayHyp, displayParenthesis } from '../tools';
 import { putInFragment, Symbol } from './misc';
+import { ParensMode } from '../types';
 
 interface PropType { cnt: any[] }
 
 const putInParens = (e: any) => {
   if (Array.isArray(e) || ["prop", "propInfix"].includes(e.id)) {
-    return putInFragment(<><Symbol shape="(" />{displayHyp(0, true)(e)} <Symbol shape=")" /></>)
+    return putInFragment(displayParenthesis(ParensMode.round, [displayHyp(0, true)(e)]))
   } else {
     return putInFragment(displayHyp(0, true)(e))
   }
@@ -21,7 +22,6 @@ function Prop({ cnt }: PropType) {
     onMouseLeave={() => setIsHover(false)}>
       {displayHyp(0, false)(hd)}
       {tl.map(putInParens)}
-      {/* {displayHyp(0, false)(tl)} */}
     </span>
   )
 }

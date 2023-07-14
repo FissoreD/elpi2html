@@ -5,16 +5,16 @@ import { Symbol } from './misc';
 export function Quantification({ body, names, type }: QuantificationType) {
   let symbol: SymbolsList;
   switch (type) {
-    case "anonymousForall": symbol = "λ"; break;
+    case "binder": symbol = "λ"; break;
     case "sigma": symbol = "∃"; break;
     case "pi": symbol = "∀";
   }
   return (
-    <>
-      <Symbol shape={symbol}  /> 
+    <span>
+      <Symbol shape={symbol} /> 
       {displayHyp(0)(names)}.
       {displayHyp(0)(body)}
-    </>
+    </span>
   )
 }
 

@@ -34,13 +34,13 @@
 { "id":"clause", 
 "title":"File \"coq-builtin.elpi\", line 728, column 3, character 29981:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.warning"}, {"id":"string", "cnt":"elpi.deprecated"}, {"id":"string", "cnt":"elpi.const-opaque"}, {"id":"string", "cnt":"use coq.env.opaque? in place of coq.env.const-opaque?"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.env.opaque?"}, {"id":"var", "cnt":"C"}]}]]}],
+[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.warning"}, {"id":"string", "cnt":"\"elpi.deprecated\""}, {"id":"string", "cnt":"\"elpi.const-opaque\""}, {"id":"string", "cnt":"\"use coq.env.opaque? in place of coq.env.const-opaque?\""}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.env.opaque?"}, {"id":"var", "cnt":"C"}]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.env.const-opaque?"}, {"id":"var", "cnt":"C"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"coq-builtin.elpi\", line 735, column 3, character 30229:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.warning"}, {"id":"string", "cnt":"elpi.deprecated"}, {"id":"string", "cnt":"elpi.const-primitive"}, {"id":"string", "cnt":"use coq.env.primitive? in place of coq.env.const-primitive?"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.env.primitive?"}, {"id":"var", "cnt":"C"}]}]]}],
+[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.warning"}, {"id":"string", "cnt":"\"elpi.deprecated\""}, {"id":"string", "cnt":"\"elpi.const-primitive\""}, {"id":"string", "cnt":"\"use coq.env.primitive? in place of coq.env.const-primitive?\""}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.env.primitive?"}, {"id":"var", "cnt":"C"}]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.env.const-primitive?"}, {"id":"var", "cnt":"C"}]}]}}}
 ,
 { "id":"clause", 
@@ -58,26 +58,26 @@
 { "id":"clause", 
 "title":"File \"coq-builtin.elpi\", line 1170, column 0, character 47056:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.warning"}, {"id":"string", "cnt":"elpi.deprecated"}, {"id":"string", "cnt":"elpi.canonical-projections"}, {"id":"string", "cnt":"use coq.env.projections in place of coq.CS.canonical-projections"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.env.projections"}, {"id":"var", "cnt":"I"}, {"id":"var", "cnt":"L"}]}]]}],
+[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.warning"}, {"id":"string", "cnt":"\"elpi.deprecated\""}, {"id":"string", "cnt":"\"elpi.canonical-projections\""}, {"id":"string", "cnt":"\"use coq.env.projections in place of coq.CS.canonical-projections\""}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.env.projections"}, {"id":"var", "cnt":"I"}, {"id":"var", "cnt":"L"}]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.CS.canonical-projections"}, {"id":"var", "cnt":"I"}, {"id":"var", "cnt":"L"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"coq-builtin.elpi\", line 1470, column 0, character 59697:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.warning"}, {"id":"string", "cnt":"elpi.deprecated"}, {"id":"string", "cnt":"elpi.cbv-whd-all"}, {"id":"string", "cnt":"use coq.reduction.cbv.norm in place of coq.reduction.cbv.whd_all"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.reduction.cbv.norm"}, {"id":"var", "cnt":"T"}, {"id":"var", "cnt":"R"}]}]]}],
+[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.warning"}, {"id":"string", "cnt":"\"elpi.deprecated\""}, {"id":"string", "cnt":"\"elpi.cbv-whd-all\""}, {"id":"string", "cnt":"\"use coq.reduction.cbv.norm in place of coq.reduction.cbv.whd_all\""}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.reduction.cbv.norm"}, {"id":"var", "cnt":"T"}, {"id":"var", "cnt":"R"}]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.reduction.cbv.whd_all"}, {"id":"var", "cnt":"T"}, {"id":"var", "cnt":"R"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"coq-builtin.elpi\", line 1477, column 0, character 59975:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.warning"}, {"id":"string", "cnt":"elpi.deprecated"}, {"id":"string", "cnt":"elpi.vm-whd-all"}, {"id":"string", "cnt":"use coq.reduction.vm.norm in place of coq.reduction.vm.whd_all"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.reduction.vm.norm"}, {"id":"var", "cnt":"T"}, {"id":"var", "cnt":"TY"}, {"id":"var", "cnt":"R"}]}]]}],
+[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.warning"}, {"id":"string", "cnt":"\"elpi.deprecated\""}, {"id":"string", "cnt":"\"elpi.vm-whd-all\""}, {"id":"string", "cnt":"\"use coq.reduction.vm.norm in place of coq.reduction.vm.whd_all\""}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.reduction.vm.norm"}, {"id":"var", "cnt":"T"}, {"id":"var", "cnt":"TY"}, {"id":"var", "cnt":"R"}]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.reduction.vm.whd_all"}, {"id":"var", "cnt":"T"}, {"id":"var", "cnt":"TY"}, {"id":"var", "cnt":"R"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"coq-builtin.elpi\", line 1484, column 0, character 60209:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 {"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"=>"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"get-option"}, {"id":"string", "cnt":"coq:redflags"}, {"id":"const", "cnt":"coq.redflags.all"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.reduction.lazy.whd"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}]]}},
+{"id":"const", "cnt":"=>"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"get-option"}, {"id":"string", "cnt":"\"coq:redflags\""}, {"id":"const", "cnt":"coq.redflags.all"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.reduction.lazy.whd"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}]]}},
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.reduction.lazy.whd_all"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}]}}}
 ,
 { "id":"clause", 
@@ -147,85 +147,99 @@
 "title":"File \"elpi-builtin.elpi\", line 181, column 0, character 2879:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"le_"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}],
-"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"=<"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}]}}}
+"args":{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"=<"}, {"id":"var", "cnt":"X"},{"id":"var", "cnt":"Y"}]}}}}}
 ,
 { "id":"clause", 
 "title":"File \"elpi-builtin.elpi\", line 183, column 0, character 2900:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"ge_"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}],
-"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":">="}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}]}}}
+"args":{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":">="}, {"id":"var", "cnt":"X"},{"id":"var", "cnt":"Y"}]}}}}}
 ,
 { "id":"clause", 
 "title":"File \"elpi-builtin.elpi\", line 187, column 0, character 2972:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"lt_"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}],
-"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"i<"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}]}}}
+"args":{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"i<"}, {"id":"var", "cnt":"X"},{"id":"var", "cnt":"Y"}]}}}}}
 ,
 { "id":"clause", 
 "title":"File \"elpi-builtin.elpi\", line 189, column 0, character 2993:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"gt_"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}],
-"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"i>"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}]}}}
+"args":{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"i>"}, {"id":"var", "cnt":"X"},{"id":"var", "cnt":"Y"}]}}}}}
 ,
 { "id":"clause", 
 "title":"File \"elpi-builtin.elpi\", line 191, column 0, character 3014:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"le_"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}],
-"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"i=<"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}]}}}
+"args":{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"i=<"}, {"id":"var", "cnt":"X"},{"id":"var", "cnt":"Y"}]}}}}}
 ,
 { "id":"clause", 
 "title":"File \"elpi-builtin.elpi\", line 193, column 0, character 3035:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"ge_"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}],
-"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"i>="}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}]}}}
+"args":{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"i>="}, {"id":"var", "cnt":"X"},{"id":"var", "cnt":"Y"}]}}}}}
 ,
 { "id":"clause", 
 "title":"File \"elpi-builtin.elpi\", line 197, column 0, character 3111:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"lt_"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}],
-"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"r<"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}]}}}
+"args":{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"r<"}, {"id":"var", "cnt":"X"},{"id":"var", "cnt":"Y"}]}}}}}
 ,
 { "id":"clause", 
 "title":"File \"elpi-builtin.elpi\", line 199, column 0, character 3132:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"gt_"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}],
-"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"r>"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}]}}}
+"args":{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"r>"}, {"id":"var", "cnt":"X"},{"id":"var", "cnt":"Y"}]}}}}}
 ,
 { "id":"clause", 
 "title":"File \"elpi-builtin.elpi\", line 201, column 0, character 3153:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"le_"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}],
-"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"r=<"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}]}}}
+"args":{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"r=<"}, {"id":"var", "cnt":"X"},{"id":"var", "cnt":"Y"}]}}}}}
 ,
 { "id":"clause", 
 "title":"File \"elpi-builtin.elpi\", line 203, column 0, character 3174:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"ge_"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}],
-"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"r>="}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}]}}}
+"args":{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"r>="}, {"id":"var", "cnt":"X"},{"id":"var", "cnt":"Y"}]}}}}}
 ,
 { "id":"clause", 
 "title":"File \"elpi-builtin.elpi\", line 207, column 0, character 3252:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"lt_"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}],
-"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"s<"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}]}}}
+"args":{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"s<"}, {"id":"var", "cnt":"X"},{"id":"var", "cnt":"Y"}]}}}}}
 ,
 { "id":"clause", 
 "title":"File \"elpi-builtin.elpi\", line 209, column 0, character 3273:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"gt_"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}],
-"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"s>"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}]}}}
+"args":{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"s>"}, {"id":"var", "cnt":"X"},{"id":"var", "cnt":"Y"}]}}}}}
 ,
 { "id":"clause", 
 "title":"File \"elpi-builtin.elpi\", line 211, column 0, character 3294:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"le_"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}],
-"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"s=<"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}]}}}
+"args":{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"s=<"}, {"id":"var", "cnt":"X"},{"id":"var", "cnt":"Y"}]}}}}}
 ,
 { "id":"clause", 
 "title":"File \"elpi-builtin.elpi\", line 213, column 0, character 3315:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"ge_"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}],
-"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"s>="}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}]}}}
+"args":{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"s>="}, {"id":"var", "cnt":"X"},{"id":"var", "cnt":"Y"}]}}}}}
 ,
 { "id":"clause", 
 "title":"File \"elpi-builtin.elpi\", line 234, column 0, character 3725:", 
@@ -321,13 +335,13 @@
 [{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"term_to_string"}, {"id":"var", "cnt":"Data"}, {"id":"var", "cnt":"DataS"}]}],{"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"is"}, {"id":"var", "cnt":"M"},{"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"^"}, {"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"^"}, {"id":"var", "cnt":"Msg"},{"id":"string", "cnt":": "}]}},{"id":"var", "cnt":"DataS"}]}}]}},[{"id":"prop", "cnt":[{"id":"const", "cnt":"stop"}, {"id":"var", "cnt":"M"}]}]]}],
+{"id":"const", "cnt":"^"}, {"id":"var", "cnt":"Msg"},{"id":"string", "cnt":"\": \""}]}},{"id":"var", "cnt":"DataS"}]}}]}},[{"id":"prop", "cnt":[{"id":"const", "cnt":"stop"}, {"id":"var", "cnt":"M"}]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error-w-data"}, {"id":"var", "cnt":"Msg"}, {"id":"var", "cnt":"Data"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi: default-fatal-error-w-data\", line 20, column 0, character 756:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"halt"}, {"id":"var", "cnt":"Msg"}, {"id":"string", "cnt":":"}, {"id":"var", "cnt":"Data"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"halt"}, {"id":"var", "cnt":"Msg"}, {"id":"string", "cnt":"\":\""}, {"id":"var", "cnt":"Data"}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error-w-data"}, {"id":"var", "cnt":"Msg"}, {"id":"var", "cnt":"Data"}]}]}}}
 ,
 { "id":"clause", 
@@ -372,33 +386,33 @@
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 41, column 0, character 1520:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error-w-data"}, {"id":"var", "cnt":"Msg"}, {"id":"string", "cnt":"no diagnostic returned"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error-w-data"}, {"id":"var", "cnt":"Msg"}, {"id":"string", "cnt":"\"no diagnostic returned\""}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.assert-ok!"}, {"id":"discard"}, {"id":"var", "cnt":"Msg"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 45, column 0, character 1682:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"trace.counter"}, {"id":"string", "cnt":"run"}, {"id":"var", "cnt":"NR"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"if"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"not"}, {"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"="}, {"id":"var", "cnt":"NR"},{"id":"string", "cnt":"0"}]}}]}], [{"id":"prop", "cnt":[{"id":"const", "cnt":"std.debug-print"}, {"id":"string", "cnt":"run="}, {"id":"var", "cnt":"NR"}]}], {"id":"const", "cnt":"true"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.debug-print"}, {"id":"string", "cnt":"----<<---- enter: "}, {"id":"var", "cnt":"P"}]}],{"id":"var", "cnt":"P"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.debug-print"}, {"id":"string", "cnt":"---->>---- exit: "}, {"id":"var", "cnt":"P"}]}]]}],
+[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"trace.counter"}, {"id":"string", "cnt":"\"run\""}, {"id":"var", "cnt":"NR"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"if"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"not"}, {"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"="}, {"id":"var", "cnt":"NR"},{"id":"string", "cnt":"0"}]}}]}], [{"id":"prop", "cnt":[{"id":"const", "cnt":"std.debug-print"}, {"id":"string", "cnt":"\"run=\""}, {"id":"var", "cnt":"NR"}]}], {"id":"const", "cnt":"true"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.debug-print"}, {"id":"string", "cnt":"\"----<<---- enter: \""}, {"id":"var", "cnt":"P"}]}],{"id":"var", "cnt":"P"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.debug-print"}, {"id":"string", "cnt":"\"---->>---- exit: \""}, {"id":"var", "cnt":"P"}]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.spy"}, {"id":"var", "cnt":"P"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 49, column 0, character 1863:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.debug-print"}, {"id":"string", "cnt":"---->>---- fail: "}, {"id":"var", "cnt":"P"}]}],{"id":"const", "cnt":"fail"}]}],
+[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.debug-print"}, {"id":"string", "cnt":"\"---->>---- fail: \""}, {"id":"var", "cnt":"P"}]}],{"id":"const", "cnt":"fail"}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.spy"}, {"id":"var", "cnt":"P"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 53, column 0, character 2001:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"trace.counter"}, {"id":"string", "cnt":"run"}, {"id":"var", "cnt":"NR"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"if"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"not"}, {"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"="}, {"id":"var", "cnt":"NR"},{"id":"string", "cnt":"0"}]}}]}], [{"id":"prop", "cnt":[{"id":"const", "cnt":"std.debug-print"}, {"id":"string", "cnt":"run="}, {"id":"var", "cnt":"NR"}]}], {"id":"const", "cnt":"true"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.debug-print"}, {"id":"string", "cnt":"----<<---- enter: "}, {"id":"var", "cnt":"P"}]}],{"id":"var", "cnt":"P"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.debug-print"}, {"id":"string", "cnt":"---->>---- exit: "}, {"id":"var", "cnt":"P"}]}],{"id":"cut"}]}],
+[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"trace.counter"}, {"id":"string", "cnt":"\"run\""}, {"id":"var", "cnt":"NR"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"if"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"not"}, {"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"="}, {"id":"var", "cnt":"NR"},{"id":"string", "cnt":"0"}]}}]}], [{"id":"prop", "cnt":[{"id":"const", "cnt":"std.debug-print"}, {"id":"string", "cnt":"\"run=\""}, {"id":"var", "cnt":"NR"}]}], {"id":"const", "cnt":"true"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.debug-print"}, {"id":"string", "cnt":"\"----<<---- enter: \""}, {"id":"var", "cnt":"P"}]}],{"id":"var", "cnt":"P"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.debug-print"}, {"id":"string", "cnt":"\"---->>---- exit: \""}, {"id":"var", "cnt":"P"}]}],{"id":"cut"}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.spy!"}, {"id":"var", "cnt":"P"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 57, column 0, character 2186:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.debug-print"}, {"id":"string", "cnt":"---->>---- fail: "}, {"id":"var", "cnt":"P"}]}],{"id":"const", "cnt":"fail"}]}],
+[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.debug-print"}, {"id":"string", "cnt":"\"---->>---- fail: \""}, {"id":"var", "cnt":"P"}]}],{"id":"const", "cnt":"fail"}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.spy!"}, {"id":"var", "cnt":"P"}]}]}}}
 ,
 { "id":"clause", 
@@ -439,7 +453,7 @@
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 75, column 0, character 2576:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"last on empty list"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"\"last on empty list\""}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.last"}, {"id":"const", "cnt":"[]"}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
@@ -493,7 +507,7 @@
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 90, column 0, character 2985:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"take run out of list items"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"\"take run out of list items\""}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.take"}, {"id":"discard"}, {"id":"discard"}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
@@ -521,7 +535,7 @@
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 101, column 0, character 3249:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"drop run out of list items"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"\"drop run out of list items\""}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.drop"}, {"id":"discard"}, {"id":"discard"}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
@@ -549,7 +563,7 @@
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 110, column 0, character 3550:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"split-at run out of list items"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"\"split-at run out of list items\""}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.split-at"}, {"id":"discard"}, {"id":"discard"}, {"id":"discard"}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
@@ -566,13 +580,13 @@
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 117, column 0, character 3806:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"fold2 on lists of different length"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"\"fold2 on lists of different length\""}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fold2"}, {"id":"const", "cnt":"[]"}, {"id":"list", "cnt":{"l":[{"id":"discard"}],"tl":{"id":"discard"}}}, {"id":"discard"}, {"id":"discard"}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 118, column 0, character 3880:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"fold2 on lists of different length"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"\"fold2 on lists of different length\""}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fold2"}, {"id":"list", "cnt":{"l":[{"id":"discard"}],"tl":{"id":"discard"}}}, {"id":"const", "cnt":"[]"}, {"id":"discard"}, {"id":"discard"}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
@@ -636,13 +650,13 @@
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 138, column 0, character 4588:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"map2 on lists of different length"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"\"map2 on lists of different length\""}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map2"}, {"id":"const", "cnt":"[]"}, {"id":"list", "cnt":{"l":[{"id":"discard"}],"tl":{"id":"discard"}}}, {"id":"discard"}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 139, column 0, character 4658:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"map2 on lists of different length"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"\"map2 on lists of different length\""}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map2"}, {"id":"list", "cnt":{"l":[{"id":"discard"}],"tl":{"id":"discard"}}}, {"id":"const", "cnt":"[]"}, {"id":"discard"}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
@@ -659,13 +673,13 @@
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 144, column 0, character 4875:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"map2-filter on lists of different length"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"\"map2-filter on lists of different length\""}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map2-filter"}, {"id":"const", "cnt":"[]"}, {"id":"list", "cnt":{"l":[{"id":"discard"}],"tl":{"id":"discard"}}}, {"id":"discard"}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 145, column 0, character 4959:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"map2-filter on lists of different length"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"\"map2-filter on lists of different length\""}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map2-filter"}, {"id":"list", "cnt":{"l":[{"id":"discard"}],"tl":{"id":"discard"}}}, {"id":"const", "cnt":"[]"}, {"id":"discard"}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
@@ -740,13 +754,13 @@
 "title":"File \"builtin_stdlib.elpi\", line 166, column 0, character 5838:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"comma", "cnt":[{"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"<"}, {"id":"var", "cnt":"N"},{"id":"string", "cnt":"0"}]}},{"id":"cut"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"nth got a negative index"}]}]]}],
+{"id":"const", "cnt":"<"}, {"id":"var", "cnt":"N"},{"id":"string", "cnt":"0"}]}},{"id":"cut"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"\"nth got a negative index\""}]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.nth"}, {"id":"var", "cnt":"N"}, {"id":"discard"}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 167, column 0, character 5901:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"nth run out of list items"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"\"nth run out of list items\""}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.nth"}, {"id":"discard"}, {"id":"discard"}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
@@ -810,13 +824,13 @@
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 194, column 0, character 6678:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"exists2 on lists of different length"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"\"exists2 on lists of different length\""}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.exists2"}, {"id":"const", "cnt":"[]"}, {"id":"list", "cnt":{"l":[{"id":"discard"}],"tl":{"id":"discard"}}}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 195, column 0, character 6752:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"exists2 on lists of different length"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"\"exists2 on lists of different length\""}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.exists2"}, {"id":"list", "cnt":{"l":[{"id":"discard"}],"tl":{"id":"discard"}}}, {"id":"const", "cnt":"[]"}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
@@ -858,13 +872,13 @@
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 208, column 0, character 7198:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"forall2 on lists of different length"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"\"forall2 on lists of different length\""}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.forall2"}, {"id":"const", "cnt":"[]"}, {"id":"list", "cnt":{"l":[{"id":"discard"}],"tl":{"id":"discard"}}}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 209, column 0, character 7272:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"forall2 on lists of different length"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"\"forall2 on lists of different length\""}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.forall2"}, {"id":"list", "cnt":{"l":[{"id":"discard"}],"tl":{"id":"discard"}}}, {"id":"const", "cnt":"[]"}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
@@ -894,13 +908,13 @@
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 218, column 0, character 7598:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"zip on lists of different length"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"\"zip on lists of different length\""}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.zip"}, {"id":"list", "cnt":{"l":[{"id":"discard"}],"tl":{"id":"discard"}}}, {"id":"const", "cnt":"[]"}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 219, column 0, character 7664:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"zip on lists of different length"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"\"zip on lists of different length\""}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.zip"}, {"id":"const", "cnt":"[]"}, {"id":"list", "cnt":{"l":[{"id":"discard"}],"tl":{"id":"discard"}}}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
@@ -1066,7 +1080,8 @@
 { "id":"clause", 
 "title":"File \"builtin_stdlib.elpi\", line 278, column 0, character 9231:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":">="}, {"id":"var", "cnt":"N"}, {"id":"var", "cnt":"M"}]}],{"id":"cut"}]}],
+[{"id":"comma", "cnt":[{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":">="}, {"id":"var", "cnt":"N"},{"id":"var", "cnt":"M"}]}},{"id":"cut"}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.max"}, {"id":"var", "cnt":"N"}, {"id":"var", "cnt":"M"}, {"id":"var", "cnt":"N"}]}]}}}
 ,
 { "id":"clause", 
@@ -1141,7 +1156,8 @@
 "title":"File \"builtin_map.elpi\", line 47, column 0, character 11280:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"comma", "cnt":[{"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":">"}, {"id":"var", "cnt":"HL"},{"id":"var", "cnt":"HR 2"}]}},[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map.private.height"}, {"id":"var", "cnt":"LL"}, {"id":"var", "cnt":"Spilled 2"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map.private.height"}, {"id":"var", "cnt":"LR"}, {"id":"var", "cnt":"Spilled 3"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":">="}, {"id":"var", "cnt":"Spilled 2"}, {"id":"var", "cnt":"Spilled 3"}]}]]}],{"id":"cut"},[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map.private.create"}, {"id":"var", "cnt":"LR"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"D"}, {"id":"var", "cnt":"R"}, {"id":"var", "cnt":"Spilled 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map.private.create"}, {"id":"var", "cnt":"LL"}, {"id":"var", "cnt":"LV"}, {"id":"var", "cnt":"LD"}, {"id":"var", "cnt":"Spilled 1"}, {"id":"var", "cnt":"T"}]}]]}]]}],
+{"id":"const", "cnt":">"}, {"id":"var", "cnt":"HL"},{"id":"var", "cnt":"HR 2"}]}},[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map.private.height"}, {"id":"var", "cnt":"LL"}, {"id":"var", "cnt":"Spilled 2"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map.private.height"}, {"id":"var", "cnt":"LR"}, {"id":"var", "cnt":"Spilled 3"}]}],{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":">="}, {"id":"var", "cnt":"Spilled 2"},{"id":"var", "cnt":"Spilled 3"}]}}]}],{"id":"cut"},[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map.private.create"}, {"id":"var", "cnt":"LR"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"D"}, {"id":"var", "cnt":"R"}, {"id":"var", "cnt":"Spilled 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map.private.create"}, {"id":"var", "cnt":"LL"}, {"id":"var", "cnt":"LV"}, {"id":"var", "cnt":"LD"}, {"id":"var", "cnt":"Spilled 1"}, {"id":"var", "cnt":"T"}]}]]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map.private.bal.aux"}, {"id":"var", "cnt":"HL"}, {"id":"discard"}, {"id":"discard"}, {"id":"var", "cnt":"HR 2"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map.private.node"}, {"id":"var", "cnt":"LL"}, {"id":"var", "cnt":"LV"}, {"id":"var", "cnt":"LD"}, {"id":"var", "cnt":"LR"}, {"id":"discard"}]}], {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"D"}, {"id":"var", "cnt":"R"}, {"id":"var", "cnt":"T"}]}]}}}
 ,
 { "id":"clause", 
@@ -1155,7 +1171,8 @@
 "title":"File \"builtin_map.elpi\", line 53, column 0, character 11562:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"comma", "cnt":[{"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":">"}, {"id":"var", "cnt":"HR"},{"id":"var", "cnt":"HL 2"}]}},[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map.private.height"}, {"id":"var", "cnt":"RR"}, {"id":"var", "cnt":"Spilled 2"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map.private.height"}, {"id":"var", "cnt":"RL"}, {"id":"var", "cnt":"Spilled 3"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":">="}, {"id":"var", "cnt":"Spilled 2"}, {"id":"var", "cnt":"Spilled 3"}]}]]}],{"id":"cut"},[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map.private.create"}, {"id":"var", "cnt":"L"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"D"}, {"id":"var", "cnt":"RL"}, {"id":"var", "cnt":"Spilled 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map.private.create"}, {"id":"var", "cnt":"Spilled 1"}, {"id":"var", "cnt":"RV"}, {"id":"var", "cnt":"RD"}, {"id":"var", "cnt":"RR"}, {"id":"var", "cnt":"T"}]}]]}]]}],
+{"id":"const", "cnt":">"}, {"id":"var", "cnt":"HR"},{"id":"var", "cnt":"HL 2"}]}},[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map.private.height"}, {"id":"var", "cnt":"RR"}, {"id":"var", "cnt":"Spilled 2"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map.private.height"}, {"id":"var", "cnt":"RL"}, {"id":"var", "cnt":"Spilled 3"}]}],{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":">="}, {"id":"var", "cnt":"Spilled 2"},{"id":"var", "cnt":"Spilled 3"}]}}]}],{"id":"cut"},[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map.private.create"}, {"id":"var", "cnt":"L"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"D"}, {"id":"var", "cnt":"RL"}, {"id":"var", "cnt":"Spilled 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map.private.create"}, {"id":"var", "cnt":"Spilled 1"}, {"id":"var", "cnt":"RV"}, {"id":"var", "cnt":"RD"}, {"id":"var", "cnt":"RR"}, {"id":"var", "cnt":"T"}]}]]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map.private.bal.aux"}, {"id":"discard"}, {"id":"var", "cnt":"HR"}, {"id":"var", "cnt":"HL 2"}, {"id":"discard"}, {"id":"var", "cnt":"L"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"D"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map.private.node"}, {"id":"var", "cnt":"RL"}, {"id":"var", "cnt":"RV"}, {"id":"var", "cnt":"RD"}, {"id":"var", "cnt":"RR"}, {"id":"discard"}]}], {"id":"var", "cnt":"T"}]}]}}}
 ,
 { "id":"clause", 
@@ -1376,7 +1393,8 @@
 "title":"File \"builtin_set.elpi\", line 50, column 0, character 18098:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"comma", "cnt":[{"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":">"}, {"id":"var", "cnt":"HL"},{"id":"var", "cnt":"HR 2"}]}},[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.set.private.height"}, {"id":"var", "cnt":"LL"}, {"id":"var", "cnt":"Spilled 2"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.set.private.height"}, {"id":"var", "cnt":"LR"}, {"id":"var", "cnt":"Spilled 3"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":">="}, {"id":"var", "cnt":"Spilled 2"}, {"id":"var", "cnt":"Spilled 3"}]}]]}],{"id":"cut"},[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.set.private.create"}, {"id":"var", "cnt":"LR"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"R"}, {"id":"var", "cnt":"Spilled 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.set.private.create"}, {"id":"var", "cnt":"LL"}, {"id":"var", "cnt":"LV"}, {"id":"var", "cnt":"Spilled 1"}, {"id":"var", "cnt":"T"}]}]]}]]}],
+{"id":"const", "cnt":">"}, {"id":"var", "cnt":"HL"},{"id":"var", "cnt":"HR 2"}]}},[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.set.private.height"}, {"id":"var", "cnt":"LL"}, {"id":"var", "cnt":"Spilled 2"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.set.private.height"}, {"id":"var", "cnt":"LR"}, {"id":"var", "cnt":"Spilled 3"}]}],{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":">="}, {"id":"var", "cnt":"Spilled 2"},{"id":"var", "cnt":"Spilled 3"}]}}]}],{"id":"cut"},[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.set.private.create"}, {"id":"var", "cnt":"LR"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"R"}, {"id":"var", "cnt":"Spilled 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.set.private.create"}, {"id":"var", "cnt":"LL"}, {"id":"var", "cnt":"LV"}, {"id":"var", "cnt":"Spilled 1"}, {"id":"var", "cnt":"T"}]}]]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.set.private.bal.aux"}, {"id":"var", "cnt":"HL"}, {"id":"discard"}, {"id":"discard"}, {"id":"var", "cnt":"HR 2"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"std.set.private.node"}, {"id":"var", "cnt":"LL"}, {"id":"var", "cnt":"LV"}, {"id":"var", "cnt":"LR"}, {"id":"discard"}]}], {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"R"}, {"id":"var", "cnt":"T"}]}]}}}
 ,
 { "id":"clause", 
@@ -1390,7 +1408,8 @@
 "title":"File \"builtin_set.elpi\", line 56, column 0, character 18352:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"comma", "cnt":[{"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":">"}, {"id":"var", "cnt":"HR"},{"id":"var", "cnt":"HL 2"}]}},[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.set.private.height"}, {"id":"var", "cnt":"RR"}, {"id":"var", "cnt":"Spilled 2"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.set.private.height"}, {"id":"var", "cnt":"RL"}, {"id":"var", "cnt":"Spilled 3"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":">="}, {"id":"var", "cnt":"Spilled 2"}, {"id":"var", "cnt":"Spilled 3"}]}]]}],{"id":"cut"},[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.set.private.create"}, {"id":"var", "cnt":"L"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"RL"}, {"id":"var", "cnt":"Spilled 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.set.private.create"}, {"id":"var", "cnt":"Spilled 1"}, {"id":"var", "cnt":"RV"}, {"id":"var", "cnt":"RR"}, {"id":"var", "cnt":"T"}]}]]}]]}],
+{"id":"const", "cnt":">"}, {"id":"var", "cnt":"HR"},{"id":"var", "cnt":"HL 2"}]}},[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.set.private.height"}, {"id":"var", "cnt":"RR"}, {"id":"var", "cnt":"Spilled 2"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.set.private.height"}, {"id":"var", "cnt":"RL"}, {"id":"var", "cnt":"Spilled 3"}]}],{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":">="}, {"id":"var", "cnt":"Spilled 2"},{"id":"var", "cnt":"Spilled 3"}]}}]}],{"id":"cut"},[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.set.private.create"}, {"id":"var", "cnt":"L"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"RL"}, {"id":"var", "cnt":"Spilled 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.set.private.create"}, {"id":"var", "cnt":"Spilled 1"}, {"id":"var", "cnt":"RV"}, {"id":"var", "cnt":"RR"}, {"id":"var", "cnt":"T"}]}]]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.set.private.bal.aux"}, {"id":"discard"}, {"id":"var", "cnt":"HR"}, {"id":"var", "cnt":"HL 2"}, {"id":"discard"}, {"id":"var", "cnt":"L"}, {"id":"var", "cnt":"X"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"std.set.private.node"}, {"id":"var", "cnt":"RL"}, {"id":"var", "cnt":"RV"}, {"id":"var", "cnt":"RR"}, {"id":"discard"}]}], {"id":"var", "cnt":"T"}]}]}}}
 ,
 { "id":"clause", 
@@ -1557,7 +1576,7 @@
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 22, column 0, character 794:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"get-option"}, {"id":"string", "cnt":"ltac:fail"}, {"id":"var", "cnt":"N"}]}],{"id":"cut"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.ltac.fail"}, {"id":"var", "cnt":"N"}, {"id":"var", "cnt":"S"}]}]]}],
+[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"get-option"}, {"id":"string", "cnt":"\"ltac:fail\""}, {"id":"var", "cnt":"N"}]}],{"id":"cut"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.ltac.fail"}, {"id":"var", "cnt":"N"}, {"id":"var", "cnt":"S"}]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"stop"}, {"id":"var", "cnt":"S"}]}]}}}
 ,
 { "id":"clause", 
@@ -1587,7 +1606,7 @@
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi: subst-prod:fail\", line 39, column 0, character 1505:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error-w-data"}, {"id":"string", "cnt":"subst-prod: not a product"}, {"id":"var", "cnt":"T"}]}]]}],
+[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error-w-data"}, {"id":"string", "cnt":"\"subst-prod: not a product\""}, {"id":"var", "cnt":"T"}]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.subst-prod"}, {"id":"list", "cnt":{"l":[{"id":"discard"}],"tl":{"id":"discard"}}}, {"id":"var", "cnt":"T"}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
@@ -1611,7 +1630,7 @@
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi: subst-fun:fail\", line 47, column 0, character 1820:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error-w-data"}, {"id":"string", "cnt":"subst-fun: not a lambda"}, {"id":"var", "cnt":"T"}]}]]}],
+[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error-w-data"}, {"id":"string", "cnt":"\"subst-fun: not a lambda\""}, {"id":"var", "cnt":"T"}]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.subst-fun"}, {"id":"list", "cnt":{"l":[{"id":"discard"}],"tl":{"id":"discard"}}}, {"id":"var", "cnt":"T"}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
@@ -2107,12 +2126,12 @@
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 198, column 0, character 8158:", 
 "cnt":{"id":"clause", "cnt":{"hyp":[],
- "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.upoly-decl->attribute"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"upoly-decl"}, {"id":"var", "cnt":"A"}, {"id":"var", "cnt":"B"}, {"id":"var", "cnt":"C"}, {"id":"var", "cnt":"D"}]}], [{"id":"prop", "cnt":[{"id":"const", "cnt":"get-option"}, {"id":"string", "cnt":"coq:udecl"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"upoly-decl"}, {"id":"var", "cnt":"A"}, {"id":"var", "cnt":"B"}, {"id":"var", "cnt":"C"}, {"id":"var", "cnt":"D"}]}]]}]]}]}}}
+ "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.upoly-decl->attribute"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"upoly-decl"}, {"id":"var", "cnt":"A"}, {"id":"var", "cnt":"B"}, {"id":"var", "cnt":"C"}, {"id":"var", "cnt":"D"}]}], [{"id":"prop", "cnt":[{"id":"const", "cnt":"get-option"}, {"id":"string", "cnt":"\"coq:udecl\""}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"upoly-decl"}, {"id":"var", "cnt":"A"}, {"id":"var", "cnt":"B"}, {"id":"var", "cnt":"C"}, {"id":"var", "cnt":"D"}]}]]}]]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 199, column 0, character 8224:", 
 "cnt":{"id":"clause", "cnt":{"hyp":[],
- "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.upoly-decl->attribute"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"upoly-decl-cumul"}, {"id":"var", "cnt":"A"}, {"id":"var", "cnt":"B"}, {"id":"var", "cnt":"C"}, {"id":"var", "cnt":"D"}]}], [{"id":"prop", "cnt":[{"id":"const", "cnt":"get-option"}, {"id":"string", "cnt":"coq:udecl-cumul"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"upoly-decl-cumul"}, {"id":"var", "cnt":"A"}, {"id":"var", "cnt":"B"}, {"id":"var", "cnt":"C"}, {"id":"var", "cnt":"D"}]}]]}]]}]}}}
+ "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.upoly-decl->attribute"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"upoly-decl-cumul"}, {"id":"var", "cnt":"A"}, {"id":"var", "cnt":"B"}, {"id":"var", "cnt":"C"}, {"id":"var", "cnt":"D"}]}], [{"id":"prop", "cnt":[{"id":"const", "cnt":"get-option"}, {"id":"string", "cnt":"\"coq:udecl-cumul\""}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"upoly-decl-cumul"}, {"id":"var", "cnt":"A"}, {"id":"var", "cnt":"B"}, {"id":"var", "cnt":"C"}, {"id":"var", "cnt":"D"}]}]]}]]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 202, column 0, character 8372:", 
@@ -2234,7 +2253,7 @@
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi: coq.build-indt-decl-aux:fail\", line 255, column 0, character 10855:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"coq.build-indt-decl-aux: invalid declaration"}]}]]}],
+[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error"}, {"id":"string", "cnt":"\"coq.build-indt-decl-aux: invalid declaration\""}]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.build-indt-decl-aux"}, {"id":"discard"}, {"id":"discard"}, {"id":"discard"}, {"id":"discard"}, {"id":"discard"}, {"id":"discard"}, {"id":"discard"}, {"id":"discard"}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
@@ -2295,7 +2314,7 @@
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"comma", "cnt":[{"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"is"}, {"id":"var", "cnt":"Name"},{"id":"var", "cnt":"Exp"}]}},[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.env.fresh-global-id"}, {"id":"var", "cnt":"Name"}, {"id":"var", "cnt":"S"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"if"}, {"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"="}, {"id":"var", "cnt":"Name"},{"id":"var", "cnt":"S"}]}}, {"id":"const", "cnt":"true"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.warning"}, {"id":"string", "cnt":"elpi"}, {"id":"string", "cnt":"elpi.renamed"}, {"id":"string", "cnt":"Global name"}, {"id":"var", "cnt":"Name"}, {"id":"string", "cnt":"is taken, using"}, {"id":"var", "cnt":"S"}, {"id":"string", "cnt":"instead"}]}]]}]]}],
+{"id":"const", "cnt":"="}, {"id":"var", "cnt":"Name"},{"id":"var", "cnt":"S"}]}}, {"id":"const", "cnt":"true"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.warning"}, {"id":"string", "cnt":"\"elpi\""}, {"id":"string", "cnt":"\"elpi.renamed\""}, {"id":"string", "cnt":"\"Global name\""}, {"id":"var", "cnt":"Name"}, {"id":"string", "cnt":"\"is taken, using\""}, {"id":"var", "cnt":"S"}, {"id":"string", "cnt":"\"instead\""}]}]]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.ensure-fresh-global-id"}, {"id":"var", "cnt":"Exp"}, {"id":"var", "cnt":"S"}]}]}}}
 ,
 { "id":"clause", 
@@ -2326,7 +2345,7 @@
 {"id":"const", "cnt":"=>"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"decl"}, {"id":"var", "cnt":"x 3"}, {"id":"var", "cnt":"X 2"}, {"id":"var", "cnt":"T"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-indt-arity"}, [{"id":"prop", "cnt":[{"id":"var", "cnt":"D"}, {"id":"var", "cnt":"x 3"}]}], [{"id":"prop", "cnt":[{"id":"var", "cnt":"F"}, {"id":"var", "cnt":"x 3"}]}], {"id":"var", "cnt":"NU"}, {"id":"var", "cnt":"x 1"}]}]]}}]}}]}]]}}]}}
 ,[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"is"}, {"id":"var", "cnt":"NU 1"},{"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"+"}, {"id":"var", "cnt":"NU"},{"id":"string", "cnt":"1"}]}}]}}, {"id":"string", "cnt":""}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.id->name"}, {"id":"var", "cnt":"ID"}, {"id":"var", "cnt":"N"}]}], {"id":"string", "cnt":""}]}]]}}]}],
+{"id":"const", "cnt":"+"}, {"id":"var", "cnt":"NU"},{"id":"string", "cnt":"1"}]}}]}}, {"id":"string", "cnt":"\"\""}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.id->name"}, {"id":"var", "cnt":"ID"}, {"id":"var", "cnt":"N"}]}], {"id":"string", "cnt":"\"\""}]}]]}}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-indt-arity"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"parameter"}, {"id":"var", "cnt":"ID"}, {"id":"discard"}, {"id":"var", "cnt":"T"}, {"id":"var", "cnt":"D"}]}], [{"id":"prop", "cnt":[{"id":"const", "cnt":"prod"}, {"id":"var", "cnt":"N"}, {"id":"var", "cnt":"T"}, {"id":"var", "cnt":"F"}]}], {"id":"var", "cnt":"NU 1"}, {"id":"var", "cnt":"Diag"}]}]}}}
 ,
 { "id":"clause", 
@@ -2382,7 +2401,7 @@
  "cnt":{
 "type":"pi","names":[{"id":"var", "cnt":"x 3"}],
 "body":[{"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"=>"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"decl"}, {"id":"var", "cnt":"x 3"}, {"id":"var", "cnt":"X 2"}, {"id":"var", "cnt":"A"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.do-ok!"}, {"id":"var", "cnt":"x 1"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-indt-decl-field"}, {"id":"var", "cnt":"x 3"}, {"id":"var", "cnt":"FDecl"}, [{"id":"prop", "cnt":[{"id":"var", "cnt":"K"}, {"id":"var", "cnt":"x 3"}]}]]}], {"id":"string", "cnt":""}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-indt-decl-c"}, {"id":"var", "cnt":"x 3"}, {"id":"var", "cnt":"A"}, {"id":"string", "cnt":"0"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"constructor"}, {"id":"string", "cnt":"fields"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"arity"}, [{"id":"prop", "cnt":[{"id":"var", "cnt":"K"}, {"id":"var", "cnt":"x 3"}]}]]}]]}]]}]]}}]}]]}}]}}]}]]}}]}}
+{"id":"const", "cnt":"=>"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"decl"}, {"id":"var", "cnt":"x 3"}, {"id":"var", "cnt":"X 2"}, {"id":"var", "cnt":"A"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.do-ok!"}, {"id":"var", "cnt":"x 1"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-indt-decl-field"}, {"id":"var", "cnt":"x 3"}, {"id":"var", "cnt":"FDecl"}, [{"id":"prop", "cnt":[{"id":"var", "cnt":"K"}, {"id":"var", "cnt":"x 3"}]}]]}], {"id":"string", "cnt":"\"\""}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-indt-decl-c"}, {"id":"var", "cnt":"x 3"}, {"id":"var", "cnt":"A"}, {"id":"string", "cnt":"0"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"constructor"}, {"id":"string", "cnt":"\"fields\""}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"arity"}, [{"id":"prop", "cnt":[{"id":"var", "cnt":"K"}, {"id":"var", "cnt":"x 3"}]}]]}]]}]]}]]}}]}]]}}]}}]}]]}}]}}
 ]}}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-indt-decl"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"record"}, {"id":"var", "cnt":"ID"}, {"id":"var", "cnt":"A"}, {"id":"discard"}, {"id":"var", "cnt":"FDecl"}]}], {"id":"var", "cnt":"Diag"}]}]}}}
 ,
@@ -2397,7 +2416,7 @@
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"std.do-ok!"}, {"id":"var", "cnt":"Diag"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-ty"}, {"id":"var", "cnt":"T"}, {"id":"discard"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"is"}, {"id":"var", "cnt":"NUPNO 1"},{"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"-"}, {"id":"var", "cnt":"NUPNO"},{"id":"string", "cnt":"1"}]}}]}}, {"id":"string", "cnt":""}]}],{"id": "quantification",
+{"id":"const", "cnt":"-"}, {"id":"var", "cnt":"NUPNO"},{"id":"string", "cnt":"1"}]}}]}}, {"id":"string", "cnt":"\"\""}]}],{"id": "quantification",
  "cnt":{
 "type":"anonymousForall","names":[{"id":"var", "cnt":"x 1"}], 
 "body":[{"id": "quantification",
@@ -2408,13 +2427,13 @@
 "type":"pi","names":[{"id":"var", "cnt":"x 3"}],
 "body":[{"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"=>"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"decl"}, {"id":"var", "cnt":"x 3"}, {"id":"var", "cnt":"X 2"}, {"id":"var", "cnt":"T"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-indc-arity"}, [{"id":"prop", "cnt":[{"id":"var", "cnt":"D"}, {"id":"var", "cnt":"x 3"}]}], {"id":"var", "cnt":"NUPNO 1"}, [{"id":"prop", "cnt":[{"id":"var", "cnt":"F"}, {"id":"var", "cnt":"x 3"}]}], {"id":"var", "cnt":"S"}, {"id":"var", "cnt":"x 1"}]}]]}}]}}]}]]}}]}}
-,[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.id->name"}, {"id":"var", "cnt":"ID"}, {"id":"var", "cnt":"N"}]}], {"id":"string", "cnt":""}]}]]}}]}],
+,[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.id->name"}, {"id":"var", "cnt":"ID"}, {"id":"var", "cnt":"N"}]}], {"id":"string", "cnt":"\"\""}]}]]}}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-indc-arity"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"parameter"}, {"id":"var", "cnt":"ID"}, {"id":"discard"}, {"id":"var", "cnt":"T"}, {"id":"var", "cnt":"D"}]}], {"id":"var", "cnt":"NUPNO"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"prod"}, {"id":"var", "cnt":"N"}, {"id":"var", "cnt":"T"}, {"id":"var", "cnt":"F"}]}], {"id":"var", "cnt":"S"}, {"id":"var", "cnt":"Diag"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 348, column 0, character 14386:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.do-ok!"}, {"id":"var", "cnt":"Diag"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-indc-arity"}, {"id":"var", "cnt":"Arity"}, {"id":"var", "cnt":"NUPNO"}, {"id":"var", "cnt":"T"}, {"id":"var", "cnt":"KS"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-indt-decl-c.unify-arrow-tgt"}, {"id":"var", "cnt":"I"}, {"id":"string", "cnt":"0"}, {"id":"var", "cnt":"S"}, {"id":"var", "cnt":"T"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.arity->sort"}, {"id":"var", "cnt":"S"}, {"id":"var", "cnt":"IS"}]}], {"id":"string", "cnt":""}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.sort.leq"}, {"id":"var", "cnt":"KS"}, {"id":"var", "cnt":"IS"}]}], {"id":"string", "cnt":"constructor universe too large"}]}]]}}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.do-ok!"}, {"id":"var", "cnt":"Diag"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-indc-arity"}, {"id":"var", "cnt":"Arity"}, {"id":"var", "cnt":"NUPNO"}, {"id":"var", "cnt":"T"}, {"id":"var", "cnt":"KS"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-indt-decl-c.unify-arrow-tgt"}, {"id":"var", "cnt":"I"}, {"id":"string", "cnt":"0"}, {"id":"var", "cnt":"S"}, {"id":"var", "cnt":"T"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.arity->sort"}, {"id":"var", "cnt":"S"}, {"id":"var", "cnt":"IS"}]}], {"id":"string", "cnt":"\"\""}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.sort.leq"}, {"id":"var", "cnt":"KS"}, {"id":"var", "cnt":"IS"}]}], {"id":"string", "cnt":"\"constructor universe too large\""}]}]]}}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-indt-decl-c"}, {"id":"var", "cnt":"I"}, {"id":"var", "cnt":"S"}, {"id":"var", "cnt":"NUPNO"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"constructor"}, {"id":"discard"}, {"id":"var", "cnt":"Arity"}]}], {"id":"var", "cnt":"Diag"}]}]}}}
 ,
 { "id":"clause", 
@@ -2480,7 +2499,7 @@
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 378, column 0, character 15858:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.do-ok!"}, {"id":"var", "cnt":"Diag"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.elaborate-arity-skeleton"}, {"id":"var", "cnt":"Arity"}, {"id":"discard"}, {"id":"var", "cnt":"Arity 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.arity->nparams"}, {"id":"var", "cnt":"Arity 1"}, {"id":"var", "cnt":"NUPNO"}]}], {"id":"string", "cnt":""}]}],{"id": "quantification",
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.do-ok!"}, {"id":"var", "cnt":"Diag"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.elaborate-arity-skeleton"}, {"id":"var", "cnt":"Arity"}, {"id":"discard"}, {"id":"var", "cnt":"Arity 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.arity->nparams"}, {"id":"var", "cnt":"Arity 1"}, {"id":"var", "cnt":"NUPNO"}]}], {"id":"string", "cnt":"\"\""}]}],{"id": "quantification",
  "cnt":{
 "type":"anonymousForall","names":[{"id":"var", "cnt":"x 1"}], 
 "body":[[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.arity->term"}, {"id":"var", "cnt":"Arity 1"}, {"id":"var", "cnt":"A 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.do-ok!"}, {"id":"var", "cnt":"x 1"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-indt-decl.heuristic-var-type"}, {"id":"var", "cnt":"A 1"}]}],{"id": "quantification",
@@ -2502,7 +2521,7 @@
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 386, column 0, character 16287:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"std.do-ok!"}, {"id":"var", "cnt":"Diag"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.elaborate-ty-skeleton"}, {"id":"var", "cnt":"A"}, {"id":"discard"}, {"id":"var", "cnt":"A 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, {"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"="}, {"id":"var", "cnt":"A 1"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"sort"}, {"id":"var", "cnt":"U"}]}]]}}, {"id":"string", "cnt":"record type is not a sort"}]}],{"id": "quantification",
+{"id":"const", "cnt":"="}, {"id":"var", "cnt":"A 1"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"sort"}, {"id":"var", "cnt":"U"}]}]]}}, {"id":"string", "cnt":"\"record type is not a sort\""}]}],{"id": "quantification",
  "cnt":{
 "type":"anonymousForall","names":[{"id":"var", "cnt":"x 1"}], 
 "body":[{"id": "quantification",
@@ -2524,7 +2543,7 @@
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 394, column 0, character 16735:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.do-ok!"}, {"id":"var", "cnt":"Diag"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.elaborate-ty-skeleton"}, {"id":"var", "cnt":"A"}, {"id":"var", "cnt":"UA"}, {"id":"var", "cnt":"A 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.sort.leq"}, {"id":"var", "cnt":"UA"}, {"id":"var", "cnt":"U"}]}], {"id":"string", "cnt":"constructor universe too large"}]}],{"id": "quantification",
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.do-ok!"}, {"id":"var", "cnt":"Diag"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.elaborate-ty-skeleton"}, {"id":"var", "cnt":"A"}, {"id":"var", "cnt":"UA"}, {"id":"var", "cnt":"A 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.sort.leq"}, {"id":"var", "cnt":"UA"}, {"id":"var", "cnt":"U"}]}], {"id":"string", "cnt":"\"constructor universe too large\""}]}],{"id": "quantification",
  "cnt":{
 "type":"anonymousForall","names":[{"id":"var", "cnt":"x 1"}], 
 "body":[{"id": "quantification",
@@ -2541,7 +2560,7 @@
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 402, column 0, character 17160:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.do-ok!"}, {"id":"var", "cnt":"Diag"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.elaborate-arity-skeleton-nuparams"}, {"id":"var", "cnt":"Arity"}, {"id":"var", "cnt":"NUPNO"}, {"id":"var", "cnt":"KS"}, {"id":"var", "cnt":"Arity 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-indt-decl-c.unify-arity"}, {"id":"var", "cnt":"I"}, {"id":"string", "cnt":"0"}, {"id":"var", "cnt":"SA"}, {"id":"var", "cnt":"Arity 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.arity->term"}, {"id":"var", "cnt":"SA"}, {"id":"var", "cnt":"Spilled 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.arity->sort"}, {"id":"var", "cnt":"Spilled 1"}, {"id":"var", "cnt":"IS"}]}]]}], {"id":"string", "cnt":""}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.sort.leq"}, {"id":"var", "cnt":"KS"}, {"id":"var", "cnt":"IS"}]}], {"id":"string", "cnt":"constructor universe too large"}]}]]}}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.do-ok!"}, {"id":"var", "cnt":"Diag"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.elaborate-arity-skeleton-nuparams"}, {"id":"var", "cnt":"Arity"}, {"id":"var", "cnt":"NUPNO"}, {"id":"var", "cnt":"KS"}, {"id":"var", "cnt":"Arity 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-indt-decl-c.unify-arity"}, {"id":"var", "cnt":"I"}, {"id":"string", "cnt":"0"}, {"id":"var", "cnt":"SA"}, {"id":"var", "cnt":"Arity 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.arity->term"}, {"id":"var", "cnt":"SA"}, {"id":"var", "cnt":"Spilled 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.arity->sort"}, {"id":"var", "cnt":"Spilled 1"}, {"id":"var", "cnt":"IS"}]}]]}], {"id":"string", "cnt":"\"\""}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.sort.leq"}, {"id":"var", "cnt":"KS"}, {"id":"var", "cnt":"IS"}]}], {"id":"string", "cnt":"\"constructor universe too large\""}]}]]}}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.elaborate-indt-decl-skeleton-c"}, {"id":"var", "cnt":"I"}, {"id":"var", "cnt":"SA"}, {"id":"var", "cnt":"NUPNO"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"constructor"}, {"id":"var", "cnt":"ID"}, {"id":"var", "cnt":"Arity"}]}], [{"id":"prop", "cnt":[{"id":"const", "cnt":"constructor"}, {"id":"var", "cnt":"ID"}, {"id":"var", "cnt":"Arity 1"}]}], {"id":"var", "cnt":"Diag"}]}]}}}
 ,
 { "id":"clause", 
@@ -2549,7 +2568,7 @@
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"std.do-ok!"}, {"id":"var", "cnt":"D"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.unify-eq"}, {"id":"var", "cnt":"T 1"}, {"id":"var", "cnt":"T"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"is"}, {"id":"var", "cnt":"PNO 1"},{"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"+"}, {"id":"var", "cnt":"PNO"},{"id":"string", "cnt":"1"}]}}]}}, {"id":"string", "cnt":""}]}],{"id": "quantification",
+{"id":"const", "cnt":"+"}, {"id":"var", "cnt":"PNO"},{"id":"string", "cnt":"1"}]}}]}}, {"id":"string", "cnt":"\"\""}]}],{"id": "quantification",
  "cnt":{
 "type":"anonymousForall","names":[{"id":"var", "cnt":"x 1"}], 
 "body":[{"id": "quantification",
@@ -2596,7 +2615,7 @@
 "type":"pi","names":[{"id":"var", "cnt":"x 3"}],
 "body":[{"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"=>"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"decl"}, {"id":"var", "cnt":"x 3"}, {"id":"var", "cnt":"X 2"}, {"id":"var", "cnt":"T 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.elaborate-arity-skeleton"}, [{"id":"prop", "cnt":[{"id":"var", "cnt":"A"}, {"id":"var", "cnt":"x 3"}]}], {"id":"var", "cnt":"U 2"}, [{"id":"prop", "cnt":[{"id":"var", "cnt":"A 1"}, {"id":"var", "cnt":"x 3"}]}], {"id":"var", "cnt":"x 1"}]}]]}}]}}]}]]}}]}}
-,[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.sort.pts-triple"}, {"id":"var", "cnt":"U 1"}, {"id":"var", "cnt":"U 2"}, {"id":"var", "cnt":"U 3"}]}], {"id":"string", "cnt":"coq.elaborate-arity-skeleton: should not happen"}]}]]}}]}],
+,[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.sort.pts-triple"}, {"id":"var", "cnt":"U 1"}, {"id":"var", "cnt":"U 2"}, {"id":"var", "cnt":"U 3"}]}], {"id":"string", "cnt":"\"coq.elaborate-arity-skeleton: should not happen\""}]}]]}}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.elaborate-arity-skeleton"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"parameter"}, {"id":"var", "cnt":"ID"}, {"id":"var", "cnt":"Imp"}, {"id":"var", "cnt":"T"}, {"id":"var", "cnt":"A"}]}], {"id":"var", "cnt":"U 3"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"parameter"}, {"id":"var", "cnt":"ID"}, {"id":"var", "cnt":"Imp"}, {"id":"var", "cnt":"T 1"}, {"id":"var", "cnt":"A 1"}]}], {"id":"var", "cnt":"Diag"}]}]}}}
 ,
 { "id":"clause", 
@@ -2619,7 +2638,7 @@
 "type":"pi","names":[{"id":"var", "cnt":"x 3"}],
 "body":[{"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"=>"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"decl"}, {"id":"var", "cnt":"x 3"}, {"id":"var", "cnt":"X 2"}, {"id":"var", "cnt":"T 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.elaborate-arity-skeleton-nuparams"}, [{"id":"prop", "cnt":[{"id":"var", "cnt":"A"}, {"id":"var", "cnt":"x 3"}]}], {"id":"string", "cnt":"0"}, {"id":"var", "cnt":"U 2"}, [{"id":"prop", "cnt":[{"id":"var", "cnt":"A 1"}, {"id":"var", "cnt":"x 3"}]}], {"id":"var", "cnt":"x 1"}]}]]}}]}}]}]]}}]}}
-,[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.sort.pts-triple"}, {"id":"var", "cnt":"U 1"}, {"id":"var", "cnt":"U 2"}, {"id":"var", "cnt":"U 3"}]}], {"id":"string", "cnt":"coq.elaborate-arity-skeleton-nuparams: should not happen"}]}]]}}]}]]}],
+,[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.sort.pts-triple"}, {"id":"var", "cnt":"U 1"}, {"id":"var", "cnt":"U 2"}, {"id":"var", "cnt":"U 3"}]}], {"id":"string", "cnt":"\"coq.elaborate-arity-skeleton-nuparams: should not happen\""}]}]]}}]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.elaborate-arity-skeleton-nuparams"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"parameter"}, {"id":"var", "cnt":"ID"}, {"id":"var", "cnt":"Imp"}, {"id":"var", "cnt":"T"}, {"id":"var", "cnt":"A"}]}], {"id":"string", "cnt":"0"}, {"id":"var", "cnt":"U 3"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"parameter"}, {"id":"var", "cnt":"ID"}, {"id":"var", "cnt":"Imp"}, {"id":"var", "cnt":"T 1"}, {"id":"var", "cnt":"A 1"}]}], {"id":"var", "cnt":"Diag"}]}]}}}
 ,
 { "id":"clause", 
@@ -2627,7 +2646,7 @@
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"std.do-ok!"}, {"id":"var", "cnt":"Diag"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.elaborate-ty-skeleton"}, {"id":"var", "cnt":"T"}, {"id":"discard"}, {"id":"var", "cnt":"T 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.lift-ok"}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"is"}, {"id":"var", "cnt":"M"},{"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"-"}, {"id":"var", "cnt":"N"},{"id":"string", "cnt":"1"}]}}]}}, {"id":"string", "cnt":""}]}],{"id": "quantification",
+{"id":"const", "cnt":"-"}, {"id":"var", "cnt":"N"},{"id":"string", "cnt":"1"}]}}]}}, {"id":"string", "cnt":"\"\""}]}],{"id": "quantification",
  "cnt":{
 "type":"anonymousForall","names":[{"id":"var", "cnt":"x 1"}], 
 "body":[{"id": "quantification",
@@ -2698,7 +2717,7 @@
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi: arity->sort:fail\", line 462, column 0, character 20148:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error-w-data"}, {"id":"string", "cnt":"arity->sort: not a sort or prod"}, {"id":"var", "cnt":"T"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error-w-data"}, {"id":"string", "cnt":"\"arity->sort: not a sort or prod\""}, {"id":"var", "cnt":"T"}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.arity->sort"}, {"id":"var", "cnt":"T"}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
@@ -2721,15 +2740,15 @@
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 473, column 0, character 20517:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"comma", "cnt":[{"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"="}, {"id":"var", "cnt":"Res"},{"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.pp.box"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.pp.hv"}, {"id":"string", "cnt":"2"}]}], {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.pp.str"}, {"id":"var", "cnt":"A"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.pp.str"}, {"id":"var", "cnt":"ID"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.pp.str"}, {"id":"string", "cnt":" :"}]}],{"id":"const", "cnt":"coq.pp.spc"},{"id":"var", "cnt":"TPP"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.pp.str"}, {"id":"var", "cnt":"B"}]}]]}}]}],{"id":"const", "cnt":"coq.pp.spc"},{"id":"var", "cnt":"Rest"}]}}]}},[{"id":"prop", "cnt":[{"id":"const", "cnt":"if2"}, {"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"="}, {"id":"var", "cnt":"Res"},{"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.pp.box"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.pp.hv"}, {"id":"string", "cnt":"2"}]}], {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.pp.str"}, {"id":"var", "cnt":"A"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.pp.str"}, {"id":"var", "cnt":"ID"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.pp.str"}, {"id":"string", "cnt":"\" :\""}]}],{"id":"const", "cnt":"coq.pp.spc"},{"id":"var", "cnt":"TPP"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.pp.str"}, {"id":"var", "cnt":"B"}]}]]}}]}],{"id":"const", "cnt":"coq.pp.spc"},{"id":"var", "cnt":"Rest"}]}}]}},[{"id":"prop", "cnt":[{"id":"const", "cnt":"if2"}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"Imp"},{"id":"const", "cnt":"explicit"}]}}, [{"id":"comma", "cnt":[{"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"="}, {"id":"var", "cnt":"A"},{"id":"string", "cnt":"("}]}},{"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"="}, {"id":"var", "cnt":"B"},{"id":"string", "cnt":")"}]}}]}], {"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"="}, {"id":"var", "cnt":"A"},{"id":"string", "cnt":"\"(\""}]}},{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"="}, {"id":"var", "cnt":"B"},{"id":"string", "cnt":"\")\""}]}}]}], {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"Imp"},{"id":"const", "cnt":"maximal"}]}}, [{"id":"comma", "cnt":[{"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"="}, {"id":"var", "cnt":"A"},{"id":"string", "cnt":"{"}]}},{"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"="}, {"id":"var", "cnt":"B"},{"id":"string", "cnt":"}"}]}}]}], [{"id":"comma", "cnt":[{"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"="}, {"id":"var", "cnt":"A"},{"id":"string", "cnt":"["}]}},{"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"="}, {"id":"var", "cnt":"B"},{"id":"string", "cnt":"]"}]}}]}]]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.term->pp"}, {"id":"var", "cnt":"T"}, {"id":"var", "cnt":"TPP"}]}],{"id": "quantification",
+{"id":"const", "cnt":"="}, {"id":"var", "cnt":"A"},{"id":"string", "cnt":"\"{\""}]}},{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"="}, {"id":"var", "cnt":"B"},{"id":"string", "cnt":"\"}\""}]}}]}], [{"id":"comma", "cnt":[{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"="}, {"id":"var", "cnt":"A"},{"id":"string", "cnt":"\"[\""}]}},{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"="}, {"id":"var", "cnt":"B"},{"id":"string", "cnt":"\"]\""}]}}]}]]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.term->pp"}, {"id":"var", "cnt":"T"}, {"id":"var", "cnt":"TPP"}]}],{"id": "quantification",
  "cnt":{
 "type":"sigma","names":[{"id":"var", "cnt":"X 1"}],
 "body":[[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.id->name"}, {"id":"var", "cnt":"ID"}, {"id":"var", "cnt":"X 1"}]}],{"id": "quantification",
@@ -2743,7 +2762,7 @@
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 483, column 0, character 20967:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.term->pp"}, {"id":"var", "cnt":"T"}, {"id":"var", "cnt":"TPP"}]}],
-"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.arity->pp"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"arity"}, {"id":"var", "cnt":"T"}]}], [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.pp.glue"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.pp.str"}, {"id":"string", "cnt":" : "}]}],{"id":"var", "cnt":"TPP"}]}}]}]]}]}}}
+"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.arity->pp"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"arity"}, {"id":"var", "cnt":"T"}]}], [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.pp.glue"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.pp.str"}, {"id":"string", "cnt":"\" : \""}]}],{"id":"var", "cnt":"TPP"}]}}]}]]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 487, column 0, character 21144:", 
@@ -2857,7 +2876,7 @@
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi: term->gref:fail\", line 512, column 0, character 22238:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error-w-data"}, {"id":"string", "cnt":"term->gref: input has no global reference"}, {"id":"var", "cnt":"Term"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fatal-error-w-data"}, {"id":"string", "cnt":"\"term->gref: input has no global reference\""}, {"id":"var", "cnt":"Term"}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.term->gref"}, {"id":"var", "cnt":"Term"}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
@@ -2944,8 +2963,8 @@
 [{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"whd"}, {"id":"var", "cnt":"Tty"}, {"id":"const", "cnt":"[]"}, {"id":"var", "cnt":"HD"}, {"id":"var", "cnt":"Args"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"if2"}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"HD"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"global"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"indt"}, {"id":"var", "cnt":"GR"}]}]]}]]}}, {"id":"const", "cnt":"true"}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"HD"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"pglobal"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"indt"}, {"id":"var", "cnt":"GR"}]}], {"id":"var", "cnt":"I"}]}]]}}, {"id":"const", "cnt":"true"}, {"id":"const", "cnt":"fail"}]}],{"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"=>"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"get-option"}, {"id":"string", "cnt":"coq:uinstance"}, {"id":"var", "cnt":"I"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.env.indt"}, {"id":"var", "cnt":"GR"}, {"id":"discard"}, {"id":"var", "cnt":"Lno"}, {"id":"discard"}, {"id":"var", "cnt":"Arity"}, {"id":"var", "cnt":"Kn"}, {"id":"var", "cnt":"Kt"}]}]]}},[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.take"}, {"id":"var", "cnt":"Lno"}, {"id":"var", "cnt":"Args"}, {"id":"var", "cnt":"LArgs"}]}],{"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"=>"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"get-option"}, {"id":"string", "cnt":"coq:uinstance"}, {"id":"var", "cnt":"I"}]}],[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.env.global"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"indt"}, {"id":"var", "cnt":"GR"}]}], {"id":"var", "cnt":"Spilled 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.mk-app"}, {"id":"var", "cnt":"Spilled 1"}, {"id":"var", "cnt":"LArgs"}, {"id":"var", "cnt":"IndtLArgs"}]}]]}]]}},[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.subst-prod"}, {"id":"var", "cnt":"LArgs"}, {"id":"var", "cnt":"Arity"}, {"id":"var", "cnt":"ArityArgs"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.bind-ind-arity-no-let"}, {"id":"var", "cnt":"IndtLArgs"}, {"id":"var", "cnt":"ArityArgs"}, {"id":"var", "cnt":"RtyF"}, {"id":"var", "cnt":"Rty"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map"}, {"id":"var", "cnt":"Kt"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.subst-prod"}, {"id":"var", "cnt":"LArgs"}]}], {"id":"var", "cnt":"KtArgs"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map"}, {"id":"var", "cnt":"KtArgs"}, {"id":"const", "cnt":"hd-beta-zeta-reduce"}, {"id":"var", "cnt":"KtArgsNorm"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map"}, {"id":"var", "cnt":"KtArgsNorm"}, {"id":"const", "cnt":"coq.prod->fun"}, {"id":"var", "cnt":"KtArgsLam"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map"}, {"id":"var", "cnt":"Kn"}, {"id": "quantification",
+{"id":"const", "cnt":"=>"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"get-option"}, {"id":"string", "cnt":"\"coq:uinstance\""}, {"id":"var", "cnt":"I"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.env.indt"}, {"id":"var", "cnt":"GR"}, {"id":"discard"}, {"id":"var", "cnt":"Lno"}, {"id":"discard"}, {"id":"var", "cnt":"Arity"}, {"id":"var", "cnt":"Kn"}, {"id":"var", "cnt":"Kt"}]}]]}},[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.take"}, {"id":"var", "cnt":"Lno"}, {"id":"var", "cnt":"Args"}, {"id":"var", "cnt":"LArgs"}]}],{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"=>"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"get-option"}, {"id":"string", "cnt":"\"coq:uinstance\""}, {"id":"var", "cnt":"I"}]}],[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.env.global"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"indt"}, {"id":"var", "cnt":"GR"}]}], {"id":"var", "cnt":"Spilled 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.mk-app"}, {"id":"var", "cnt":"Spilled 1"}, {"id":"var", "cnt":"LArgs"}, {"id":"var", "cnt":"IndtLArgs"}]}]]}]]}},[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.subst-prod"}, {"id":"var", "cnt":"LArgs"}, {"id":"var", "cnt":"Arity"}, {"id":"var", "cnt":"ArityArgs"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.bind-ind-arity-no-let"}, {"id":"var", "cnt":"IndtLArgs"}, {"id":"var", "cnt":"ArityArgs"}, {"id":"var", "cnt":"RtyF"}, {"id":"var", "cnt":"Rty"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map"}, {"id":"var", "cnt":"Kt"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.subst-prod"}, {"id":"var", "cnt":"LArgs"}]}], {"id":"var", "cnt":"KtArgs"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map"}, {"id":"var", "cnt":"KtArgs"}, {"id":"const", "cnt":"hd-beta-zeta-reduce"}, {"id":"var", "cnt":"KtArgsNorm"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map"}, {"id":"var", "cnt":"KtArgsNorm"}, {"id":"const", "cnt":"coq.prod->fun"}, {"id":"var", "cnt":"KtArgsLam"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.map"}, {"id":"var", "cnt":"Kn"}, {"id": "quantification",
  "cnt":{
 "type":"anonymousForall","names":[{"id":"var", "cnt":"x 1"}], 
 "body":[{"id": "quantification",
@@ -3073,12 +3092,12 @@
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 659, column 0, character 28584:", 
 "cnt":{"id":"clause", "cnt":{"hyp":[],
- "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"supported-attribute"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"att"}, {"id":"string", "cnt":"elpi.loc"}, {"id":"const", "cnt":"loc"}]}]]}]}}}
+ "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"supported-attribute"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"att"}, {"id":"string", "cnt":"\"elpi.loc\""}, {"id":"const", "cnt":"loc"}]}]]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 660, column 0, character 28626:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"rex_match"}, {"id":"string", "cnt":"^elpi\\."}, {"id":"var", "cnt":"Name"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"rex_match"}, {"id":"string", "cnt":"\"^elpi\\.\""}, {"id":"var", "cnt":"Name"}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"supported-attribute"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"att"}, {"id":"var", "cnt":"Name"}, {"id":"const", "cnt":"string"}]}]]}]}}}
 ,
 { "id":"clause", 
@@ -3089,22 +3108,22 @@
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"V"},{"id":"const", "cnt":"none"}]}},{"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"Diag"},{"id":"const", "cnt":"ok"}]}}]}], [{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"calc"}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"^"}, {"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"^"}, {"id":"string", "cnt":"Attribute "},{"id":"var", "cnt":"Name"}]}},{"id":"string", "cnt":" is not supported"}]}}, {"id":"var", "cnt":"Spilled 1"}]}],{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"^"}, {"id":"string", "cnt":"\"Attribute \""},{"id":"var", "cnt":"Name"}]}},{"id":"string", "cnt":"\" is not supported\""}]}}, {"id":"var", "cnt":"Spilled 1"}]}],{"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"Diag"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"error"}, {"id":"var", "cnt":"Spilled 1"}]}]]}}]}]]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.valid-str-attribute"}, {"id":"var", "cnt":"Name"}, {"id":"var", "cnt":"Value"}, {"id":"var", "cnt":"V"}, {"id":"var", "cnt":"Diag"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 680, column 0, character 29429:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"if"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"supported-attribute"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"att"}, {"id":"var", "cnt":"Name"}, {"id":"const", "cnt":"loc"}]}]]}], [{"id":"prop", "cnt":[{"id":"const", "cnt":"if"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"primitive?"}, {"id":"var", "cnt":"Loc"}, {"id":"string", "cnt":"Loc.t"}]}], {"id":"propInfix", "cnt": {"args":[
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"if"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"supported-attribute"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"att"}, {"id":"var", "cnt":"Name"}, {"id":"const", "cnt":"loc"}]}]]}], [{"id":"prop", "cnt":[{"id":"const", "cnt":"if"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"primitive?"}, {"id":"var", "cnt":"Loc"}, {"id":"string", "cnt":"\"Loc.t\""}]}], {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"Diag"},{"id":"const", "cnt":"ok"}]}}, [{"id":"comma", "cnt":[[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.any->string"}, {"id":"var", "cnt":"Loc"}, {"id":"var", "cnt":"Spilled 2"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"calc"}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"^"}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"^"}, {"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"^"}, {"id":"string", "cnt":"Attribute "},{"id":"var", "cnt":"Name"}]}},{"id":"string", "cnt":" takes a loc, got "}]}},{"id":"var", "cnt":"Spilled 2"}]}}, {"id":"var", "cnt":"Spilled 3"}]}]]}],{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"^"}, {"id":"string", "cnt":"\"Attribute \""},{"id":"var", "cnt":"Name"}]}},{"id":"string", "cnt":"\" takes a loc, got \""}]}},{"id":"var", "cnt":"Spilled 2"}]}}, {"id":"var", "cnt":"Spilled 3"}]}]]}],{"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"Diag"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"error"}, {"id":"var", "cnt":"Spilled 3"}]}]]}}]}]]}], [{"id":"prop", "cnt":[{"id":"const", "cnt":"if"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"supported-attribute"}, {"id":"const", "cnt":"att-ignore-unknown"}]}], {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"Diag"},{"id":"const", "cnt":"ok"}]}}, [{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"calc"}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"^"}, {"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"^"}, {"id":"string", "cnt":"Attribute "},{"id":"var", "cnt":"Name"}]}},{"id":"string", "cnt":" is not supported"}]}}, {"id":"var", "cnt":"Spilled 1"}]}],{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"^"}, {"id":"string", "cnt":"\"Attribute \""},{"id":"var", "cnt":"Name"}]}},{"id":"string", "cnt":"\" is not supported\""}]}}, {"id":"var", "cnt":"Spilled 1"}]}],{"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"Diag"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"error"}, {"id":"var", "cnt":"Spilled 1"}]}]]}}]}]]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.valid-loc-attribute"}, {"id":"var", "cnt":"Name"}, {"id":"var", "cnt":"Loc"}, {"id":"var", "cnt":"Diag"}]}]}}}
 ,
@@ -3122,7 +3141,7 @@
 {"id":"const", "cnt":"is"}, {"id":"var", "cnt":"Msg"},{"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"^"}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"^"}, {"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"^"}, {"id":"string", "cnt":"Attribute "},{"id":"var", "cnt":"N"}]}},{"id":"string", "cnt":" takes an integer, got: "}]}},{"id":"var", "cnt":"Value"}]}}]}},
+{"id":"const", "cnt":"^"}, {"id":"string", "cnt":"\"Attribute \""},{"id":"var", "cnt":"N"}]}},{"id":"string", "cnt":"\" takes an integer, got: \""}]}},{"id":"var", "cnt":"Value"}]}}]}},
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"var", "cnt":"N"}, {"id":"const", "cnt":"int"}, {"id":"var", "cnt":"Value"}, {"id":"discard"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"error"}, {"id":"var", "cnt":"Msg"}]}]]}]}}}
 ,
 { "id":"clause", 
@@ -3133,57 +3152,57 @@
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 695, column 0, character 30132:", 
 "cnt":{"id":"clause", "cnt":{"hyp":[],
- "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":"true"}, {"id":"const", "cnt":"tt"}, {"id":"const", "cnt":"ok"}]}]}}}
+ "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":"\"true\""}, {"id":"const", "cnt":"tt"}, {"id":"const", "cnt":"ok"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 696, column 0, character 30178:", 
 "cnt":{"id":"clause", "cnt":{"hyp":[],
- "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":"tt"}, {"id":"const", "cnt":"tt"}, {"id":"const", "cnt":"ok"}]}]}}}
+ "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":"\"tt\""}, {"id":"const", "cnt":"tt"}, {"id":"const", "cnt":"ok"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 697, column 0, character 30224:", 
 "cnt":{"id":"clause", "cnt":{"hyp":[],
- "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":"True"}, {"id":"const", "cnt":"tt"}, {"id":"const", "cnt":"ok"}]}]}}}
+ "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":"\"True\""}, {"id":"const", "cnt":"tt"}, {"id":"const", "cnt":"ok"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 698, column 0, character 30270:", 
 "cnt":{"id":"clause", "cnt":{"hyp":[],
- "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":"on"}, {"id":"const", "cnt":"tt"}, {"id":"const", "cnt":"ok"}]}]}}}
+ "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":"\"on\""}, {"id":"const", "cnt":"tt"}, {"id":"const", "cnt":"ok"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 699, column 0, character 30316:", 
 "cnt":{"id":"clause", "cnt":{"hyp":[],
- "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":"yes"}, {"id":"const", "cnt":"tt"}, {"id":"const", "cnt":"ok"}]}]}}}
+ "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":"\"yes\""}, {"id":"const", "cnt":"tt"}, {"id":"const", "cnt":"ok"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 700, column 0, character 30363:", 
 "cnt":{"id":"clause", "cnt":{"hyp":[],
- "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":""}, {"id":"const", "cnt":"tt"}, {"id":"const", "cnt":"ok"}]}]}}}
+ "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":"\"\""}, {"id":"const", "cnt":"tt"}, {"id":"const", "cnt":"ok"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 701, column 0, character 30409:", 
 "cnt":{"id":"clause", "cnt":{"hyp":[],
- "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":"false"}, {"id":"const", "cnt":"ff"}, {"id":"const", "cnt":"ok"}]}]}}}
+ "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":"\"false\""}, {"id":"const", "cnt":"ff"}, {"id":"const", "cnt":"ok"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 702, column 0, character 30455:", 
 "cnt":{"id":"clause", "cnt":{"hyp":[],
- "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":"False"}, {"id":"const", "cnt":"ff"}, {"id":"const", "cnt":"ok"}]}]}}}
+ "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":"\"False\""}, {"id":"const", "cnt":"ff"}, {"id":"const", "cnt":"ok"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 703, column 0, character 30501:", 
 "cnt":{"id":"clause", "cnt":{"hyp":[],
- "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":"off"}, {"id":"const", "cnt":"ff"}, {"id":"const", "cnt":"ok"}]}]}}}
+ "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":"\"off\""}, {"id":"const", "cnt":"ff"}, {"id":"const", "cnt":"ok"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 704, column 0, character 30547:", 
 "cnt":{"id":"clause", "cnt":{"hyp":[],
- "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":"ff"}, {"id":"const", "cnt":"ff"}, {"id":"const", "cnt":"ok"}]}]}}}
+ "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":"\"ff\""}, {"id":"const", "cnt":"ff"}, {"id":"const", "cnt":"ok"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 705, column 0, character 30593:", 
 "cnt":{"id":"clause", "cnt":{"hyp":[],
- "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":"no"}, {"id":"const", "cnt":"ff"}, {"id":"const", "cnt":"ok"}]}]}}}
+ "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"discard"}, {"id":"const", "cnt":"bool"}, {"id":"string", "cnt":"\"no\""}, {"id":"const", "cnt":"ff"}, {"id":"const", "cnt":"ok"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 706, column 0, character 30639:", 
@@ -3192,7 +3211,7 @@
 {"id":"const", "cnt":"is"}, {"id":"var", "cnt":"Msg"},{"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"^"}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"^"}, {"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"^"}, {"id":"string", "cnt":"Attribute "},{"id":"var", "cnt":"N"}]}},{"id":"string", "cnt":" takes an boolean, got: "}]}},{"id":"var", "cnt":"Value"}]}}]}},
+{"id":"const", "cnt":"^"}, {"id":"string", "cnt":"\"Attribute \""},{"id":"var", "cnt":"N"}]}},{"id":"string", "cnt":"\" takes an boolean, got: \""}]}},{"id":"var", "cnt":"Value"}]}}]}},
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"var", "cnt":"N"}, {"id":"const", "cnt":"bool"}, {"id":"var", "cnt":"Value"}, {"id":"discard"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"error"}, {"id":"var", "cnt":"Msg"}]}]]}]}}}
 ,
 { "id":"clause", 
@@ -3221,7 +3240,7 @@
 "body":[{"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"x 1"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"`->"}, {"id":"var", "cnt":"x 2"}, {"id":"var", "cnt":"X 3"}]}]]}}]}}]}}
 ]}}
-, {"id":"var", "cnt":"S"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fold"}, {"id":"var", "cnt":"S"}, {"id":"string", "cnt":""}, {"id": "quantification",
+, {"id":"var", "cnt":"S"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.fold"}, {"id":"var", "cnt":"S"}, {"id":"string", "cnt":"\"\""}, {"id": "quantification",
  "cnt":{
 "type":"anonymousForall","names":[{"id":"var", "cnt":"x 1"}], 
 "body":[{"id": "quantification",
@@ -3229,7 +3248,7 @@
 "type":"anonymousForall","names":[{"id":"var", "cnt":"x 2"}], 
 "body":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"calc"}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"^"}, {"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"^"}, {"id":"var", "cnt":"x 2"},{"id":"string", "cnt":" "}]}},{"id":"var", "cnt":"x 1"}]}}]}]]}}
+{"id":"const", "cnt":"^"}, {"id":"var", "cnt":"x 2"},{"id":"string", "cnt":"\" \""}]}},{"id":"var", "cnt":"x 1"}]}}]}]]}}
 ]}}
 , {"id":"var", "cnt":"OneOf"}]}],{"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"is"}, {"id":"var", "cnt":"Msg"},{"id":"propInfix", "cnt": {"args":[
@@ -3237,7 +3256,7 @@
 {"id":"const", "cnt":"^"}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"^"}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"^"}, {"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"^"}, {"id":"string", "cnt":"Attribute "},{"id":"var", "cnt":"N"}]}},{"id":"string", "cnt":" takes one of "}]}},{"id":"var", "cnt":"OneOf"}]}},{"id":"string", "cnt":", got: "}]}},{"id":"var", "cnt":"K"}]}}]}}]}],
+{"id":"const", "cnt":"^"}, {"id":"string", "cnt":"\"Attribute \""},{"id":"var", "cnt":"N"}]}},{"id":"string", "cnt":"\" takes one of \""}]}},{"id":"var", "cnt":"OneOf"}]}},{"id":"string", "cnt":"\", got: \""}]}},{"id":"var", "cnt":"K"}]}}]}}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.typecheck-attribute"}, {"id":"var", "cnt":"N"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"oneof"}, {"id":"var", "cnt":"L"}]}], {"id":"var", "cnt":"K"}, {"id":"discard"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"error"}, {"id":"var", "cnt":"Msg"}]}]]}]}}}
 ,
 { "id":"clause", 
@@ -3253,7 +3272,7 @@
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"x 2"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"supported-attribute"}, {"id":"var", "cnt":"x 1"}]}]]}}]}}
 ]}}
 , {"id":"var", "cnt":"CS"}]}],{"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"=>"}, {"id":"var", "cnt":"CS"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"parse-attributes.aux"}, {"id":"var", "cnt":"L"}, {"id":"string", "cnt":""}, {"id":"var", "cnt":"O"}]}]]}},{"id":"cut"}]}],
+{"id":"const", "cnt":"=>"}, {"id":"var", "cnt":"CS"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"parse-attributes.aux"}, {"id":"var", "cnt":"L"}, {"id":"string", "cnt":"\"\""}, {"id":"var", "cnt":"O"}]}]]}},{"id":"cut"}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.parse-attributes"}, {"id":"var", "cnt":"L"}, {"id":"var", "cnt":"S"}, {"id":"var", "cnt":"O"}]}]}}}
 ,
 { "id":"clause", 
@@ -3265,39 +3284,39 @@
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 723, column 0, character 31302:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"if"}, {"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"="}, {"id":"var", "cnt":"Prefix"},{"id":"string", "cnt":""}]}}, {"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"="}, {"id":"var", "cnt":"Prefix"},{"id":"string", "cnt":"\"\""}]}}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"PS"},{"id":"var", "cnt":"S"}]}}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"is"}, {"id":"var", "cnt":"PS"},{"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"^"}, {"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"^"}, {"id":"var", "cnt":"Prefix"},{"id":"string", "cnt":"."}]}},{"id":"var", "cnt":"S"}]}}]}}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"supported-attribute"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"att"}, {"id":"var", "cnt":"PS"}, {"id":"const", "cnt":"attmap"}]}]]}],{"id":"cut"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"parse-attributes.aux"}, {"id":"var", "cnt":"AS"}, {"id":"var", "cnt":"Prefix"}, {"id":"var", "cnt":"R 1"}]}],{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"^"}, {"id":"var", "cnt":"Prefix"},{"id":"string", "cnt":"\".\""}]}},{"id":"var", "cnt":"S"}]}}]}}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"supported-attribute"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"att"}, {"id":"var", "cnt":"PS"}, {"id":"const", "cnt":"attmap"}]}]]}],{"id":"cut"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"parse-attributes.aux"}, {"id":"var", "cnt":"AS"}, {"id":"var", "cnt":"Prefix"}, {"id":"var", "cnt":"R 1"}]}],{"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"=>"}, {"id": "quantification",
  "cnt":{
 "type":"pi","names":[{"id":"var", "cnt":"x 1"}],
 "body":[{"id":"clause", "cnt":{"hyp":
 {"id":"cut"},
-"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"supported-attribute"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"att"}, {"id":"var", "cnt":"x 1"}, {"id":"const", "cnt":"string"}]}]]}]}}]}},[{"id":"prop", "cnt":[{"id":"const", "cnt":"parse-attributes.aux"}, {"id":"var", "cnt":"L"}, {"id":"string", "cnt":""}, {"id":"var", "cnt":"Map"}]}]]}},[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.append"}, {"id":"var", "cnt":"R 1"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"get-option"}, {"id":"var", "cnt":"PS"}, {"id":"var", "cnt":"Map"}]}]]}}, {"id":"var", "cnt":"R"}]}]]}],
+"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"supported-attribute"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"att"}, {"id":"var", "cnt":"x 1"}, {"id":"const", "cnt":"string"}]}]]}]}}]}},[{"id":"prop", "cnt":[{"id":"const", "cnt":"parse-attributes.aux"}, {"id":"var", "cnt":"L"}, {"id":"string", "cnt":"\"\""}, {"id":"var", "cnt":"Map"}]}]]}},[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.append"}, {"id":"var", "cnt":"R 1"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"get-option"}, {"id":"var", "cnt":"PS"}, {"id":"var", "cnt":"Map"}]}]]}}, {"id":"var", "cnt":"R"}]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"parse-attributes.aux"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"attribute"}, {"id":"var", "cnt":"S"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"node"}, {"id":"var", "cnt":"L"}]}]]}]],"tl":{"id":"var", "cnt":"AS"}}}, {"id":"var", "cnt":"Prefix"}, {"id":"var", "cnt":"R"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 727, column 0, character 31613:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"parse-attributes.aux"}, {"id":"var", "cnt":"AS"}, {"id":"var", "cnt":"Prefix"}, {"id":"var", "cnt":"R 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"if"}, {"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"="}, {"id":"var", "cnt":"Prefix"},{"id":"string", "cnt":""}]}}, {"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"="}, {"id":"var", "cnt":"Prefix"},{"id":"string", "cnt":"\"\""}]}}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"PS"},{"id":"var", "cnt":"S"}]}}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"is"}, {"id":"var", "cnt":"PS"},{"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"^"}, {"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"^"}, {"id":"var", "cnt":"Prefix"},{"id":"string", "cnt":"."}]}},{"id":"var", "cnt":"S"}]}}]}}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"parse-attributes.aux"}, {"id":"var", "cnt":"L"}, {"id":"var", "cnt":"PS"}, {"id":"var", "cnt":"R 2"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.append"}, {"id":"var", "cnt":"R 1"}, {"id":"var", "cnt":"R 2"}, {"id":"var", "cnt":"R"}]}]]}],
+{"id":"const", "cnt":"^"}, {"id":"var", "cnt":"Prefix"},{"id":"string", "cnt":"\".\""}]}},{"id":"var", "cnt":"S"}]}}]}}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"parse-attributes.aux"}, {"id":"var", "cnt":"L"}, {"id":"var", "cnt":"PS"}, {"id":"var", "cnt":"R 2"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.append"}, {"id":"var", "cnt":"R 1"}, {"id":"var", "cnt":"R 2"}, {"id":"var", "cnt":"R"}]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"parse-attributes.aux"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"attribute"}, {"id":"var", "cnt":"S"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"node"}, {"id":"var", "cnt":"L"}]}]]}]],"tl":{"id":"var", "cnt":"AS"}}}, {"id":"var", "cnt":"Prefix"}, {"id":"var", "cnt":"R"}]}]}}}
 ,
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 732, column 0, character 31820:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"if"}, {"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"="}, {"id":"var", "cnt":"Prefix"},{"id":"string", "cnt":""}]}}, {"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"="}, {"id":"var", "cnt":"Prefix"},{"id":"string", "cnt":"\"\""}]}}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"PS"},{"id":"var", "cnt":"S"}]}}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"is"}, {"id":"var", "cnt":"PS"},{"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"^"}, {"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"^"}, {"id":"var", "cnt":"Prefix"},{"id":"string", "cnt":"."}]}},{"id":"var", "cnt":"S"}]}}]}}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.valid-str-attribute"}, {"id":"var", "cnt":"PS"}, {"id":"var", "cnt":"V"}, {"id":"var", "cnt":"V 1"}, {"id":"var", "cnt":"Diag"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"if"}, {"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"^"}, {"id":"var", "cnt":"Prefix"},{"id":"string", "cnt":"\".\""}]}},{"id":"var", "cnt":"S"}]}}]}}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.valid-str-attribute"}, {"id":"var", "cnt":"PS"}, {"id":"var", "cnt":"V"}, {"id":"var", "cnt":"V 1"}, {"id":"var", "cnt":"Diag"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"if"}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"Diag"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"error"}, {"id":"var", "cnt":"Msg"}]}]]}}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.error"}, {"id":"var", "cnt":"Msg"}]}], {"id":"const", "cnt":"true"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"if"}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"V 1"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"some"}, {"id":"var", "cnt":"Val"}]}]]}}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"CLS"},{"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"get-option"}, {"id":"var", "cnt":"PS"}, {"id":"var", "cnt":"Val"}]}]],"tl":{"id":"var", "cnt":"R"}}}]}}, {"id":"propInfix", "cnt": {"args":[
@@ -3308,11 +3327,11 @@
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/coq-lib.elpi\", line 738, column 0, character 32136:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"if"}, {"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"="}, {"id":"var", "cnt":"Prefix"},{"id":"string", "cnt":""}]}}, {"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"="}, {"id":"var", "cnt":"Prefix"},{"id":"string", "cnt":"\"\""}]}}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"PS"},{"id":"var", "cnt":"S"}]}}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"is"}, {"id":"var", "cnt":"PS"},{"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"^"}, {"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"^"}, {"id":"var", "cnt":"Prefix"},{"id":"string", "cnt":"."}]}},{"id":"var", "cnt":"S"}]}}]}}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.valid-loc-attribute"}, {"id":"var", "cnt":"PS"}, {"id":"var", "cnt":"V"}, {"id":"var", "cnt":"Diag"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"if"}, {"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"^"}, {"id":"var", "cnt":"Prefix"},{"id":"string", "cnt":"\".\""}]}},{"id":"var", "cnt":"S"}]}}]}}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.valid-loc-attribute"}, {"id":"var", "cnt":"PS"}, {"id":"var", "cnt":"V"}, {"id":"var", "cnt":"Diag"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"if"}, {"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"Diag"},[{"id":"prop", "cnt":[{"id":"const", "cnt":"error"}, {"id":"var", "cnt":"Msg"}]}]]}}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.error"}, {"id":"var", "cnt":"Msg"}]}], {"id":"const", "cnt":"true"}]}],{"id":"propInfix", "cnt": {"args":[
 {"id":"const", "cnt":"="}, {"id":"var", "cnt":"CLS"},{"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"get-option"}, {"id":"var", "cnt":"PS"}, {"id":"var", "cnt":"V"}]}]],"tl":{"id":"var", "cnt":"R"}}}]}},[{"id":"prop", "cnt":[{"id":"const", "cnt":"parse-attributes.aux"}, {"id":"var", "cnt":"AS"}, {"id":"var", "cnt":"Prefix"}, {"id":"var", "cnt":"R"}]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"parse-attributes.aux"}, {"id":"list", "cnt":{"l":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"attribute"}, {"id":"var", "cnt":"S"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"leaf-loc"}, {"id":"var", "cnt":"V"}]}]]}]],"tl":{"id":"var", "cnt":"AS"}}}, {"id":"var", "cnt":"Prefix"}, {"id":"var", "cnt":"CLS"}]}]}}}
@@ -3469,7 +3488,7 @@
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/elpi-reduction.elpi\", line 86, column 0, character 3331:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"comma", "cnt":[{"id":"propInfix", "cnt": {"args":[
-{"id":"const", "cnt":"=>"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"get-option"}, {"id":"string", "cnt":"coq:uinstance"}, {"id":"var", "cnt":"I"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.env.const"}, {"id":"var", "cnt":"GR"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"some"}, {"id":"var", "cnt":"B"}]}], {"id":"discard"}]}]]}},[{"id":"prop", "cnt":[{"id":"const", "cnt":"hd-beta"}, {"id":"var", "cnt":"B"}, {"id":"var", "cnt":"A"}, {"id":"var", "cnt":"BO"}, {"id":"var", "cnt":"BOC"}]}]]}],
+{"id":"const", "cnt":"=>"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"get-option"}, {"id":"string", "cnt":"\"coq:uinstance\""}, {"id":"var", "cnt":"I"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.env.const"}, {"id":"var", "cnt":"GR"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"some"}, {"id":"var", "cnt":"B"}]}], {"id":"discard"}]}]]}},[{"id":"prop", "cnt":[{"id":"const", "cnt":"hd-beta"}, {"id":"var", "cnt":"B"}, {"id":"var", "cnt":"A"}, {"id":"var", "cnt":"BO"}, {"id":"var", "cnt":"BOC"}]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"unfold"}, {"id":"var", "cnt":"GR"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"some"}, {"id":"var", "cnt":"I"}]}], {"id":"var", "cnt":"A"}, {"id":"var", "cnt":"BO"}, {"id":"var", "cnt":"BOC"}]}]}}}
 ,
 { "id":"clause", 
@@ -3488,7 +3507,7 @@
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/elpi-reduction.elpi\", line 93, column 0, character 3663:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.term->string"}, {"id":"var", "cnt":"N"}, {"id":"var", "cnt":"Spilled 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.error"}, {"id":"string", "cnt":"anomaly: def with no cache:"}, {"id":"var", "cnt":"Spilled 1"}]}]]}],
+[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.term->string"}, {"id":"var", "cnt":"N"}, {"id":"var", "cnt":"Spilled 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.error"}, {"id":"string", "cnt":"\"anomaly: def with no cache:\""}, {"id":"var", "cnt":"Spilled 1"}]}]]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"cache-whd"}, {"id":"var", "cnt":"N"}, {"id":"discard"}, {"id":"discard"}]}]}}}
 ,
 { "id":"clause", 
@@ -3702,7 +3721,7 @@
 { "id":"clause", 
 "title":"File \"/home/dfissore/Documents/Github/mine/coq-elpi/elpi2html/./elpi/elpi-ltac.elpi\", line 88, column 0, character 3395:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.rev"}, {"id":"var", "cnt":"C"}, {"id":"var", "cnt":"Cr"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.rev"}, {"id":"var", "cnt":"D"}, {"id":"var", "cnt":"Dr"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.assert!"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.ltac.private.move-term"}, {"id":"var", "cnt":"Cr"}, {"id":"var", "cnt":"Dr"}, {"id":"var", "cnt":"T"}, {"id":"var", "cnt":"T 1"}]}], {"id":"string", "cnt":"cannot move goal argument to the right context"}]}],{"id":"cut"}]}],
+[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.rev"}, {"id":"var", "cnt":"C"}, {"id":"var", "cnt":"Cr"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.rev"}, {"id":"var", "cnt":"D"}, {"id":"var", "cnt":"Dr"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"std.assert!"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.ltac.private.move-term"}, {"id":"var", "cnt":"Cr"}, {"id":"var", "cnt":"Dr"}, {"id":"var", "cnt":"T"}, {"id":"var", "cnt":"T 1"}]}], {"id":"string", "cnt":"\"cannot move goal argument to the right context\""}]}],{"id":"cut"}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.ltac.private.move-goal-argument"}, {"id":"var", "cnt":"C"}, {"id":"var", "cnt":"D"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"trm"}, {"id":"var", "cnt":"T"}]}], [{"id":"prop", "cnt":[{"id":"const", "cnt":"trm"}, {"id":"var", "cnt":"T 1"}]}]]}]}}}
 ,
 { "id":"clause", 
@@ -3792,6 +3811,6 @@
 { "id":"clause", 
 "title":"File \"./tests/elpi2html.v\", line 11, column 3, character 4:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
-[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.say"}, {"id":"string", "cnt":"CIAO"}]}],
+[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.say"}, {"id":"string", "cnt":"\"CIAO\""}]}],
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"main"}, {"id":"discard"}]}]}}}
 ]}

@@ -1,28 +1,6 @@
-.compound {
-  /* display: flex; */
-  /* vertical-align: top; */
-  /* padding-left: 1em; */
-  /* text-indent: -1em; */
-  border: 3px solid transparent;
-  margin: 0 0.4rem;
-  /* text-align: center; */
-}
-
 .hover {
   border: 1px dotted grey;
   transition: border 0.5s;
-}
-
-.clause {
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  /* justify-content: center; */
-}
-
-.concl {
-  /* display: block; */
-  border-top: 1px solid black;
 }
 
 .neckcut {
@@ -31,11 +9,6 @@
 
 .cut {
   color: red;
-}
-
-.loc {
-  display: block;
-  background-color: #ecebeb;
 }
 
 .card {
@@ -47,26 +20,11 @@ body {
   padding: 7pt;
 }
 
-.hyps {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  margin: 0 0.4rem;
+.card-body, .list, .prop, .concl, .comma, .parens, .string {
+  display: inline-block;
 }
 
-.flex-end {
-  display: flex;
-  align-items: flex-end;
-}
 
-.card-body, .list, .prop, .concl, .comma {
-  display: flex;
-}
-
-.prop, .comma {
-  flex-wrap: wrap;
-}
 
 .card-body {
   justify-content: center;
@@ -79,7 +37,8 @@ body {
   flex-direction: row;
 }
 
-.var, .const, .cut, .discard , .parens{
+/* .var:not(:last-child), .const:not(:last-child), .cut, .discard, .parens{ */
+.var, .const, .cut, .discard, .symbol{
   padding: 0 2pt;
 }
 
@@ -87,7 +46,7 @@ body {
   color: red;
 }
 
-.cut, .parens, .infix {
+.cut, .symbol, .infix {
   font-weight: bold;
 }
 
@@ -105,9 +64,19 @@ resizable {
   bottom: 0;
   cursor: se-resize;
 }
-/* 
-.prop {
+
+
+ 
+/* .prop {
   padding-left: 2em;
   text-indent: -2em;
-  display: flow-root;
-} */
+}  */
+
+.hyps, .concl {
+  margin: 0 0.4rem;
+}
+
+.concl {
+  border-top: 1px solid black;
+  display: flex;
+}

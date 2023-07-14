@@ -10,8 +10,8 @@ export interface ClauseType { hyp: any[], args: any[] }
 export interface PropType { name: string }
 export interface StringType { name: string }
 
-export interface QuantificationType { type: "sigma" | "pi" | "anonymousForall", names: any[], body: any }
+export interface QuantificationType { type: "sigma" | "pi" | "binder", names: any[], body: any }
 
 export enum ParensMode { round, square, curly }
-export type SymbolsList = "[" | "]" | ")" | "{" | "}" | "(" | "|" | "λ" | "∃" | "∀";
+export type SymbolsList = "[" | "]" | ")" | "{" | "}" | "(" | "|" | "λ" | "∃" | "∀" | ",";
 export interface SymbolType { shape: SymbolsList }
