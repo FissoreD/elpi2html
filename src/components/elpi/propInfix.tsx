@@ -17,11 +17,11 @@ function getPrio(i: string) {
 }
 
 function getOperator(e: any): string {
-  if (e.id == "propInfix") {
+  if (e.id === "propInfix") {
     let op = e.cnt.args[0].cnt
     return op
   }
-  if (Array.isArray(e) && e[0].id == "comma")
+  if (Array.isArray(e) && e[0].id === "comma")
     return ","
   return ""
 }

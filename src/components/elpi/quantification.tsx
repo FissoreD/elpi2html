@@ -1,9 +1,9 @@
-import { displayList, displayParenthesis } from '../tools';
+import { displayList, displayParenthesis, Symbol } from '../tools';
 import { SymbolsList, QuantificationType, ParensMode } from '../types';
-import { Symbol } from './misc';
 
 // for 9823 in json
-const accumulateSameSymbol = (type: string, body: any, names: any[]) : any => {
+// display λx1.λx2...λxn.Bo in the following way λx1 x2 ... xn.Bo
+const accumulateSameSymbol = (type: string, body: any, names: any[]): any => {
   if (body.length === 1 && body[0].id === "quantification" && body[0].cnt.type === type) {
     names.push(...body[0].cnt.names)
     return accumulateSameSymbol(type, body[0].cnt.body, names)

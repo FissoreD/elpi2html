@@ -1,13 +1,7 @@
-import Clause from './elpi/clause';
-import List from './elpi/list';
-import Var from './elpi/var';
 import { DispatchProp, QuantificationType } from './types';
 import { Quantification } from './elpi/quantification';
-import Const from './elpi/const';
-import { Cut, Discard , String } from './elpi/misc';
-import Prop from './elpi/prop';
-import Comma from './elpi/commas';
 import PropInfix from './elpi/propInfix';
+import { Clause, Comma, Const, Cut, Discard, List, Prop, Var, String } from './elpi/constructs';
 
 
 function Dispatch({ id, cnt }: DispatchProp) {

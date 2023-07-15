@@ -1,6 +1,14 @@
+import React from "react"
+import IntGenerator from "../generator"
 import Dispatch from "./dispatch"
-import { Symbol, putInFragment } from "./elpi/misc"
-import { ParensMode, SymbolsList } from "./types"
+import { ParensMode, SymbolType, SymbolsList } from "./types"
+
+export function Symbol({ shape }: SymbolType) {
+  return <span className="symbol">{shape} </span>
+}
+
+export const putInFragment = (e: React.ReactNode) =>
+  <React.Fragment key={IntGenerator.next().value!}>{e}</React.Fragment>
 
 export const displayParenthesis = (type: ParensMode, cnt: JSX.Element[], cond=true) => {
   let dict : {[x in ParensMode] : SymbolsList[]} = {

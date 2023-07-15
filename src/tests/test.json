@@ -4320,6 +4320,11 @@
 ,
 { "id":"card", 
 "title":"File \"./tests/elpi2html.v\", line 36, column 3, character 455:", 
+"cnt":{"id":"clause", "cnt":{"hyp":[],
+ "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"mytest"}, {"id":"string", "cnt":"3"}, {"id":"string", "cnt":"4"}]}]}}}
+,
+{ "id":"card", 
+"title":"File \"./tests/elpi2html.v\", line 38, column 3, character 470:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.say"}, {"id":"string", "cnt":"\"CIAO\""}]}],
 "isNeckcut":false,
