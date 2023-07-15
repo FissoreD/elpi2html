@@ -5,6 +5,7 @@ import React from "react"
 import { setFilterDB } from "../features/databaseSlice"
 
 export function Body() {
+  
   const dispatch = useAppDispatch();
 
   function setFilterInput(e: any) {
@@ -32,7 +33,7 @@ export function Body() {
         <Row xs={2}>
           {db.map((x, pos) =>
             filterStr === "" || x.predicate === filterStr ?
-              <Col className="mb-4" key={pos}><Card {...x} /> </Col> :
+              <Card key={pos} {...x} />:
               <React.Fragment key={pos}></React.Fragment>)}
         </Row>
       </Col>
