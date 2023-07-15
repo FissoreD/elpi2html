@@ -3,7 +3,6 @@ import List from './elpi/list';
 import Var from './elpi/var';
 import { DispatchProp, QuantificationType } from './types';
 import { Quantification } from './elpi/quantification';
-import Int from './elpi/int';
 import Const from './elpi/const';
 import { Cut, Discard , String } from './elpi/misc';
 import Prop from './elpi/prop';
@@ -15,7 +14,7 @@ function Dispatch({ id, cnt }: DispatchProp) {
   switch (id) {
     case "clause": return <Clause {...cnt} />
     case "list": return <List {...cnt} />
-    case "num": return <Int num={cnt} />
+    // case "num": return <Int num={cnt} />
     case "var": return <Var name={cnt} />
     case "const": return <Const name={cnt} />
     case "propInfix": return <PropInfix {...cnt} />

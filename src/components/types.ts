@@ -1,4 +1,8 @@
-export type DispatchProp = { id: string, cnt: any }
+export type id = "propInfix" | "prop" | "clause" | "list" | "var" |
+  "const" | "card" | "discard" | "cut" | "quantification" |
+  "comma" | "string"
+
+export type DispatchProp = { id: id, cnt: any }
 
 type VarName = string
 

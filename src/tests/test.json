@@ -317,7 +317,8 @@
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"same_term"}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}],
 "isNeckcut":false,
-"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"=="}, {"id":"var", "cnt":"X"}, {"id":"var", "cnt":"Y"}]}]}}}
+"args":{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"=="}, {"id":"var", "cnt":"X"},{"id":"var", "cnt":"Y"}]}}}}}
 ,
 { "id":"card", 
 "title":"File \"elpi-builtin.elpi\", line 373, column 0, character 8225:", 
@@ -4240,7 +4241,85 @@
 "args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.ltac.private.not-already-assumed"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"def"}, {"id":"var", "cnt":"X"}, {"id":"discard"}, {"id":"discard"}, {"id":"discard"}]}]]}]}}}
 ,
 { "id":"card", 
-"title":"File \"./tests/elpi2html.v\", line 11, column 3, character 4:", 
+"title":"File \"./tests/elpi2html.v\", line 12, column 3, character 33:", 
+"cnt":{"id":"clause", "cnt":{"hyp":
+{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"is"}, {"id":"var", "cnt":"B"},{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"*"}, {"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"+"}, {"id":"string", "cnt":"3"},{"id":"string", "cnt":"4"}]}},{"id":"var", "cnt":"A"}]}}]}},
+"isNeckcut":false,
+"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"mytest"}, {"id":"var", "cnt":"A"}, {"id":"var", "cnt":"B"}]}]}}}
+,
+{ "id":"card", 
+"title":"File \"./tests/elpi2html.v\", line 15, column 3, character 73:", 
+"cnt":{"id":"clause", "cnt":{"hyp":
+[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"calc"}, {"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"*"}, {"id":"string", "cnt":"3"},{"id":"var", "cnt":"A"}]}}, {"id":"var", "cnt":"Spilled 1"}]}],[{"id":"prop", "cnt":[{"id":"const", "cnt":"mytest"}, {"id":"var", "cnt":"Spilled 1"}, {"id":"var", "cnt":"B"}]}]]}],
+"isNeckcut":false,
+"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"mytest"}, {"id":"var", "cnt":"A"}, {"id":"var", "cnt":"B"}]}]}}}
+,
+{ "id":"card", 
+"title":"File \"./tests/elpi2html.v\", line 18, column 3, character 120:", 
+"cnt":{"id":"clause", "cnt":{"hyp":
+[{"id":"comma", "cnt":[[{"id":"prop", "cnt":[{"id":"const", "cnt":"mytest"}, {"id":"var", "cnt":"A"}, {"id":"var", "cnt":"Spilled 1"}]}],{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"is"}, {"id":"var", "cnt":"B"},{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"*"}, {"id":"var", "cnt":"A"},{"id":"var", "cnt":"Spilled 1"}]}}]}}]}],
+"isNeckcut":false,
+"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"mytest"}, {"id":"var", "cnt":"A"}, {"id":"var", "cnt":"B"}]}]}}}
+,
+{ "id":"card", 
+"title":"File \"./tests/elpi2html.v\", line 21, column 3, character 163:", 
+"cnt":{"id":"clause", "cnt":{"hyp":
+[{"id":"comma", "cnt":[{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":";"}, {"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"="}, {"id":"var", "cnt":"B"},{"id":"var", "cnt":"A"}]}},{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"="}, {"id":"var", "cnt":"B"},{"id":"string", "cnt":"3"}]}}]}},{"id":"const", "cnt":"true"}]}],
+"isNeckcut":false,
+"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"mytest"}, {"id":"var", "cnt":"A"}, {"id":"var", "cnt":"B"}]}]}}}
+,
+{ "id":"card", 
+"title":"File \"./tests/elpi2html.v\", line 24, column 3, character 207:", 
+"cnt":{"id":"clause", "cnt":{"hyp":
+[{"id":"comma", "cnt":[{"id": "quantification",
+ "cnt":{
+"type":"pi","names":[{"id":"var", "cnt":"x 1"}],
+"body":[{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"=>"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"mytest"}, {"id":"string", "cnt":"3"}, {"id":"var", "cnt":"x 1"}]}],{"id":"const", "cnt":"true"}]}}]}},{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"="}, {"id":"var", "cnt":"B"},{"id":"string", "cnt":"4"}]}}]}],
+"isNeckcut":false,
+"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"mytest"}, {"id":"var", "cnt":"A_"}, {"id":"var", "cnt":"B"}]}]}}}
+,
+{ "id":"card", 
+"title":"File \"./tests/elpi2html.v\", line 28, column 3, character 270:", 
+"cnt":{"id":"clause", "cnt":{"hyp":
+[{"id":"comma", "cnt":[{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"=>"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"mytest"}, {"id":"string", "cnt":"3"}, {"id":"string", "cnt":"2"}]}],{"id":"const", "cnt":"true"}]}},{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"=>"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"mytest"}, {"id":"string", "cnt":"3"}, {"id":"var", "cnt":"B"}]}],{"id":"const", "cnt":"true"}]}}]}],
+"isNeckcut":false,
+"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"mytest"}, {"id":"var", "cnt":"A_"}, {"id":"var", "cnt":"B"}]}]}}}
+,
+{ "id":"card", 
+"title":"File \"./tests/elpi2html.v\", line 31, column 3, character 335:", 
+"cnt":{"id":"clause", "cnt":{"hyp":
+{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"=>"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"mytest"}, {"id":"string", "cnt":"3"}, {"id":"string", "cnt":"2"}]}],[{"id":"comma", "cnt":[{"id":"const", "cnt":"true"},{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"=>"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"mytest"}, {"id":"string", "cnt":"3"}, {"id":"var", "cnt":"B"}]}],{"id":"const", "cnt":"true"}]}}]}]]}},
+"isNeckcut":false,
+"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"mytest"}, {"id":"var", "cnt":"A_"}, {"id":"var", "cnt":"B"}]}]}}}
+,
+{ "id":"card", 
+"title":"File \"./tests/elpi2html.v\", line 34, column 3, character 400:", 
+"cnt":{"id":"clause", "cnt":{"hyp":
+[{"id":"comma", "cnt":[{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"=>"}, [{"id":"prop", "cnt":[{"id":"const", "cnt":"mytest"}, {"id":"string", "cnt":"3"}, {"id":"string", "cnt":"2"}]}],{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"is"}, {"id":"var", "cnt":"B"},{"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"*"}, {"id":"propInfix", "cnt": {"args":[
+{"id":"const", "cnt":"+"}, {"id":"string", "cnt":"4"},{"id":"string", "cnt":"5"}]}},{"id":"var", "cnt":"A"}]}}]}}]}},{"id":"const", "cnt":"true"}]}],
+"isNeckcut":false,
+"args":[{"id":"prop", "cnt":[{"id":"const", "cnt":"mytest"}, {"id":"var", "cnt":"A"}, {"id":"var", "cnt":"B"}]}]}}}
+,
+{ "id":"card", 
+"title":"File \"./tests/elpi2html.v\", line 36, column 3, character 455:", 
 "cnt":{"id":"clause", "cnt":{"hyp":
 [{"id":"prop", "cnt":[{"id":"const", "cnt":"coq.say"}, {"id":"string", "cnt":"\"CIAO\""}]}],
 "isNeckcut":false,
