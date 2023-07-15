@@ -25,7 +25,7 @@ function NavBar() {
   }
 
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary mb-3">
       <Container>
         <Navbar.Brand href="#home">Elpi Database Viewer</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -33,7 +33,6 @@ function NavBar() {
           <Nav className="me-auto">
             <Nav.Link onClick={openFile}>Open File</Nav.Link>
             <input type='file' id='file' ref={inputFile} style={{ display: 'none' }} onChange={readSingleFile} />
-            <Nav.Link href="#pricing">Menu2</Nav.Link>
             <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">

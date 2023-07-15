@@ -1,4 +1,4 @@
-import { Card as C } from 'react-bootstrap';
+import { Card as C, Row } from 'react-bootstrap';
 import { useRef } from 'react';
 import Dispatch from './dispatch';
 import { CardType } from './types';
@@ -28,16 +28,20 @@ const stopDrag = (e: MouseEvent) => {
   document.documentElement.removeEventListener('mouseup', stopDrag, false);
 }
 
-function Card({ title, cnt}: CardType) {
+function Card({ title, cnt }: CardType) {
   const hiddenDivRef = useRef<HTMLDivElement>(null);
   return (
-      <div>
-        <C border="primary resizable overflow-auto" ref={hiddenDivRef}>
-          <C.Header>{title}</C.Header>
-          <C.Body><Dispatch {...cnt} /></C.Body>
-          <div className='resizer' onMouseDown={e => { cardHook = hiddenDivRef.current!; initDrag(e) }}></div>
-        </C>
-      </div>
+    <C border="primary resizable overflow-auto h-100" ref={hiddenDivRef}>
+      <C.Header>{title}</C.Header>
+      <C.Body className="my-auto">
+        <Row className="h-100">
+          <div className="my-auto">
+            <Dispatch {...cnt} />
+          </div>
+        </Row>
+      </C.Body>
+      <div className='resizer' onMouseDown={e => { cardHook = hiddenDivRef.current!; initDrag(e) }}></div>
+    </C>
   )
 }
 

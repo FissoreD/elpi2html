@@ -1,4 +1,4 @@
-import { Store, configureStore } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 import setDB_Reducer from "../features/databaseSlice"
 
 export const store = configureStore({

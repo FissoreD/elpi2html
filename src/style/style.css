@@ -2,11 +2,6 @@
   color: red;
 }
 
-.card {
-  width: 30em;
-  margin: 3pt;
-}
-
 body * {
   font-family: 'Times New Roman', serif;
 }
@@ -21,16 +16,12 @@ body * {
   /* margin-left: 0.5em; */
 }
 
-.card-body {
-  justify-content: center;
-}
-
-.container {
+#cards {
   flex-wrap: wrap;
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 /* .var:not(:last-child), .const:not(:last-child), .cut, .discard, .parens{ */
