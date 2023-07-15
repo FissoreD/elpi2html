@@ -3,24 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './style/index.css';
 import './style/style.css';
 import reportWebVitals from './reportWebVitals';
-import Card from './components/card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
-import X from './tests/test.json';
+import NavBar from './components/navbar';
+import { Provider } from 'react-redux';
+import { store } from './app/store';
+import { Body } from './components/body';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-var pos = X.clauses.length - 20
-var pos2 = pos + 20
-var X1 = X.clauses.slice(pos, pos2)
-
 root.render(
   <React.StrictMode>
-    {
-      X1.map((x, pos) => <Card key={pos} {...x} />)
-    }
+    <Provider store={store}>
+      <NavBar />
+      <Body />
+    </Provider>
   </React.StrictMode>
 );
 
