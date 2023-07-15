@@ -6,11 +6,13 @@ var pos2 = pos + 20
 var X1 = X.clauses.slice(pos, pos2)
 
 type elpiDatabase = {
-  db : any[]
+  db: any[],
+  filter: string
 }
 
 const initialState : elpiDatabase = {
-  db: X1
+  db: X1,
+  filter: ""
 }
 
 const DB_State = createSlice({
@@ -19,9 +21,12 @@ const DB_State = createSlice({
   reducers: {
     setDB(state, action) {
       state.db = action.payload;
+    },
+    setFilterDB(state, action) {
+      state.filter = action.payload
     }
   }
 })
 
-export const { setDB } = DB_State.actions
+export const { setDB, setFilterDB } = DB_State.actions
 export default DB_State.reducer
