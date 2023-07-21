@@ -51,7 +51,7 @@ export function Body() {
             </DropdownButton>
           </InputGroup>
         </Row>
-        <Row xs={2}>
+        <Row xs={2} className="justify-content-center">
           {db.map((x, pos) => {
             return <Card key={pos} {...x} />
           })}
