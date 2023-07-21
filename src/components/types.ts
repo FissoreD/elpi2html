@@ -6,7 +6,7 @@ export type DispatchProp = { id: id, cnt: any }
 
 type VarName = string
 
-export interface CardType { title: string, cnt: any }
+export interface CardType { predicate: string, title: string, cnt: any }
 export interface VarType { name: VarName }
 export interface IntType { num: number }
 export interface ListType { l: any[], tl?: any }

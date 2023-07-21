@@ -1,7 +1,7 @@
 import React from "react"
-import IntGenerator from "../generator"
 import Dispatch from "./dispatch"
 import { ParensMode, SymbolType, SymbolsList } from "./types"
+import { IntGenerator } from "../tools"
 
 export function Symbol({ shape }: SymbolType) {
   return <span className="symbol">{shape} </span>
