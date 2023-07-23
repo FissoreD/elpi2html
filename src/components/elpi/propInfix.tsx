@@ -1,5 +1,5 @@
 import { ClauseType, ParensMode } from '../types';
-import { displayList, displayParenthesis } from '../tools';
+import { displayList, Parenthesis } from '../tools';
 
 function getPrio(i: string) {
   // note : same_term (3 = 3; (4=4, true)) (3=3;4=4,true)
@@ -36,11 +36,11 @@ function PropInfix({ args }: ClauseType) {
   let putRightParent = isMorePrio(infOp.cnt, getOperator(right)) 
   return (
     <span className="prop">
-      {displayParenthesis(ParensMode.round, [displayList(0)(left)], putLeftParent)}
+      <Parenthesis type={ParensMode.round} cnt={[displayList(0)(left)]} cond={putLeftParent}/>
       <span className="infix">
         <b> {infOp.cnt} </b>
       </span>
-      {displayParenthesis(ParensMode.round, [displayList(0)(right)], putRightParent)}
+      <Parenthesis type={ParensMode.round} cnt={[displayList(0)(right)]} cond={putRightParent} />
     </span>
   )
 }

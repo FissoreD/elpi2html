@@ -1,4 +1,4 @@
-import { displayList, displayParenthesis, Symbol } from '../tools';
+import { displayList, Parenthesis, Symbol } from '../tools';
 import { SymbolsList, QuantificationType, ParensMode } from '../types';
 
 // for 9823 in json
@@ -23,12 +23,12 @@ export function Quantification({ body, names, type }: QuantificationType) {
   var body1 = accumulateSameSymbol(type, body, names1);
   return (
     <span className='quantification'>
-      {displayParenthesis(ParensMode.round,
-        [<span className='symbolName'>
+      <Parenthesis type={ParensMode.round}
+        cnt={[<span className='symbolName'>
           <Symbol shape={symbol} />
           {displayList(0, false)(names1)}.
-        </span>, displayList(-1)(body1)],
-        type === "binder")}
+        </span>, displayList(-1)(body1)]}
+        cond={type === "binder"} />
     </span>
   )
 }

@@ -1,6 +1,6 @@
 import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import { setActive } from "../../features/databaseSlice";
-import { displayList, displayParenthesis, putInFragment, Symbol } from "../tools";
+import { displayList, Parenthesis, Symbol } from "../tools";
 import { ClauseType, CommaType, ConstType, IntType, ListType, ParensMode, PropType, StringType, VarType } from "../types";
 
 export function Clause({ hyp, args, isNeckcut }: ClauseType) {
@@ -27,7 +27,9 @@ export function List({ l, tl }: ListType) {
     if (tl) { return <> <Symbol shape="|" /> {displayList(-1)(tl)} </> }
     return <></>
   }
-  return <span className='list'> {displayParenthesis(ParensMode.square, [displayList(-1, true)(l), printTl(tl)])} </span>
+  return <span className='list'>
+    <Parenthesis type={ParensMode.square} cnt={[displayList(-1, true)(l), printTl(tl)]} cond />
+  </span>
 }
 
 export function Cut() {
@@ -65,8 +67,9 @@ export function Const({ name }: ConstType) {
 
 export function Prop({ cnt }: PropType) {
   let [hd, ...tl] = cnt;
-  const putInParens = (e: any) => {
-    return putInFragment(displayParenthesis(ParensMode.round, [displayList(0, true)(e)], Array.isArray(e) || ["prop", "propInfix"].includes(e.id)))
+  const putInParens = (e: any, key: number) => {
+    return <Parenthesis key={key} type={ParensMode.round} cnt={[displayList(0, true)(e)]}
+      cond={Array.isArray(e) || ["prop", "propInfix"].includes(e.id)} />
   }
   return (
     <span className={"prop"}>
