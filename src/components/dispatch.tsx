@@ -9,7 +9,7 @@ function Dispatch({ id, cnt }: DispatchProp) {
     case "clause": return <Clause {...cnt} />
     case "list": return <List {...cnt} />
     // case "num": return <Int num={cnt} />
-    case "var": return <Var name={cnt} />
+    case "var": return <Var {...cnt} />
     case "const": return <Const name={cnt} />
     case "propInfix": return <PropInfix {...cnt} />
     case "prop": return <Prop cnt={cnt} />

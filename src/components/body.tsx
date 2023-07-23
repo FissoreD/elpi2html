@@ -2,15 +2,23 @@ import { Col, Container, Dropdown, DropdownButton, Form, InputGroup, Row } from 
 import { useAppDispatch, useAppSelector } from "../app/hooks"
 import Card from "./card"
 import { setFilterDB, setFilterFileName } from "../features/databaseSlice"
+import { useRef } from "react";
 
 export function Body() {
 
   const dispatch = useAppDispatch();
 
+  let inputRef = useRef<HTMLInputElement>(null);
+
   function setFilterInput(e: any) {
     if (e.key === "Enter" || e.key === "NumpadEnter") {
       dispatch(setFilterDB(e.target!.value))
     }
+  }
+
+  function dispatchFilterDropdown(e: string) {
+    inputRef.current!.innerHTML = e;
+    dispatch(setFilterDB(e));
   }
 
   let db = useAppSelector(state => state.DB_State.db)
@@ -22,39 +30,34 @@ export function Body() {
         <Row className="justify-content-center">
           <InputGroup className="mb-3 w-75">
             <InputGroup.Text className="w-4">Filter Predicate: </InputGroup.Text>
-            <Form.Control
-              aria-label="Small"
-              aria-describedby="inputGroup-sizing-sm"
-              autoFocus
-              onKeyDown={setFilterInput}
-              defaultValue={filterStr}
-            />
-            <DropdownButton
-              variant="outline-secondary"
-              className="overflow-auto h-50" title=""
-            >
-              <Dropdown.Item onClick={() => dispatch(setFilterDB(""))}>All</Dropdown.Item>
-              <Dropdown.Divider />
-              {useAppSelector(state => state.DB_State.predicates).map((x, pos) =>
-                <Dropdown.Item eventKey={x} key={pos} onClick={() => dispatch(setFilterDB(x))}>{x}</Dropdown.Item>)}
-            </DropdownButton>
+            <Form.Control ref={inputRef!}
+              onKeyDown={setFilterInput} defaultValue={filterStr} />
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+              </Dropdown.Toggle>
+              <Dropdown.Menu className="overflow-auto" style={{ height: "200pt" }}>
+                <Dropdown.Item onClick={() => dispatch(setFilterDB(""))}>All</Dropdown.Item>
+                <Dropdown.Divider />
+                {useAppSelector(state => state.DB_State.predicates).map((x, pos) =>
+                  <Dropdown.Item eventKey={x} key={pos} onClick={() => dispatchFilterDropdown(x)}>{x}</Dropdown.Item>)}
+              </Dropdown.Menu>
+            </Dropdown>
             <InputGroup.Text className="w-4">Filter FilePath: </InputGroup.Text>
-            <DropdownButton
-              variant="outline-secondary"
-              className="overflow-auto h-50"
-              title={pathName}
-            >
-              <Dropdown.Item onClick={() => dispatch(setFilterFileName(""))}>All</Dropdown.Item>
-              <Dropdown.Divider />
-              {useAppSelector(state => state.DB_State.fileNames).map((x, pos) =>
-                <Dropdown.Item eventKey={x} key={pos} onClick={() => dispatch(setFilterFileName(x))}>{x}</Dropdown.Item>)}
-            </DropdownButton>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                {pathName}
+              </Dropdown.Toggle>
+              <Dropdown.Menu className="overflow-auto" style={{ height : "200pt" }}>
+                <Dropdown.Item onClick={() => dispatch(setFilterFileName(""))}>All</Dropdown.Item>
+                <Dropdown.Divider />
+                {useAppSelector(state => state.DB_State.fileNames).map((x, pos) =>
+                  <Dropdown.Item eventKey={x} key={pos} onClick={() => dispatch(setFilterFileName(x))}>{x}</Dropdown.Item>)}
+              </Dropdown.Menu>
+            </Dropdown>
           </InputGroup>
         </Row>
         <Row xs={2} className="justify-content-center">
-          {db.map((x, pos) => {
-            return <Card key={pos} {...x} />
-          })}
+          {db.map((x, pos) => <Card key={pos} {...x} />)}
         </Row>
       </Col>
     </Container>

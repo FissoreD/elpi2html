@@ -1,3 +1,5 @@
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
+import { setActive } from "../../features/databaseSlice";
 import { displayList, displayParenthesis, putInFragment, Symbol } from "../tools";
 import { ClauseType, CommaType, ConstType, IntType, ListType, ParensMode, PropType, StringType, VarType } from "../types";
 
@@ -40,9 +42,21 @@ export function String({ name }: StringType) {
   return <span className='string'>{name + " "}</span>
 }
 
-export function Var({ name }: VarType) {
+export function Var({ name, varId }: VarType) {
+  const dispatch = useAppDispatch();
+  
   let [name1, index] = name.split(" ");
-  return (<span className='var'>{name1}<sub>{index}</sub></span>)
+
+  let activateVariable = () =>
+    dispatch(setActive({ isActive: true, varId }))
+  
+  let deactivateVariable = () => 
+    dispatch(setActive({ isActive: false, varId }))
+
+  let isActive = useAppSelector(state => state.DB_State.variables[varId])
+
+  return (<span className='var' onMouseEnter={activateVariable}
+    onMouseLeave={deactivateVariable} style={isActive ? { background: "black", color: "white" } : {}}>{name1}<sub>{index}</sub></span>)
 }
 
 export function Const({ name }: ConstType) {

@@ -37,12 +37,6 @@ body * {
   font-weight: bold;
 }
 
-
-.ciao {
-  padding: 0;
-  margin:"2em"
-}
-
 .hyps, .concl {
   margin: 0 0.4rem;
 }
@@ -73,4 +67,10 @@ body * {
 .quantification:hover {
   border: 1px solid black;
   transition: border 0.5s;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }

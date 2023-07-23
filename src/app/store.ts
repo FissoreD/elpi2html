@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import setDB_Reducer from "../features/databaseSlice"
+import DB_State from "../features/databaseSlice"
 
 export const store = configureStore({
   reducer: {
-    DB_State: setDB_Reducer
+    DB_State
   }
 })
 
