@@ -17,6 +17,7 @@ export function Body() {
   }
 
   function dispatchFilterDropdown(e: string) {
+    console.log(inputRef.current)
     inputRef.current!.innerHTML = e;
     dispatch(setFilterDB(e));
   }

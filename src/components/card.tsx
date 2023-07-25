@@ -9,7 +9,7 @@ import { filePathFromTitle } from "../tools"
 function Card({ title, cnt, predicate }: CardType) {
   let filterStr = useAppSelector(state => state.DB_State.filter)
   let pathName = useAppSelector(state => state.DB_State.pathName)
-  let display = (filterStr === "" || predicate === filterStr) &&
+  let display = (filterStr === "" || predicate.includes(filterStr)) &&
     (pathName === "" || filePathFromTitle(title) === pathName);
   return (
     <ResizableBox width={496} height={367} style={{
