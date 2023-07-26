@@ -41,9 +41,13 @@ const DB_State = createSlice({
       let {payload} = action
       console.log("Opening file")
       state.db = payload;
-      state.predicates = listNoDup(payload.map((x: any) => x.predicate))
-      state.fileNames = listNoDup(payload.map((x: any) => filePathFromTitle(x.title)))
-      getAllVarId(payload).forEach(v => state.variables[v] = false)
+      let predicates = listNoDup<string>(payload.map((x: any) => x.predicate));
+      predicates.sort();
+      state.predicates = predicates 
+      let fileNames = listNoDup<string>(payload.map((x: any) => filePathFromTitle(x.title)));
+      fileNames.sort(); 
+      state.fileNames = fileNames;
+      getAllVarId(payload).forEach(v => state.variables[v] = false);
     },
     setFilterDB(state, action) {
       console.log("Setting predicate filter:", action.payload)

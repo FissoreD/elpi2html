@@ -13,7 +13,7 @@ export function listNoDup<A>(l: A[]) {
 }
 
 export function filePathFromTitle(title: string) {
-  return title.split("\"")[1]
+  return title.split("\"")[1].split(":")[0]
 }
 
 export const IntGenerator = counter()
