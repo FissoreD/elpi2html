@@ -20,8 +20,8 @@ const initialState : elpiDatabase = {
   db: X1,
   filter: "",
   pathName: "",
-  predicates: listNoDup(X1.map(x => x.predicate)),
-  fileNames: listNoDup(X1.map(x => filePathFromTitle(x.title))),
+  predicates: listNoDup(X1.map(x => x.predicate)).sort(),
+  fileNames: listNoDup(X1.map(x => filePathFromTitle(x.title))).sort(),
   variables: {}
 }
 
@@ -41,12 +41,8 @@ const DB_State = createSlice({
       let {payload} = action
       console.log("Opening file")
       state.db = payload;
-      let predicates = listNoDup<string>(payload.map((x: any) => x.predicate));
-      predicates.sort();
-      state.predicates = predicates 
-      let fileNames = listNoDup<string>(payload.map((x: any) => filePathFromTitle(x.title)));
-      fileNames.sort(); 
-      state.fileNames = fileNames;
+      state.predicates = listNoDup<string>(payload.map((x: any) => x.predicate)).sort();
+      state.fileNames = listNoDup<string>(payload.map((x: any) => filePathFromTitle(x.title))).sort();
       getAllVarId(payload).forEach(v => state.variables[v] = false);
     },
     setFilterDB(state, action) {
