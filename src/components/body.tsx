@@ -1,4 +1,4 @@
-import { Col, Container, Dropdown, DropdownButton, Form, InputGroup, Row } from "react-bootstrap"
+import { Col, Container, Dropdown, Form, InputGroup, Row } from "react-bootstrap"
 import { useAppDispatch, useAppSelector } from "../app/hooks"
 import Card from "./card"
 import { setFilterDB, setFilterFileName } from "../features/databaseSlice"
@@ -57,7 +57,7 @@ export function Body() {
             </Dropdown>
           </InputGroup>
         </Row>
-        <Row xs={2} className="justify-content-center">
+        <Row xs={1} md={2} lg={3} className="justify-content-center">
           {db.map((x, pos) => <Card key={pos} {...x} />)}
         </Row>
       </Col>

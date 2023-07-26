@@ -74,3 +74,7 @@ body * {
     opacity: 0;
   }
 }
+
+.zoom-button:hover{
+  cursor: pointer;
+}

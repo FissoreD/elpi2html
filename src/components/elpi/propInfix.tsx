@@ -38,7 +38,7 @@ function PropInfix({ args }: ClauseType) {
     <span className="prop">
       <Parenthesis type={ParensMode.round} cnt={[displayList(0)(left)]} cond={putLeftParent}/>
       <span className="infix">
-        <b> {infOp.cnt} </b>
+        <b> {infOp.cnt.replace("=>", "⇒")} </b>
       </span>
       <Parenthesis type={ParensMode.round} cnt={[displayList(0)(right)]} cond={putRightParent} />
     </span>
