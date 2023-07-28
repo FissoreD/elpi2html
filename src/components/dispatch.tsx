@@ -2,9 +2,11 @@ import { DispatchProp, QuantificationType } from './types';
 import { Quantification } from './elpi/quantification';
 import PropInfix from './elpi/propInfix';
 import { Clause, Comma, Const, Cut, Discard, List, Prop, Var, String } from './elpi/constructs';
+import React from 'react';
 
 
 function Dispatch({ id, cnt }: DispatchProp) {
+  console.log("A")
   switch (id) {
     case "clause": return <Clause {...cnt} />
     case "list": return <List {...cnt} />
@@ -22,4 +24,4 @@ function Dispatch({ id, cnt }: DispatchProp) {
   }
 }
 
-export default Dispatch;
+export default React.memo(Dispatch);
