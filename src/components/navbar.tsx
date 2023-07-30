@@ -33,7 +33,7 @@ function NavBar() {
           <Nav className="me-auto">
             <Nav.Link onClick={openFile}>Open File</Nav.Link>
             <input type='file' id='file' ref={inputFile} style={{ display: 'none' }} onChange={readSingleFile} />
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+            {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -43,14 +43,14 @@ function NavBar() {
               <NavDropdown.Item href="#action/3.4">
                 Separated link
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
-          <Nav>
+          {/* <Nav>
             <Nav.Link href="#deets">More deets</Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
               Dank memes
             </Nav.Link>
-          </Nav>
+          </Nav> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>

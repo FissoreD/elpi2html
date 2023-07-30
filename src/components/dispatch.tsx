@@ -6,7 +6,6 @@ import React from 'react';
 
 
 function Dispatch({ id, cnt }: DispatchProp) {
-  console.log("A")
   switch (id) {
     case "clause": return <Clause {...cnt} />
     case "list": return <List {...cnt} />

@@ -3,7 +3,7 @@ import X from '../tests/test.json';
 import { listNoDup, filePathFromTitle } from "../tools";
 
 var pos = 0 //X.clauses.length - 20
-var pos2 = pos + X.clauses.length 
+var pos2 = 0 //pos + X.clauses.length 
 var X1 = X.clauses.slice(pos, pos2)
 
 type elpiDatabase = {
