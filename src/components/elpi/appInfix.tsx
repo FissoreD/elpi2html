@@ -17,7 +17,7 @@ function getPrio(i: string) {
 }
 
 function getOperator(e: any): string {
-  if (e.id === "propInfix") {
+  if (e.id === "appInfix") {
     let op = e.cnt.args[0].cnt
     return op
   }
@@ -30,12 +30,12 @@ function isMorePrio(op1: string, op2: string) {
   return getPrio(op1) > getPrio(op2)
 }
 
-function PropInfix({ args }: ClauseType) {
+function AppInfix({ args }: ClauseType) {
   let [infOp, left, right] = args;
   let putLeftParent = isMorePrio(infOp.cnt, getOperator(left))
   let putRightParent = isMorePrio(infOp.cnt, getOperator(right)) 
   return (
-    <span className="prop">
+    <span className="app">
       <Parenthesis type={ParensMode.round} cnt={[displayList(0)(left)]} cond={putLeftParent}/>
       <span className="infix">
         <b> {infOp.cnt.replace("=>", "⇒")} </b>
@@ -45,4 +45,4 @@ function PropInfix({ args }: ClauseType) {
   )
 }
 
-export default PropInfix;
+export default AppInfix;

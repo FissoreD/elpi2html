@@ -24,7 +24,7 @@ export function Parenthesis({ type, cnt, cond }: { type: ParensMode, cnt: JSX.El
 }
 
 function parenthesizePrio(isInCommaPred: boolean, e: any) {
-  return isInCommaPred && ((e.id === "propInfix" && [";", "=>"].includes(e.cnt.args[0].cnt)) || (e.id === "quantification"))
+  return isInCommaPred && ((e.id === "appInfix" && [";", "=>"].includes(e.cnt.args[0].cnt)) || (e.id === "quantification"))
 }
 
 const displayListAux = (isInCommaPred: boolean, commas: boolean, height: number, len: number) => (hyp: any, pos: number): JSX.Element => {

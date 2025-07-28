@@ -1,7 +1,7 @@
 import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import { setActive } from "../../features/databaseSlice";
 import { displayList, Parenthesis, Symbol } from "../tools";
-import { ClauseType, CommaType, ConstType, IntType, ListType, ParensMode, PropType, StringType, VarType } from "../types";
+import { ClauseType, CommaType, ConstType, IntType, ListType, ParensMode, AppType, StringType, VarType, QuantificationType, SymbolsList, q } from "../types";
 
 export function Clause({ hyp, args, isNeckcut }: ClauseType) {
   return (
@@ -61,18 +61,60 @@ export function Var({ name, varId }: VarType) {
     onMouseLeave={deactivateVariable} style={isActive ? { background: "black", color: "white" } : {}}>{name1}<sub>{index}</sub></span>)
 }
 
+// for 9823 in json
+// display λx1.λx2...λxn.Bo in the following way λx1 x2 ... xn.Bo
+const accumulateSameSymbol = (type: q, body: any, names: any[]): any => {
+  if (body.length === 1 && body[0].id === "quantification" && body[0].cnt.type === type) {
+    names.push(...body[0].cnt.names)
+    return accumulateSameSymbol(type, body[0].cnt.body, names)
+  // } else if (type === "sigma" && body.cnt[0]?.cnt === "sigma") {
+  //   let bpdy = body.cnt[1]
+  //   names.push(...body[0].cnt.names)
+  //   return accumulateSameSymbol(type, body[0].cnt.body, names)
+  // } else if (type === "pi") {
+
+  }
+  // else {
+    return body
+  // }
+}
+
+export function Quantification({ type, body, names }: QuantificationType) {
+  let symbol: SymbolsList;
+  switch (type) {
+    case "binder": symbol = "λ"; break
+    case "pi": symbol = "∀"; break
+    case "sigma": symbol = "∃";
+  }
+  console.log("type",type)
+  var names1 = [...names];
+  var body1 = accumulateSameSymbol(type, body, names1);
+  return (
+    <span className='quantification'>
+      <Parenthesis type={ParensMode.round}
+        cnt={[<span className='symbolName'>
+          <Symbol shape={symbol} />
+          {displayList(0, false)(names1)}.
+        </span>, displayList(-1)(body1)]}
+        cond={true} />
+    </span>
+  )
+}
+
 export function Const({ name }: ConstType) {
   return <span className="const">{name}</span>
 }
 
-export function Prop({ cnt }: PropType) {
+export function App({ cnt }: AppType) {
   let [hd, ...tl] = cnt;
+  if (hd.cnt === "pi" && hd.id === "const") return Quantification({ ...tl[0].cnt, type: "pi" })
+  if (hd.cnt === "sigma" && hd.id === "const") return Quantification({...tl[0].cnt, type: "sigma"})
   const putInParens = (e: any, key: number) => {
     return <Parenthesis key={key} type={ParensMode.round} cnt={[displayList(0, true)(e)]}
-      cond={Array.isArray(e) || ["prop", "propInfix"].includes(e.id)} />
+      cond={Array.isArray(e) || ["app", "appInfix"].includes(e.id)} />
   }
   return (
-    <span className={"prop"}>
+    <span className={"app"}>
       {displayList(0, false)(hd)}
       {tl.map(putInParens)}
     </span>

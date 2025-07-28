@@ -6,11 +6,11 @@ body * {
   font-family: 'Times New Roman', serif;
 }
 
-.list, .prop, .quantification {
+.list, .app, .quantification {
   display: inline-block;
 }
 
-.prop, .quantification, .list {
+.app, .quantification, .list {
   text-indent: -0.7em;
   padding-left: 0.7em;
   /* margin-left: 0.5em; */
@@ -56,14 +56,14 @@ body * {
   border: 1px dotted grey;
 }
 
-.prop,
+.app,
 .quantification {
   /* margin: 0.5pt; */
   border: 1px solid transparent;
   transition: border 0.5s;
 }
 
-.prop:hover,
+.app:hover,
 .quantification:hover {
   border: 1px solid black;
   transition: border 0.5s;
