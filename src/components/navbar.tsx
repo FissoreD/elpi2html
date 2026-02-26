@@ -17,7 +17,6 @@ function NavBar() {
     if (!file) return
     var reader = new FileReader();
     reader.onload = function (e) {
-      console.log(e)
       var contents : string = e.target?.result as string;
       dispatch(setDB(JSON.parse(contents).clauses))
     };

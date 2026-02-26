@@ -1,4 +1,4 @@
-import { ClauseType, ParensMode } from '../types';
+import { ClauseType, DispatchApp, ParensMode } from '../types';
 import { displayList, Parenthesis } from '../tools';
 
 function getPrio(i: string) {
@@ -18,7 +18,7 @@ function getPrio(i: string) {
 
 function getOperator(e: any): string {
   if (e.id === "appInfix") {
-    let op = e.cnt.args[0].cnt
+    let op = e.cnt[0].cnt
     return op
   }
   if (Array.isArray(e) && e[0].id === "comma")
@@ -30,8 +30,13 @@ function isMorePrio(op1: string, op2: string) {
   return getPrio(op1) > getPrio(op2)
 }
 
-function AppInfix({ args }: ClauseType) {
-  let [infOp, left, right] = args;
+function AppInfix(l: DispatchApp[]) {
+  let infOp = l[0];
+  let left = l[1];
+  let right = l[2];
+  if (l.length > 2) 
+    throw "NYI: INFIX WITH MORE THEN TWO ARGUMENTS"
+  // let [infOp, left, right] = l;
   let putLeftParent = isMorePrio(infOp.cnt, getOperator(left))
   let putRightParent = isMorePrio(infOp.cnt, getOperator(right)) 
   return (
