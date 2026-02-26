@@ -1,5 +1,4 @@
 import { AppType, ClauseType, CommaType, ConstType, DispatchApp, IntType, ListType, ParensMode, q, QuantificationType, StringType, SymbolsList, VarType } from './types';
-import AppInfix from './elpi/appInfix';
 import React from 'react';
 import { displayList, Parenthesis, Symbol } from './tools';
 import { useAppDispatch, useAppSelector } from '../app/hooks';
@@ -16,23 +15,9 @@ export function Clause({ hyp, args, isNeckcut }: ClauseType) {
   )
 }
 
-export function Comma({ cnt }: CommaType) {
-  return <>{displayList(-1, true, true)(cnt)}</>
-}
-
 export function Int({ num }: IntType) {
   return (<span className='num'>{num}</span>)
 }
-
-// export function List({ l, tl }: ListType) {
-//   let printTl = (tl?: any) => {
-//     if (tl) { return <> <Symbol shape="|" /> {displayList(-1)(tl)} </> }
-//     return <></>
-//   }
-//   return <span className='list'>
-//     <Parenthesis type={ParensMode.square} cnt={[displayList(-1, true)(l), printTl(tl)]} cond />
-//   </span>
-// }
 
 export function Cut() {
   return (<b className="cut">! </b>)
@@ -151,7 +136,6 @@ function Dispatch({ id, cnt, is_infix }: DispatchApp) {
     case "var": return <Var {...cnt} />
     case "const": return <Const name={cnt} />
     case "app": return <App cnt={cnt} is_infix={is_infix} />
-    case "comma": return <Comma cnt={cnt} />
     case "cut": return <Cut />
     case "discard": return <Discard />
     case "string": return <String name={cnt} />
