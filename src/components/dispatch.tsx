@@ -54,16 +54,8 @@ const accumulateSameSymbol = (type: q, body: any, names: any[]): any => {
   if (body.length === 1 && body[0].id === "quantification" && body[0].cnt.type === type) {
     names.push(...body[0].cnt.names)
     return accumulateSameSymbol(type, body[0].cnt.body, names)
-  // } else if (type === "sigma" && body.cnt[0]?.cnt === "sigma") {
-  //   let bpdy = body.cnt[1]
-  //   names.push(...body[0].cnt.names)
-  //   return accumulateSameSymbol(type, body[0].cnt.body, names)
-  // } else if (type === "pi") {
-
   }
-  // else {
-    return body
-  // }
+  return body
 }
 
 export function Quantification({ type, body, names }: QuantificationType) {
@@ -103,24 +95,53 @@ function interleave<T>(arr: T[], element: T): T[] {
   return result;
 }
 
+let comma = { id: "const", cnt: ",", is_infix: true }
+let pipe = { id: "const", cnt: "|", is_infix: true }
+let op1 = { id: "const", cnt: "[", is_infix: true }
+let op2 = { id: "const", cnt: "]", is_infix: true }
+
+function bin_list(l: any[]) {
+  if (l.length === 1) return l
+  let l1 = [op1]
+  let is_closed = l[l.length-1].cnt === "[]"
+  for (let i = 0; i < l.length; i++){
+    let x = l[i]
+    if (typeof x.cnt !== "string") {
+      l1.push(x)
+      if (i === l.length - 2 && !is_closed) l1.push(pipe)
+      else if (i !== l.length - 1) l1.push(comma)
+    }
+  }
+  l1.push(op2)
+  return l1
+}
+
 export function App({ cnt, is_infix }: AppType) {
-  let cnt1 : any[] = [];
+  let cnt1: any[] = [];
+  let is_comma = false;
   if (is_infix && cnt.length > 2) {
     let [hd, a1, ...tl] = cnt;
-    if (hd.cnt == ",") {
+    if (hd.cnt === ",") {
+      is_comma = true;
       cnt1 = interleave([a1].concat(tl), hd)
-    } else cnt1 = [a1, hd].concat(tl)
+    } else if (hd.cnt === "::") {
+      cnt1 = bin_list(cnt)
+    }
+    else cnt1 = [a1, hd].concat(tl)
   } else cnt1 = cnt;
   let [hd, ...tl] = cnt1;
-  if (hd.cnt === "pi" && hd.id === "const") return Quantification({ ...tl[0].cnt, type: "pi" })
-  // if (hd.cnt === "sigma" && hd.id === "const") return Quantification({...tl[0].cnt, type: "sigma"})
+  if (hd.id === "const" && (hd.cnt === "pi" || hd.cnt === "sigma")) {
+    return Quantification({ ...tl[0].cnt, type: hd.cnt }) 
+  }
   const putInParens = (e: any, key: number) => {
     return <Parenthesis key={key} type={ParensMode.round} cnt={[displayList(0, true)(e)]}
-      cond={Array.isArray(e) || ["app"].includes(e.id)} />
+      // cond={Array.isArray(e) || ["app"].includes(e.id)}
+      cond={!is_comma && ["app"].includes(e.id)}
+    />
   }
   return (
     <span className={"app"}>
-      {displayList(0, false)(hd)}
+      {displayList(1, false)(hd)}
       {tl.map(putInParens)}
     </span>
   )
