@@ -4,7 +4,9 @@ import { displayList, Parenthesis, Symbol } from './tools';
 import { useAppDispatch, useAppSelector } from '../app/hooks';
 import { setActive } from '../features/databaseSlice';
 
-export function Clause({ hyp, args, isNeckcut }: ClauseType) {
+export function Clause({ hyp, args }: ClauseType) {
+  let x = (hyp as DispatchApp).cnt;
+  let isNeckcut = x === undefined ? "" : (x === "!" || x[1]?.cnt === "!" ? "neckcut" : "")
   return (
     <div className='clause'>
       <div className='hyps'>{Array.isArray(hyp) && hyp.length === 0 ? <></> : Dispatch(hyp as DispatchApp)}</div>
