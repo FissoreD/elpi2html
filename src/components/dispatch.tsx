@@ -111,6 +111,7 @@ function bin_list(l: any[]) {
     if (typeof x.cnt !== "string") {
       l1.push(x)
       if (i === l.length - 2 && !is_closed) l1.push(pipe)
+      else if (i === l.length - 2 && is_closed) continue
       else if (i !== l.length - 1) l1.push(comma)
     }
   }
