@@ -62,11 +62,7 @@
             "cnt": [
               { "id": "const", "cnt": "," },
               { "id": "var", "cnt": { "name": "A0", "varId": 3 } },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               { "id": "const", "cnt": "fail" }
             ]
           },
@@ -104,11 +100,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "TODO" }]
-          },
+          "hyp": { "id": "const", "cnt": "TODO" },
           "args": { "id": "const", "cnt": "stop" }
         }
       }
@@ -983,11 +975,7 @@
             "cnt": [
               { "id": "const", "cnt": "," },
               { "id": "var", "cnt": { "name": "A0", "varId": 62 } },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               { "id": "var", "cnt": { "name": "A1", "varId": 63 } }
             ]
           },
@@ -1038,11 +1026,7 @@
             "cnt": [
               { "id": "const", "cnt": "," },
               { "id": "var", "cnt": { "name": "A0", "varId": 65 } },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               { "id": "var", "cnt": { "name": "A1", "varId": 66 } }
             ]
           },
@@ -1074,11 +1058,7 @@
             "cnt": [
               { "id": "const", "cnt": "," },
               { "id": "var", "cnt": { "name": "A0", "varId": 67 } },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               { "id": "var", "cnt": { "name": "A1", "varId": 68 } }
             ]
           },
@@ -1109,11 +1089,7 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               { "id": "var", "cnt": { "name": "A0", "varId": 69 } }
             ]
           },
@@ -1228,11 +1204,7 @@
             "cnt": [
               { "id": "const", "cnt": "," },
               { "id": "var", "cnt": { "name": "A0", "varId": 75 } },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              }
+              { "id": "const", "cnt": "!" }
             ]
           },
           "args": {
@@ -1278,11 +1250,7 @@
             "cnt": [
               { "id": "const", "cnt": "," },
               { "id": "var", "cnt": { "name": "A0", "varId": 76 } },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              }
+              { "id": "const", "cnt": "!" }
             ]
           },
           "args": {
@@ -1325,11 +1293,7 @@
                   }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              }
+              { "id": "const", "cnt": "!" }
             ]
           },
           "args": {
@@ -1356,12 +1320,15 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A1", "varId": 79 } },
               {
                 "id": "app",
                 "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A1", "varId": 79 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 81 } }
+                ]
               },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": true,
@@ -1413,11 +1380,7 @@
                   }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              }
+              { "id": "const", "cnt": "!" }
             ]
           },
           "args": {
@@ -1654,11 +1617,7 @@
                   { "id": "var", "cnt": { "name": "A1", "varId": 87 } }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              }
+              { "id": "const", "cnt": "!" }
             ]
           },
           "args": {
@@ -1744,7 +1703,7 @@
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.length" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 92 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 91 } },
                   { "id": "var", "cnt": { "name": "A1", "varId": 93 } }
                 ]
               },
@@ -1753,7 +1712,7 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "is" },
-                  { "id": "var", "cnt": { "name": "A2", "varId": 91 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 92 } },
                   {
                     "id": "app",
                     "is_infix": true,
@@ -1775,9 +1734,13 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 91 } }
+                ]
               },
-              { "id": "var", "cnt": { "name": "A2", "varId": 91 } }
+              { "id": "var", "cnt": { "name": "A2", "varId": 92 } }
             ]
           }
         }
@@ -1844,16 +1807,17 @@
             "is_infix": false,
             "cnt": [
               { "id": "const", "cnt": "std.rev.aux" },
-              { "id": "var", "cnt": { "name": "A0", "varId": 99 } },
+              { "id": "var", "cnt": { "name": "A0", "varId": 97 } },
               {
                 "id": "app",
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A1", "varId": 96 } }
+                  { "id": "var", "cnt": { "name": "A1", "varId": 96 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 98 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A3", "varId": 98 } }
+              { "id": "var", "cnt": { "name": "A3", "varId": 99 } }
             ]
           },
           "args": {
@@ -1866,11 +1830,12 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A1", "varId": 96 } }
+                  { "id": "var", "cnt": { "name": "A1", "varId": 96 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 97 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A2", "varId": 97 } },
-              { "id": "var", "cnt": { "name": "A3", "varId": 98 } }
+              { "id": "var", "cnt": { "name": "A2", "varId": 98 } },
+              { "id": "var", "cnt": { "name": "A3", "varId": 99 } }
             ]
           }
         }
@@ -1931,11 +1896,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -1946,7 +1907,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 101 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 101 } },
+                  { "id": "const", "cnt": "[]" }
                 ]
               },
               { "id": "var", "cnt": { "name": "A0", "varId": 101 } }
@@ -1967,8 +1929,8 @@
             "is_infix": false,
             "cnt": [
               { "id": "const", "cnt": "std.last" },
-              { "id": "var", "cnt": { "name": "A0", "varId": 103 } },
-              { "id": "var", "cnt": { "name": "A1", "varId": 102 } }
+              { "id": "var", "cnt": { "name": "A0", "varId": 102 } },
+              { "id": "var", "cnt": { "name": "A1", "varId": 103 } }
             ]
           },
           "args": {
@@ -1979,9 +1941,13 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 102 } }
+                ]
               },
-              { "id": "var", "cnt": { "name": "A1", "varId": 102 } }
+              { "id": "var", "cnt": { "name": "A1", "varId": 103 } }
             ]
           }
         }
@@ -1999,8 +1965,8 @@
             "is_infix": false,
             "cnt": [
               { "id": "const", "cnt": "std.append" },
-              { "id": "var", "cnt": { "name": "A0", "varId": 106 } },
-              { "id": "var", "cnt": { "name": "A1", "varId": 105 } },
+              { "id": "var", "cnt": { "name": "A0", "varId": 105 } },
+              { "id": "var", "cnt": { "name": "A1", "varId": 106 } },
               { "id": "var", "cnt": { "name": "A2", "varId": 107 } }
             ]
           },
@@ -2014,16 +1980,18 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 104 } }
+                  { "id": "var", "cnt": { "name": "A3", "varId": 104 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 105 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A1", "varId": 105 } },
+              { "id": "var", "cnt": { "name": "A1", "varId": 106 } },
               {
                 "id": "app",
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 104 } }
+                  { "id": "var", "cnt": { "name": "A3", "varId": 104 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 107 } }
                 ]
               }
             ]
@@ -2085,8 +2053,8 @@
             "is_infix": false,
             "cnt": [
               { "id": "const", "cnt": "std.appendR" },
-              { "id": "var", "cnt": { "name": "A0", "varId": 112 } },
-              { "id": "var", "cnt": { "name": "A1", "varId": 111 } },
+              { "id": "var", "cnt": { "name": "A0", "varId": 111 } },
+              { "id": "var", "cnt": { "name": "A1", "varId": 112 } },
               { "id": "var", "cnt": { "name": "A2", "varId": 113 } }
             ]
           },
@@ -2100,16 +2068,18 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 110 } }
+                  { "id": "var", "cnt": { "name": "A3", "varId": 110 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 111 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A1", "varId": 111 } },
+              { "id": "var", "cnt": { "name": "A1", "varId": 112 } },
               {
                 "id": "app",
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 110 } }
+                  { "id": "var", "cnt": { "name": "A3", "varId": 110 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 113 } }
                 ]
               }
             ]
@@ -2124,11 +2094,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -2154,17 +2120,13 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "is" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 116 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 118 } },
                   {
                     "id": "app",
                     "is_infix": true,
@@ -2181,9 +2143,9 @@
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.take" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 116 } },
-                  { "id": "var", "cnt": { "name": "A2", "varId": 117 } },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 118 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 118 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 116 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 117 } }
                 ]
               }
             ]
@@ -2199,7 +2161,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A4", "varId": 115 } }
+                  { "id": "var", "cnt": { "name": "A4", "varId": 115 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 116 } }
                 ]
               },
               {
@@ -2207,7 +2170,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A4", "varId": 115 } }
+                  { "id": "var", "cnt": { "name": "A4", "varId": 115 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 117 } }
                 ]
               }
             ]
@@ -2313,11 +2277,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -2343,17 +2303,13 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "is" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 127 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 128 } },
                   {
                     "id": "app",
                     "is_infix": true,
@@ -2370,9 +2326,9 @@
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.drop" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 127 } },
-                  { "id": "var", "cnt": { "name": "A2", "varId": 128 } },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 126 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 128 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 126 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 127 } }
                 ]
               }
             ]
@@ -2386,9 +2342,13 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 126 } }
+                ]
               },
-              { "id": "var", "cnt": { "name": "A3", "varId": 126 } }
+              { "id": "var", "cnt": { "name": "A3", "varId": 127 } }
             ]
           }
         }
@@ -2492,11 +2452,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -2523,17 +2479,13 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "is" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 138 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 140 } },
                   {
                     "id": "app",
                     "is_infix": true,
@@ -2550,10 +2502,10 @@
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.split-at" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 138 } },
-                  { "id": "var", "cnt": { "name": "A2", "varId": 139 } },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 140 } },
-                  { "id": "var", "cnt": { "name": "A4", "varId": 137 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 140 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 137 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 138 } },
+                  { "id": "var", "cnt": { "name": "A4", "varId": 139 } }
                 ]
               }
             ]
@@ -2569,7 +2521,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A5", "varId": 136 } }
+                  { "id": "var", "cnt": { "name": "A5", "varId": 136 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 137 } }
                 ]
               },
               {
@@ -2577,10 +2530,11 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A5", "varId": 136 } }
+                  { "id": "var", "cnt": { "name": "A5", "varId": 136 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 138 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A4", "varId": 137 } }
+              { "id": "var", "cnt": { "name": "A4", "varId": 139 } }
             ]
           }
         }
@@ -2649,16 +2603,25 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A3", "varId": 144 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A3", "varId": 145 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 142 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 144 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 147 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.fold" },
-                  { "id": "var", "cnt": { "name": "A4", "varId": 146 } },
+                  { "id": "var", "cnt": { "name": "A4", "varId": 143 } },
                   { "id": "var", "cnt": { "name": "A2", "varId": 147 } },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 144 } },
-                  { "id": "var", "cnt": { "name": "A5", "varId": 145 } }
+                  { "id": "var", "cnt": { "name": "A3", "varId": 145 } },
+                  { "id": "var", "cnt": { "name": "A5", "varId": 146 } }
                 ]
               }
             ]
@@ -2673,12 +2636,13 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 142 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 142 } },
+                  { "id": "var", "cnt": { "name": "A4", "varId": 143 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A1", "varId": 143 } },
-              { "id": "var", "cnt": { "name": "A3", "varId": 144 } },
-              { "id": "var", "cnt": { "name": "A5", "varId": 145 } }
+              { "id": "var", "cnt": { "name": "A1", "varId": 144 } },
+              { "id": "var", "cnt": { "name": "A3", "varId": 145 } },
+              { "id": "var", "cnt": { "name": "A5", "varId": 146 } }
             ]
           }
         }
@@ -2723,13 +2687,22 @@
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.fold-right" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 153 } },
-                  { "id": "var", "cnt": { "name": "A1", "varId": 150 } },
-                  { "id": "var", "cnt": { "name": "A2", "varId": 151 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 150 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 151 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 152 } },
                   { "id": "var", "cnt": { "name": "A3", "varId": 154 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A2", "varId": 151 } }
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A2", "varId": 152 } },
+                  { "id": "var", "cnt": { "name": "A4", "varId": 149 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 154 } },
+                  { "id": "var", "cnt": { "name": "A5", "varId": 153 } }
+                ]
+              }
             ]
           },
           "args": {
@@ -2742,12 +2715,13 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A4", "varId": 149 } }
+                  { "id": "var", "cnt": { "name": "A4", "varId": 149 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 150 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A1", "varId": 150 } },
-              { "id": "var", "cnt": { "name": "A2", "varId": 151 } },
-              { "id": "var", "cnt": { "name": "A5", "varId": 152 } }
+              { "id": "var", "cnt": { "name": "A1", "varId": 151 } },
+              { "id": "var", "cnt": { "name": "A2", "varId": 152 } },
+              { "id": "var", "cnt": { "name": "A5", "varId": 153 } }
             ]
           }
         }
@@ -2777,7 +2751,11 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "discard" }
+                ]
               },
               { "id": "discard" },
               { "id": "discard" },
@@ -2810,7 +2788,11 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "discard" }
+                ]
               },
               { "id": "const", "cnt": "[]" },
               { "id": "discard" },
@@ -2856,17 +2838,27 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A4", "varId": 159 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A4", "varId": 161 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 156 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 158 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 160 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 163 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.fold2" },
-                  { "id": "var", "cnt": { "name": "A5", "varId": 161 } },
-                  { "id": "var", "cnt": { "name": "A6", "varId": 162 } },
+                  { "id": "var", "cnt": { "name": "A5", "varId": 157 } },
+                  { "id": "var", "cnt": { "name": "A6", "varId": 159 } },
                   { "id": "var", "cnt": { "name": "A3", "varId": 163 } },
-                  { "id": "var", "cnt": { "name": "A4", "varId": 159 } },
-                  { "id": "var", "cnt": { "name": "A7", "varId": 160 } }
+                  { "id": "var", "cnt": { "name": "A4", "varId": 161 } },
+                  { "id": "var", "cnt": { "name": "A7", "varId": 162 } }
                 ]
               }
             ]
@@ -2881,7 +2873,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 156 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 156 } },
+                  { "id": "var", "cnt": { "name": "A5", "varId": 157 } }
                 ]
               },
               {
@@ -2889,12 +2882,13 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A1", "varId": 157 } }
+                  { "id": "var", "cnt": { "name": "A1", "varId": 158 } },
+                  { "id": "var", "cnt": { "name": "A6", "varId": 159 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A2", "varId": 158 } },
-              { "id": "var", "cnt": { "name": "A4", "varId": 159 } },
-              { "id": "var", "cnt": { "name": "A7", "varId": 160 } }
+              { "id": "var", "cnt": { "name": "A2", "varId": 160 } },
+              { "id": "var", "cnt": { "name": "A4", "varId": 161 } },
+              { "id": "var", "cnt": { "name": "A7", "varId": 162 } }
             ]
           }
         }
@@ -2933,14 +2927,22 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A2", "varId": 165 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A2", "varId": 166 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 164 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 167 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.map" },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 167 } },
-                  { "id": "var", "cnt": { "name": "A2", "varId": 165 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 165 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 166 } },
                   { "id": "var", "cnt": { "name": "A4", "varId": 168 } }
                 ]
               }
@@ -2956,16 +2958,18 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 164 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 164 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 165 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A2", "varId": 165 } },
+              { "id": "var", "cnt": { "name": "A2", "varId": 166 } },
               {
                 "id": "app",
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A1", "varId": 166 } }
+                  { "id": "var", "cnt": { "name": "A1", "varId": 167 } },
+                  { "id": "var", "cnt": { "name": "A4", "varId": 168 } }
                 ]
               }
             ]
@@ -3038,19 +3042,28 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A3", "varId": 174 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A3", "varId": 175 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 174 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 172 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 176 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "is" },
-                  { "id": "var", "cnt": { "name": "A4", "varId": 176 } },
+                  { "id": "var", "cnt": { "name": "A4", "varId": 178 } },
                   {
                     "id": "app",
                     "is_infix": true,
                     "cnt": [
                       { "id": "const", "cnt": "+" },
-                      { "id": "var", "cnt": { "name": "A0", "varId": 173 } },
+                      { "id": "var", "cnt": { "name": "A0", "varId": 174 } },
                       { "id": "string", "cnt": "1" }
                     ]
                   }
@@ -3061,10 +3074,10 @@
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.map-i.aux" },
-                  { "id": "var", "cnt": { "name": "A5", "varId": 177 } },
-                  { "id": "var", "cnt": { "name": "A4", "varId": 176 } },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 174 } },
-                  { "id": "var", "cnt": { "name": "A6", "varId": 178 } }
+                  { "id": "var", "cnt": { "name": "A5", "varId": 173 } },
+                  { "id": "var", "cnt": { "name": "A4", "varId": 178 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 175 } },
+                  { "id": "var", "cnt": { "name": "A6", "varId": 177 } }
                 ]
               }
             ]
@@ -3079,17 +3092,19 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A1", "varId": 172 } }
+                  { "id": "var", "cnt": { "name": "A1", "varId": 172 } },
+                  { "id": "var", "cnt": { "name": "A5", "varId": 173 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A0", "varId": 173 } },
-              { "id": "var", "cnt": { "name": "A3", "varId": 174 } },
+              { "id": "var", "cnt": { "name": "A0", "varId": 174 } },
+              { "id": "var", "cnt": { "name": "A3", "varId": 175 } },
               {
                 "id": "app",
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A2", "varId": 175 } }
+                  { "id": "var", "cnt": { "name": "A2", "varId": 176 } },
+                  { "id": "var", "cnt": { "name": "A6", "varId": 177 } }
                 ]
               }
             ]
@@ -3130,19 +3145,23 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A2", "varId": 180 } },
               {
                 "id": "app",
                 "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A2", "varId": 181 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 179 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 182 } }
+                ]
               },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.map-filter" },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 182 } },
-                  { "id": "var", "cnt": { "name": "A2", "varId": 180 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 180 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 181 } },
                   { "id": "var", "cnt": { "name": "A4", "varId": 183 } }
                 ]
               }
@@ -3158,16 +3177,18 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 179 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 179 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 180 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A2", "varId": 180 } },
+              { "id": "var", "cnt": { "name": "A2", "varId": 181 } },
               {
                 "id": "app",
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A1", "varId": 181 } }
+                  { "id": "var", "cnt": { "name": "A1", "varId": 182 } },
+                  { "id": "var", "cnt": { "name": "A4", "varId": 183 } }
                 ]
               }
             ]
@@ -3187,9 +3208,9 @@
             "is_infix": false,
             "cnt": [
               { "id": "const", "cnt": "std.map-filter" },
-              { "id": "var", "cnt": { "name": "A0", "varId": 186 } },
-              { "id": "var", "cnt": { "name": "A1", "varId": 184 } },
-              { "id": "var", "cnt": { "name": "A2", "varId": 185 } }
+              { "id": "var", "cnt": { "name": "A0", "varId": 184 } },
+              { "id": "var", "cnt": { "name": "A1", "varId": 185 } },
+              { "id": "var", "cnt": { "name": "A2", "varId": 186 } }
             ]
           },
           "args": {
@@ -3200,10 +3221,14 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 184 } }
+                ]
               },
-              { "id": "var", "cnt": { "name": "A1", "varId": 184 } },
-              { "id": "var", "cnt": { "name": "A2", "varId": 185 } }
+              { "id": "var", "cnt": { "name": "A1", "varId": 185 } },
+              { "id": "var", "cnt": { "name": "A2", "varId": 186 } }
             ]
           }
         }
@@ -3233,7 +3258,11 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "discard" }
+                ]
               },
               { "id": "discard" },
               { "id": "discard" }
@@ -3265,7 +3294,11 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "discard" }
+                ]
               },
               { "id": "const", "cnt": "[]" },
               { "id": "discard" },
@@ -3309,15 +3342,24 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A3", "varId": 189 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A3", "varId": 191 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 187 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 189 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 192 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.map2" },
-                  { "id": "var", "cnt": { "name": "A4", "varId": 191 } },
-                  { "id": "var", "cnt": { "name": "A5", "varId": 192 } },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 189 } },
+                  { "id": "var", "cnt": { "name": "A4", "varId": 188 } },
+                  { "id": "var", "cnt": { "name": "A5", "varId": 190 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 191 } },
                   { "id": "var", "cnt": { "name": "A6", "varId": 193 } }
                 ]
               }
@@ -3333,7 +3375,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 187 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 187 } },
+                  { "id": "var", "cnt": { "name": "A4", "varId": 188 } }
                 ]
               },
               {
@@ -3341,16 +3384,18 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A1", "varId": 188 } }
+                  { "id": "var", "cnt": { "name": "A1", "varId": 189 } },
+                  { "id": "var", "cnt": { "name": "A5", "varId": 190 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A3", "varId": 189 } },
+              { "id": "var", "cnt": { "name": "A3", "varId": 191 } },
               {
                 "id": "app",
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A2", "varId": 190 } }
+                  { "id": "var", "cnt": { "name": "A2", "varId": 192 } },
+                  { "id": "var", "cnt": { "name": "A6", "varId": 193 } }
                 ]
               }
             ]
@@ -3385,7 +3430,11 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "discard" }
+                ]
               },
               { "id": "discard" },
               { "id": "discard" }
@@ -3420,7 +3469,11 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "discard" }
+                ]
               },
               { "id": "const", "cnt": "[]" },
               { "id": "discard" },
@@ -3464,20 +3517,25 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A3", "varId": 196 } },
               {
                 "id": "app",
                 "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A3", "varId": 198 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 194 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 196 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 199 } }
+                ]
               },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.map2-filter" },
-                  { "id": "var", "cnt": { "name": "A4", "varId": 198 } },
-                  { "id": "var", "cnt": { "name": "A5", "varId": 199 } },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 196 } },
+                  { "id": "var", "cnt": { "name": "A4", "varId": 195 } },
+                  { "id": "var", "cnt": { "name": "A5", "varId": 197 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 198 } },
                   { "id": "var", "cnt": { "name": "A6", "varId": 200 } }
                 ]
               }
@@ -3493,7 +3551,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 194 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 194 } },
+                  { "id": "var", "cnt": { "name": "A4", "varId": 195 } }
                 ]
               },
               {
@@ -3501,16 +3560,18 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A1", "varId": 195 } }
+                  { "id": "var", "cnt": { "name": "A1", "varId": 196 } },
+                  { "id": "var", "cnt": { "name": "A5", "varId": 197 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A3", "varId": 196 } },
+              { "id": "var", "cnt": { "name": "A3", "varId": 198 } },
               {
                 "id": "app",
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A2", "varId": 197 } }
+                  { "id": "var", "cnt": { "name": "A2", "varId": 199 } },
+                  { "id": "var", "cnt": { "name": "A6", "varId": 200 } }
                 ]
               }
             ]
@@ -3530,10 +3591,10 @@
             "is_infix": false,
             "cnt": [
               { "id": "const", "cnt": "std.map2-filter" },
-              { "id": "var", "cnt": { "name": "A0", "varId": 203 } },
-              { "id": "var", "cnt": { "name": "A1", "varId": 204 } },
-              { "id": "var", "cnt": { "name": "A2", "varId": 201 } },
-              { "id": "var", "cnt": { "name": "A3", "varId": 202 } }
+              { "id": "var", "cnt": { "name": "A0", "varId": 201 } },
+              { "id": "var", "cnt": { "name": "A1", "varId": 202 } },
+              { "id": "var", "cnt": { "name": "A2", "varId": 203 } },
+              { "id": "var", "cnt": { "name": "A3", "varId": 204 } }
             ]
           },
           "args": {
@@ -3544,15 +3605,23 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 201 } }
+                ]
               },
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 202 } }
+                ]
               },
-              { "id": "var", "cnt": { "name": "A2", "varId": 201 } },
-              { "id": "var", "cnt": { "name": "A3", "varId": 202 } }
+              { "id": "var", "cnt": { "name": "A2", "varId": 203 } },
+              { "id": "var", "cnt": { "name": "A3", "varId": 204 } }
             ]
           }
         }
@@ -3570,7 +3639,16 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A3", "varId": 206 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A3", "varId": 207 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 205 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 208 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 211 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": false,
@@ -3581,7 +3659,7 @@
                     "is_infix": true,
                     "cnt": [
                       { "id": "const", "cnt": "=" },
-                      { "id": "var", "cnt": { "name": "A2", "varId": 209 } },
+                      { "id": "var", "cnt": { "name": "A2", "varId": 211 } },
                       { "id": "const", "cnt": "ok" }
                     ]
                   },
@@ -3590,10 +3668,10 @@
                     "is_infix": false,
                     "cnt": [
                       { "id": "const", "cnt": "std.map-ok" },
-                      { "id": "var", "cnt": { "name": "A4", "varId": 210 } },
-                      { "id": "var", "cnt": { "name": "A3", "varId": 206 } },
-                      { "id": "var", "cnt": { "name": "A5", "varId": 211 } },
-                      { "id": "var", "cnt": { "name": "A6", "varId": 208 } }
+                      { "id": "var", "cnt": { "name": "A4", "varId": 206 } },
+                      { "id": "var", "cnt": { "name": "A3", "varId": 207 } },
+                      { "id": "var", "cnt": { "name": "A5", "varId": 209 } },
+                      { "id": "var", "cnt": { "name": "A6", "varId": 210 } }
                     ]
                   },
                   {
@@ -3601,8 +3679,8 @@
                     "is_infix": true,
                     "cnt": [
                       { "id": "const", "cnt": "=" },
-                      { "id": "var", "cnt": { "name": "A6", "varId": 208 } },
-                      { "id": "var", "cnt": { "name": "A2", "varId": 209 } }
+                      { "id": "var", "cnt": { "name": "A6", "varId": 210 } },
+                      { "id": "var", "cnt": { "name": "A2", "varId": 211 } }
                     ]
                   }
                 ]
@@ -3619,19 +3697,21 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 205 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 205 } },
+                  { "id": "var", "cnt": { "name": "A4", "varId": 206 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A3", "varId": 206 } },
+              { "id": "var", "cnt": { "name": "A3", "varId": 207 } },
               {
                 "id": "app",
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A1", "varId": 207 } }
+                  { "id": "var", "cnt": { "name": "A1", "varId": 208 } },
+                  { "id": "var", "cnt": { "name": "A5", "varId": 209 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A6", "varId": 208 } }
+              { "id": "var", "cnt": { "name": "A6", "varId": 210 } }
             ]
           }
         }
@@ -3694,17 +3774,27 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A4", "varId": 215 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A4", "varId": 216 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 213 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 215 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 217 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 220 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.fold-map" },
-                  { "id": "var", "cnt": { "name": "A5", "varId": 218 } },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 219 } },
-                  { "id": "var", "cnt": { "name": "A4", "varId": 215 } },
-                  { "id": "var", "cnt": { "name": "A6", "varId": 220 } },
-                  { "id": "var", "cnt": { "name": "A7", "varId": 217 } }
+                  { "id": "var", "cnt": { "name": "A5", "varId": 214 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 220 } },
+                  { "id": "var", "cnt": { "name": "A4", "varId": 216 } },
+                  { "id": "var", "cnt": { "name": "A6", "varId": 218 } },
+                  { "id": "var", "cnt": { "name": "A7", "varId": 219 } }
                 ]
               }
             ]
@@ -3719,20 +3809,22 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 213 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 213 } },
+                  { "id": "var", "cnt": { "name": "A5", "varId": 214 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A1", "varId": 214 } },
-              { "id": "var", "cnt": { "name": "A4", "varId": 215 } },
+              { "id": "var", "cnt": { "name": "A1", "varId": 215 } },
+              { "id": "var", "cnt": { "name": "A4", "varId": 216 } },
               {
                 "id": "app",
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A2", "varId": 216 } }
+                  { "id": "var", "cnt": { "name": "A2", "varId": 217 } },
+                  { "id": "var", "cnt": { "name": "A6", "varId": 218 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A7", "varId": 217 } }
+              { "id": "var", "cnt": { "name": "A7", "varId": 219 } }
             ]
           }
         }
@@ -3766,7 +3858,15 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": { "id": "var", "cnt": { "name": "A2", "varId": 222 } },
+          "hyp": {
+            "id": "app",
+            "is_infix": false,
+            "cnt": [
+              { "id": "var", "cnt": { "name": "A2", "varId": 222 } },
+              { "id": "var", "cnt": { "name": "A0", "varId": 221 } },
+              { "id": "var", "cnt": { "name": "A1", "varId": 223 } }
+            ]
+          },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -3806,11 +3906,7 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": true,
@@ -3833,7 +3929,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 224 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 224 } },
+                  { "id": "discard" }
                 ]
               },
               { "id": "var", "cnt": { "name": "A1", "varId": 225 } }
@@ -3863,17 +3960,13 @@
                   { "id": "string", "cnt": "0" }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "is" },
-                  { "id": "var", "cnt": { "name": "A1", "varId": 228 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 229 } },
                   {
                     "id": "app",
                     "is_infix": true,
@@ -3890,9 +3983,9 @@
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.nth" },
-                  { "id": "var", "cnt": { "name": "A1", "varId": 228 } },
-                  { "id": "var", "cnt": { "name": "A2", "varId": 229 } },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 227 } }
+                  { "id": "var", "cnt": { "name": "A1", "varId": 229 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 227 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 228 } }
                 ]
               }
             ]
@@ -3906,9 +3999,13 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 227 } }
+                ]
               },
-              { "id": "var", "cnt": { "name": "A3", "varId": 227 } }
+              { "id": "var", "cnt": { "name": "A3", "varId": 228 } }
             ]
           }
         }
@@ -3935,11 +4032,7 @@
                   { "id": "string", "cnt": "0" }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
@@ -4017,7 +4110,8 @@
                       { "id": "var", "cnt": { "name": "A0", "varId": 231 } },
                       { "id": "var", "cnt": { "name": "A1", "varId": 232 } }
                     ]
-                  }
+                  },
+                  { "id": "discard" }
                 ]
               },
               { "id": "var", "cnt": { "name": "A0", "varId": 231 } },
@@ -4039,9 +4133,9 @@
             "is_infix": false,
             "cnt": [
               { "id": "const", "cnt": "std.lookup" },
-              { "id": "var", "cnt": { "name": "A0", "varId": 235 } },
-              { "id": "var", "cnt": { "name": "A1", "varId": 233 } },
-              { "id": "var", "cnt": { "name": "A2", "varId": 234 } }
+              { "id": "var", "cnt": { "name": "A0", "varId": 233 } },
+              { "id": "var", "cnt": { "name": "A1", "varId": 234 } },
+              { "id": "var", "cnt": { "name": "A2", "varId": 235 } }
             ]
           },
           "args": {
@@ -4052,10 +4146,14 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 233 } }
+                ]
               },
-              { "id": "var", "cnt": { "name": "A1", "varId": 233 } },
-              { "id": "var", "cnt": { "name": "A2", "varId": 234 } }
+              { "id": "var", "cnt": { "name": "A1", "varId": 234 } },
+              { "id": "var", "cnt": { "name": "A2", "varId": 235 } }
             ]
           }
         }
@@ -4068,11 +4166,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -4091,7 +4185,8 @@
                       { "id": "var", "cnt": { "name": "A0", "varId": 236 } },
                       { "id": "var", "cnt": { "name": "A1", "varId": 237 } }
                     ]
-                  }
+                  },
+                  { "id": "discard" }
                 ]
               },
               { "id": "var", "cnt": { "name": "A0", "varId": 236 } },
@@ -4113,9 +4208,9 @@
             "is_infix": false,
             "cnt": [
               { "id": "const", "cnt": "std.lookup!" },
-              { "id": "var", "cnt": { "name": "A0", "varId": 240 } },
-              { "id": "var", "cnt": { "name": "A1", "varId": 238 } },
-              { "id": "var", "cnt": { "name": "A2", "varId": 239 } }
+              { "id": "var", "cnt": { "name": "A0", "varId": 238 } },
+              { "id": "var", "cnt": { "name": "A1", "varId": 239 } },
+              { "id": "var", "cnt": { "name": "A2", "varId": 240 } }
             ]
           },
           "args": {
@@ -4126,10 +4221,14 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 238 } }
+                ]
               },
-              { "id": "var", "cnt": { "name": "A1", "varId": 238 } },
-              { "id": "var", "cnt": { "name": "A2", "varId": 239 } }
+              { "id": "var", "cnt": { "name": "A1", "varId": 239 } },
+              { "id": "var", "cnt": { "name": "A2", "varId": 240 } }
             ]
           }
         }
@@ -4142,11 +4241,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -4157,7 +4252,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 241 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 241 } },
+                  { "id": "discard" }
                 ]
               },
               { "id": "var", "cnt": { "name": "A0", "varId": 241 } }
@@ -4178,8 +4274,8 @@
             "is_infix": false,
             "cnt": [
               { "id": "const", "cnt": "std.mem!" },
-              { "id": "var", "cnt": { "name": "A0", "varId": 243 } },
-              { "id": "var", "cnt": { "name": "A1", "varId": 242 } }
+              { "id": "var", "cnt": { "name": "A0", "varId": 242 } },
+              { "id": "var", "cnt": { "name": "A1", "varId": 243 } }
             ]
           },
           "args": {
@@ -4190,9 +4286,13 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 242 } }
+                ]
               },
-              { "id": "var", "cnt": { "name": "A1", "varId": 242 } }
+              { "id": "var", "cnt": { "name": "A1", "varId": 243 } }
             ]
           }
         }
@@ -4216,7 +4316,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 244 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 244 } },
+                  { "id": "discard" }
                 ]
               },
               { "id": "var", "cnt": { "name": "A0", "varId": 244 } }
@@ -4237,8 +4338,8 @@
             "is_infix": false,
             "cnt": [
               { "id": "const", "cnt": "std.mem" },
-              { "id": "var", "cnt": { "name": "A0", "varId": 246 } },
-              { "id": "var", "cnt": { "name": "A1", "varId": 245 } }
+              { "id": "var", "cnt": { "name": "A0", "varId": 245 } },
+              { "id": "var", "cnt": { "name": "A1", "varId": 246 } }
             ]
           },
           "args": {
@@ -4249,9 +4350,13 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 245 } }
+                ]
               },
-              { "id": "var", "cnt": { "name": "A1", "varId": 245 } }
+              { "id": "var", "cnt": { "name": "A1", "varId": 246 } }
             ]
           }
         }
@@ -4269,12 +4374,15 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A1", "varId": 248 } },
               {
                 "id": "app",
                 "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              }
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A1", "varId": 248 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 247 } }
+                ]
+              },
+              { "id": "const", "cnt": "!" }
             ]
           },
           "args": {
@@ -4287,7 +4395,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 247 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 247 } },
+                  { "id": "discard" }
                 ]
               },
               { "id": "var", "cnt": { "name": "A1", "varId": 248 } }
@@ -4308,8 +4417,8 @@
             "is_infix": false,
             "cnt": [
               { "id": "const", "cnt": "std.exists!" },
-              { "id": "var", "cnt": { "name": "A0", "varId": 250 } },
-              { "id": "var", "cnt": { "name": "A1", "varId": 249 } }
+              { "id": "var", "cnt": { "name": "A0", "varId": 249 } },
+              { "id": "var", "cnt": { "name": "A1", "varId": 250 } }
             ]
           },
           "args": {
@@ -4320,9 +4429,13 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 249 } }
+                ]
               },
-              { "id": "var", "cnt": { "name": "A1", "varId": 249 } }
+              { "id": "var", "cnt": { "name": "A1", "varId": 250 } }
             ]
           }
         }
@@ -4335,7 +4448,14 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": { "id": "var", "cnt": { "name": "A1", "varId": 252 } },
+          "hyp": {
+            "id": "app",
+            "is_infix": false,
+            "cnt": [
+              { "id": "var", "cnt": { "name": "A1", "varId": 252 } },
+              { "id": "var", "cnt": { "name": "A0", "varId": 251 } }
+            ]
+          },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -4346,7 +4466,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 251 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 251 } },
+                  { "id": "discard" }
                 ]
               },
               { "id": "var", "cnt": { "name": "A1", "varId": 252 } }
@@ -4367,8 +4488,8 @@
             "is_infix": false,
             "cnt": [
               { "id": "const", "cnt": "std.exists" },
-              { "id": "var", "cnt": { "name": "A0", "varId": 254 } },
-              { "id": "var", "cnt": { "name": "A1", "varId": 253 } }
+              { "id": "var", "cnt": { "name": "A0", "varId": 253 } },
+              { "id": "var", "cnt": { "name": "A1", "varId": 254 } }
             ]
           },
           "args": {
@@ -4379,9 +4500,13 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 253 } }
+                ]
               },
-              { "id": "var", "cnt": { "name": "A1", "varId": 253 } }
+              { "id": "var", "cnt": { "name": "A1", "varId": 254 } }
             ]
           }
         }
@@ -4411,7 +4536,11 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "discard" }
+                ]
               },
               { "id": "discard" }
             ]
@@ -4442,7 +4571,11 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "discard" }
+                ]
               },
               { "id": "const", "cnt": "[]" },
               { "id": "discard" }
@@ -4458,7 +4591,15 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": { "id": "var", "cnt": { "name": "A2", "varId": 257 } },
+          "hyp": {
+            "id": "app",
+            "is_infix": false,
+            "cnt": [
+              { "id": "var", "cnt": { "name": "A2", "varId": 257 } },
+              { "id": "var", "cnt": { "name": "A0", "varId": 255 } },
+              { "id": "var", "cnt": { "name": "A1", "varId": 256 } }
+            ]
+          },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -4469,7 +4610,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 255 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 255 } },
+                  { "id": "discard" }
                 ]
               },
               {
@@ -4477,7 +4619,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A1", "varId": 256 } }
+                  { "id": "var", "cnt": { "name": "A1", "varId": 256 } },
+                  { "id": "discard" }
                 ]
               },
               { "id": "var", "cnt": { "name": "A2", "varId": 257 } }
@@ -4498,9 +4641,9 @@
             "is_infix": false,
             "cnt": [
               { "id": "const", "cnt": "std.exists2" },
-              { "id": "var", "cnt": { "name": "A0", "varId": 259 } },
-              { "id": "var", "cnt": { "name": "A1", "varId": 260 } },
-              { "id": "var", "cnt": { "name": "A2", "varId": 258 } }
+              { "id": "var", "cnt": { "name": "A0", "varId": 258 } },
+              { "id": "var", "cnt": { "name": "A1", "varId": 259 } },
+              { "id": "var", "cnt": { "name": "A2", "varId": 260 } }
             ]
           },
           "args": {
@@ -4511,14 +4654,22 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 258 } }
+                ]
               },
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 259 } }
+                ]
               },
-              { "id": "var", "cnt": { "name": "A2", "varId": 258 } }
+              { "id": "var", "cnt": { "name": "A2", "varId": 260 } }
             ]
           }
         }
@@ -4556,14 +4707,21 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A1", "varId": 262 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A1", "varId": 263 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 261 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.forall" },
-                  { "id": "var", "cnt": { "name": "A2", "varId": 263 } },
-                  { "id": "var", "cnt": { "name": "A1", "varId": 262 } }
+                  { "id": "var", "cnt": { "name": "A2", "varId": 262 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 263 } }
                 ]
               }
             ]
@@ -4578,10 +4736,11 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 261 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 261 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 262 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A1", "varId": 262 } }
+              { "id": "var", "cnt": { "name": "A1", "varId": 263 } }
             ]
           }
         }
@@ -4599,7 +4758,15 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A2", "varId": 265 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A2", "varId": 266 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 264 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 268 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": false,
@@ -4610,7 +4777,7 @@
                     "is_infix": true,
                     "cnt": [
                       { "id": "const", "cnt": "=" },
-                      { "id": "var", "cnt": { "name": "A1", "varId": 267 } },
+                      { "id": "var", "cnt": { "name": "A1", "varId": 268 } },
                       { "id": "const", "cnt": "ok" }
                     ]
                   },
@@ -4619,9 +4786,9 @@
                     "is_infix": false,
                     "cnt": [
                       { "id": "const", "cnt": "std.forall-ok" },
-                      { "id": "var", "cnt": { "name": "A3", "varId": 268 } },
-                      { "id": "var", "cnt": { "name": "A2", "varId": 265 } },
-                      { "id": "var", "cnt": { "name": "A4", "varId": 266 } }
+                      { "id": "var", "cnt": { "name": "A3", "varId": 265 } },
+                      { "id": "var", "cnt": { "name": "A2", "varId": 266 } },
+                      { "id": "var", "cnt": { "name": "A4", "varId": 267 } }
                     ]
                   },
                   {
@@ -4629,8 +4796,8 @@
                     "is_infix": true,
                     "cnt": [
                       { "id": "const", "cnt": "=" },
-                      { "id": "var", "cnt": { "name": "A4", "varId": 266 } },
-                      { "id": "var", "cnt": { "name": "A1", "varId": 267 } }
+                      { "id": "var", "cnt": { "name": "A4", "varId": 267 } },
+                      { "id": "var", "cnt": { "name": "A1", "varId": 268 } }
                     ]
                   }
                 ]
@@ -4647,11 +4814,12 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 264 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 264 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 265 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A2", "varId": 265 } },
-              { "id": "var", "cnt": { "name": "A4", "varId": 266 } }
+              { "id": "var", "cnt": { "name": "A2", "varId": 266 } },
+              { "id": "var", "cnt": { "name": "A4", "varId": 267 } }
             ]
           }
         }
@@ -4702,7 +4870,11 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "discard" }
+                ]
               },
               { "id": "discard" }
             ]
@@ -4733,7 +4905,11 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "discard" }
+                ]
               },
               { "id": "const", "cnt": "[]" },
               { "id": "discard" }
@@ -4754,15 +4930,23 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A2", "varId": 271 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A2", "varId": 273 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 269 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 271 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.forall2" },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 272 } },
-                  { "id": "var", "cnt": { "name": "A4", "varId": 273 } },
-                  { "id": "var", "cnt": { "name": "A2", "varId": 271 } }
+                  { "id": "var", "cnt": { "name": "A3", "varId": 270 } },
+                  { "id": "var", "cnt": { "name": "A4", "varId": 272 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 273 } }
                 ]
               }
             ]
@@ -4777,7 +4961,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 269 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 269 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 270 } }
                 ]
               },
               {
@@ -4785,10 +4970,11 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A1", "varId": 270 } }
+                  { "id": "var", "cnt": { "name": "A1", "varId": 271 } },
+                  { "id": "var", "cnt": { "name": "A4", "varId": 272 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A2", "varId": 271 } }
+              { "id": "var", "cnt": { "name": "A2", "varId": 273 } }
             ]
           }
         }
@@ -4853,19 +5039,30 @@
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "if" },
-                  { "id": "var", "cnt": { "name": "A1", "varId": 275 } },
+                  {
+                    "id": "app",
+                    "is_infix": false,
+                    "cnt": [
+                      { "id": "var", "cnt": { "name": "A1", "varId": 276 } },
+                      { "id": "var", "cnt": { "name": "A0", "varId": 274 } }
+                    ]
+                  },
                   {
                     "id": "app",
                     "is_infix": true,
                     "cnt": [
                       { "id": "const", "cnt": "=" },
-                      { "id": "var", "cnt": { "name": "A2", "varId": 276 } },
+                      { "id": "var", "cnt": { "name": "A2", "varId": 277 } },
                       {
                         "id": "app",
                         "is_infix": true,
                         "cnt": [
                           { "id": "const", "cnt": "::" },
-                          { "id": "var", "cnt": { "name": "A0", "varId": 274 } }
+                          {
+                            "id": "var",
+                            "cnt": { "name": "A0", "varId": 274 }
+                          },
+                          { "id": "var", "cnt": { "name": "A3", "varId": 278 } }
                         ]
                       }
                     ]
@@ -4875,8 +5072,8 @@
                     "is_infix": true,
                     "cnt": [
                       { "id": "const", "cnt": "=" },
-                      { "id": "var", "cnt": { "name": "A2", "varId": 276 } },
-                      { "id": "var", "cnt": { "name": "A3", "varId": 277 } }
+                      { "id": "var", "cnt": { "name": "A2", "varId": 277 } },
+                      { "id": "var", "cnt": { "name": "A3", "varId": 278 } }
                     ]
                   }
                 ]
@@ -4886,9 +5083,9 @@
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.filter" },
-                  { "id": "var", "cnt": { "name": "A4", "varId": 278 } },
-                  { "id": "var", "cnt": { "name": "A1", "varId": 275 } },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 277 } }
+                  { "id": "var", "cnt": { "name": "A4", "varId": 275 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 276 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 278 } }
                 ]
               }
             ]
@@ -4903,11 +5100,12 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 274 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 274 } },
+                  { "id": "var", "cnt": { "name": "A4", "varId": 275 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A1", "varId": 275 } },
-              { "id": "var", "cnt": { "name": "A2", "varId": 276 } }
+              { "id": "var", "cnt": { "name": "A1", "varId": 276 } },
+              { "id": "var", "cnt": { "name": "A2", "varId": 277 } }
             ]
           }
         }
@@ -4947,21 +5145,24 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A1", "varId": 280 } },
               {
                 "id": "app",
                 "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A1", "varId": 281 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 279 } }
+                ]
               },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.partition" },
-                  { "id": "var", "cnt": { "name": "A2", "varId": 282 } },
-                  { "id": "var", "cnt": { "name": "A1", "varId": 280 } },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 283 } },
-                  { "id": "var", "cnt": { "name": "A4", "varId": 281 } }
+                  { "id": "var", "cnt": { "name": "A2", "varId": 280 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 281 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 282 } },
+                  { "id": "var", "cnt": { "name": "A4", "varId": 283 } }
                 ]
               }
             ]
@@ -4976,19 +5177,21 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 279 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 279 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 280 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A1", "varId": 280 } },
+              { "id": "var", "cnt": { "name": "A1", "varId": 281 } },
               {
                 "id": "app",
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 279 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 279 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 282 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A4", "varId": 281 } }
+              { "id": "var", "cnt": { "name": "A4", "varId": 283 } }
             ]
           }
         }
@@ -5006,9 +5209,9 @@
             "is_infix": false,
             "cnt": [
               { "id": "const", "cnt": "std.partition" },
-              { "id": "var", "cnt": { "name": "A0", "varId": 287 } },
-              { "id": "var", "cnt": { "name": "A1", "varId": 285 } },
-              { "id": "var", "cnt": { "name": "A2", "varId": 286 } },
+              { "id": "var", "cnt": { "name": "A0", "varId": 285 } },
+              { "id": "var", "cnt": { "name": "A1", "varId": 286 } },
+              { "id": "var", "cnt": { "name": "A2", "varId": 287 } },
               { "id": "var", "cnt": { "name": "A3", "varId": 288 } }
             ]
           },
@@ -5022,17 +5225,19 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A4", "varId": 284 } }
+                  { "id": "var", "cnt": { "name": "A4", "varId": 284 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 285 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A1", "varId": 285 } },
-              { "id": "var", "cnt": { "name": "A2", "varId": 286 } },
+              { "id": "var", "cnt": { "name": "A1", "varId": 286 } },
+              { "id": "var", "cnt": { "name": "A2", "varId": 287 } },
               {
                 "id": "app",
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A4", "varId": 284 } }
+                  { "id": "var", "cnt": { "name": "A4", "varId": 284 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 288 } }
                 ]
               }
             ]
@@ -5063,7 +5268,11 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "discard" }
+                ]
               },
               { "id": "const", "cnt": "[]" },
               { "id": "discard" }
@@ -5096,7 +5305,11 @@
               {
                 "id": "app",
                 "is_infix": true,
-                "cnt": [{ "id": "const", "cnt": "::" }, { "id": "discard" }]
+                "cnt": [
+                  { "id": "const", "cnt": "::" },
+                  { "id": "discard" },
+                  { "id": "discard" }
+                ]
               },
               { "id": "discard" }
             ]
@@ -5116,7 +5329,7 @@
             "is_infix": false,
             "cnt": [
               { "id": "const", "cnt": "std.zip" },
-              { "id": "var", "cnt": { "name": "A0", "varId": 291 } },
+              { "id": "var", "cnt": { "name": "A0", "varId": 290 } },
               { "id": "var", "cnt": { "name": "A1", "varId": 292 } },
               { "id": "var", "cnt": { "name": "A2", "varId": 293 } }
             ]
@@ -5131,7 +5344,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 289 } }
+                  { "id": "var", "cnt": { "name": "A3", "varId": 289 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 290 } }
                 ]
               },
               {
@@ -5139,7 +5353,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A4", "varId": 290 } }
+                  { "id": "var", "cnt": { "name": "A4", "varId": 291 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 292 } }
                 ]
               },
               {
@@ -5153,9 +5368,10 @@
                     "cnt": [
                       { "id": "const", "cnt": "pr" },
                       { "id": "var", "cnt": { "name": "A3", "varId": 289 } },
-                      { "id": "var", "cnt": { "name": "A4", "varId": 290 } }
+                      { "id": "var", "cnt": { "name": "A4", "varId": 291 } }
                     ]
-                  }
+                  },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 293 } }
                 ]
               }
             ]
@@ -5240,7 +5456,8 @@
                       { "id": "var", "cnt": { "name": "A3", "varId": 294 } },
                       { "id": "var", "cnt": { "name": "A4", "varId": 295 } }
                     ]
-                  }
+                  },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 296 } }
                 ]
               },
               {
@@ -5248,7 +5465,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 294 } }
+                  { "id": "var", "cnt": { "name": "A3", "varId": 294 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 297 } }
                 ]
               },
               {
@@ -5256,7 +5474,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A4", "varId": 295 } }
+                  { "id": "var", "cnt": { "name": "A4", "varId": 295 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 298 } }
                 ]
               }
             ]
@@ -5281,7 +5500,7 @@
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.flatten" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 301 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 300 } },
                   { "id": "var", "cnt": { "name": "A1", "varId": 302 } }
                 ]
               },
@@ -5292,7 +5511,7 @@
                   { "id": "const", "cnt": "std.append" },
                   { "id": "var", "cnt": { "name": "A2", "varId": 299 } },
                   { "id": "var", "cnt": { "name": "A1", "varId": 302 } },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 300 } }
+                  { "id": "var", "cnt": { "name": "A3", "varId": 301 } }
                 ]
               }
             ]
@@ -5307,10 +5526,11 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A2", "varId": 299 } }
+                  { "id": "var", "cnt": { "name": "A2", "varId": 299 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 300 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A3", "varId": 300 } }
+              { "id": "var", "cnt": { "name": "A3", "varId": 301 } }
             ]
           }
         }
@@ -5362,11 +5582,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -5397,7 +5613,7 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "is" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 305 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 306 } },
                   {
                     "id": "app",
                     "is_infix": true,
@@ -5414,9 +5630,9 @@
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.list.make" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 305 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 306 } },
                   { "id": "var", "cnt": { "name": "A2", "varId": 304 } },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 306 } }
+                  { "id": "var", "cnt": { "name": "A3", "varId": 305 } }
                 ]
               }
             ]
@@ -5433,7 +5649,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A2", "varId": 304 } }
+                  { "id": "var", "cnt": { "name": "A2", "varId": 304 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 305 } }
                 ]
               }
             ]
@@ -5503,11 +5720,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -5534,13 +5747,21 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A2", "varId": 313 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A2", "varId": 313 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 311 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 314 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "is" },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 315 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 316 } },
                   {
                     "id": "app",
                     "is_infix": true,
@@ -5557,10 +5778,10 @@
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.list.init.aux" },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 315 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 316 } },
                   { "id": "var", "cnt": { "name": "A4", "varId": 312 } },
                   { "id": "var", "cnt": { "name": "A2", "varId": 313 } },
-                  { "id": "var", "cnt": { "name": "A5", "varId": 316 } }
+                  { "id": "var", "cnt": { "name": "A5", "varId": 315 } }
                 ]
               }
             ]
@@ -5578,7 +5799,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A1", "varId": 314 } }
+                  { "id": "var", "cnt": { "name": "A1", "varId": 314 } },
+                  { "id": "var", "cnt": { "name": "A5", "varId": 315 } }
                 ]
               }
             ]
@@ -5603,17 +5825,19 @@
                 "id": "quantification",
                 "cnt": {
                   "type": "binder",
-                  "names": [
-                    { "id": "var", "cnt": { "name": "c0", "varId": 319 } }
-                  ],
+                  "names": {
+                    "id": "var",
+                    "cnt": { "name": "c0", "varId": 319 }
+                  },
                   "body": [
                     {
                       "id": "quantification",
                       "cnt": {
                         "type": "binder",
-                        "names": [
-                          { "id": "var", "cnt": { "name": "c1", "varId": 320 } }
-                        ],
+                        "names": {
+                          "id": "var",
+                          "cnt": { "name": "c1", "varId": 320 }
+                        },
                         "body": [
                           {
                             "id": "app",
@@ -5679,11 +5903,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -5695,7 +5915,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 321 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 321 } },
+                  { "id": "const", "cnt": "[]" }
                 ]
               },
               {
@@ -5703,7 +5924,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 321 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 321 } },
+                  { "id": "const", "cnt": "[]" }
                 ]
               }
             ]
@@ -5739,7 +5961,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 323 } }
+                  { "id": "var", "cnt": { "name": "A3", "varId": 323 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 324 } }
                 ]
               },
               {
@@ -5748,7 +5971,15 @@
                 "cnt": [
                   { "id": "const", "cnt": "::" },
                   { "id": "var", "cnt": { "name": "A3", "varId": 323 } },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 322 } }
+                  {
+                    "id": "app",
+                    "is_infix": true,
+                    "cnt": [
+                      { "id": "const", "cnt": "::" },
+                      { "id": "var", "cnt": { "name": "A0", "varId": 322 } },
+                      { "id": "var", "cnt": { "name": "A2", "varId": 325 } }
+                    ]
+                  }
                 ]
               }
             ]
@@ -5763,7 +5994,15 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": { "id": "var", "cnt": { "name": "A2", "varId": 326 } },
+          "hyp": {
+            "id": "app",
+            "is_infix": false,
+            "cnt": [
+              { "id": "var", "cnt": { "name": "A2", "varId": 326 } },
+              { "id": "var", "cnt": { "name": "A0", "varId": 328 } },
+              { "id": "var", "cnt": { "name": "A1", "varId": 327 } }
+            ]
+          },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -5869,11 +6108,7 @@
             "cnt": [
               { "id": "const", "cnt": "," },
               { "id": "var", "cnt": { "name": "A0", "varId": 333 } },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
@@ -5894,7 +6129,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 333 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 333 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 334 } }
                 ]
               }
             ]
@@ -5934,12 +6170,15 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A1", "varId": 336 } },
               {
                 "id": "app",
                 "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A1", "varId": 336 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 338 } }
+                ]
               },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
@@ -5950,7 +6189,7 @@
                     "is_infix": true,
                     "cnt": [
                       { "id": "const", "cnt": "=" },
-                      { "id": "var", "cnt": { "name": "A0", "varId": 337 } },
+                      { "id": "var", "cnt": { "name": "A0", "varId": 338 } },
                       { "id": "const", "cnt": "ok" }
                     ]
                   },
@@ -5960,7 +6199,7 @@
                     "cnt": [
                       { "id": "const", "cnt": "std.do-ok!" },
                       { "id": "var", "cnt": { "name": "A2", "varId": 335 } },
-                      { "id": "var", "cnt": { "name": "A3", "varId": 338 } }
+                      { "id": "var", "cnt": { "name": "A3", "varId": 337 } }
                     ]
                   },
                   {
@@ -5969,7 +6208,7 @@
                     "cnt": [
                       { "id": "const", "cnt": "=" },
                       { "id": "var", "cnt": { "name": "A2", "varId": 335 } },
-                      { "id": "var", "cnt": { "name": "A0", "varId": 337 } }
+                      { "id": "var", "cnt": { "name": "A0", "varId": 338 } }
                     ]
                   }
                 ]
@@ -5987,7 +6226,8 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A1", "varId": 336 } }
+                  { "id": "var", "cnt": { "name": "A1", "varId": 336 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 337 } }
                 ]
               }
             ]
@@ -6077,20 +6317,19 @@
                     "id": "quantification",
                     "cnt": {
                       "type": "binder",
-                      "names": [
-                        { "id": "var", "cnt": { "name": "c0", "varId": 343 } }
-                      ],
+                      "names": {
+                        "id": "var",
+                        "cnt": { "name": "c0", "varId": 343 }
+                      },
                       "body": [
                         {
                           "id": "quantification",
                           "cnt": {
                             "type": "binder",
-                            "names": [
-                              {
-                                "id": "var",
-                                "cnt": { "name": "c1", "varId": 344 }
-                              }
-                            ],
+                            "names": {
+                              "id": "var",
+                              "cnt": { "name": "c1", "varId": 344 }
+                            },
                             "body": [
                               {
                                 "id": "app",
@@ -6159,7 +6398,7 @@
               { "id": "const", "cnt": "std.while-ok-do!" },
               {
                 "id": "app",
-                "is_infix": false,
+                "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "as" },
                   {
@@ -6213,20 +6452,23 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A1", "varId": 347 } },
               {
                 "id": "app",
                 "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A1", "varId": 347 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 350 } }
+                ]
               },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
                 "cnt": [
                   { "id": "const", "cnt": "std.while-ok-do!" },
-                  { "id": "var", "cnt": { "name": "A0", "varId": 349 } },
-                  { "id": "var", "cnt": { "name": "A2", "varId": 350 } },
-                  { "id": "var", "cnt": { "name": "A3", "varId": 348 } }
+                  { "id": "var", "cnt": { "name": "A0", "varId": 350 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 348 } },
+                  { "id": "var", "cnt": { "name": "A3", "varId": 349 } }
                 ]
               }
             ]
@@ -6242,10 +6484,11 @@
                 "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "::" },
-                  { "id": "var", "cnt": { "name": "A1", "varId": 347 } }
+                  { "id": "var", "cnt": { "name": "A1", "varId": 347 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 348 } }
                 ]
               },
-              { "id": "var", "cnt": { "name": "A3", "varId": 348 } }
+              { "id": "var", "cnt": { "name": "A3", "varId": 349 } }
             ]
           }
         }
@@ -6300,11 +6543,7 @@
                   { "id": "var", "cnt": { "name": "A1", "varId": 354 } }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              }
+              { "id": "const", "cnt": "!" }
             ]
           },
           "args": {
@@ -6850,11 +7089,7 @@
                   { "id": "var", "cnt": { "name": "A5", "varId": 403 } }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
@@ -6932,11 +7167,7 @@
                   { "id": "var", "cnt": { "name": "A1", "varId": 406 } }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
@@ -7064,11 +7295,7 @@
                   { "id": "var", "cnt": { "name": "A5", "varId": 431 } }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
@@ -7146,11 +7373,7 @@
                   { "id": "var", "cnt": { "name": "A1", "varId": 434 } }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
@@ -7314,7 +7537,16 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A3", "varId": 458 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A3", "varId": 458 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 459 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 456 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 462 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": false,
@@ -7337,7 +7569,7 @@
               { "id": "const", "cnt": "std.map.private.add" },
               {
                 "id": "app",
-                "is_infix": false,
+                "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "as" },
                   {
@@ -7560,7 +7792,16 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A3", "varId": 491 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A3", "varId": 491 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 492 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 488 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 494 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": false,
@@ -7704,11 +7945,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -7800,11 +8037,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -7877,11 +8110,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -7902,11 +8131,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -7988,11 +8213,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -8019,7 +8240,16 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A3", "varId": 528 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A3", "varId": 528 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 529 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 525 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 531 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": false,
@@ -8272,7 +8502,8 @@
                           },
                           { "id": "var", "cnt": { "name": "A5", "varId": 554 } }
                         ]
-                      }
+                      },
+                      { "id": "var", "cnt": { "name": "A2", "varId": 558 } }
                     ]
                   },
                   { "id": "var", "cnt": { "name": "A6", "varId": 557 } }
@@ -8899,11 +9130,7 @@
                   { "id": "var", "cnt": { "name": "A5", "varId": 608 } }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
@@ -8981,11 +9208,7 @@
                   { "id": "var", "cnt": { "name": "A1", "varId": 611 } }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
@@ -9113,11 +9336,7 @@
                   { "id": "var", "cnt": { "name": "A5", "varId": 636 } }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
@@ -9195,11 +9414,7 @@
                   { "id": "var", "cnt": { "name": "A1", "varId": 639 } }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
@@ -9363,7 +9578,16 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A3", "varId": 663 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A3", "varId": 663 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 664 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 661 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 667 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": false,
@@ -9386,7 +9610,7 @@
               { "id": "const", "cnt": "std.fmap.private.add" },
               {
                 "id": "app",
-                "is_infix": false,
+                "is_infix": true,
                 "cnt": [
                   { "id": "const", "cnt": "as" },
                   {
@@ -9609,7 +9833,16 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A3", "varId": 696 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A3", "varId": 696 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 697 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 693 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 699 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": false,
@@ -9753,11 +9986,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -9849,11 +10078,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -9926,11 +10151,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -9951,11 +10172,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -10037,11 +10254,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -10068,7 +10281,16 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A3", "varId": 733 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A3", "varId": 733 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 734 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 730 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 736 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": false,
@@ -10321,7 +10543,8 @@
                           },
                           { "id": "var", "cnt": { "name": "A5", "varId": 759 } }
                         ]
-                      }
+                      },
+                      { "id": "var", "cnt": { "name": "A2", "varId": 763 } }
                     ]
                   },
                   { "id": "var", "cnt": { "name": "A6", "varId": 762 } }
@@ -10861,11 +11084,7 @@
                   { "id": "var", "cnt": { "name": "A5", "varId": 805 } }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
@@ -10939,11 +11158,7 @@
                   { "id": "var", "cnt": { "name": "A1", "varId": 808 } }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
@@ -11065,11 +11280,7 @@
                   { "id": "var", "cnt": { "name": "A5", "varId": 828 } }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
@@ -11143,11 +11354,7 @@
                   { "id": "var", "cnt": { "name": "A1", "varId": 831 } }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
@@ -11301,7 +11508,16 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A3", "varId": 852 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A3", "varId": 852 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 853 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 849 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 855 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": false,
@@ -11499,7 +11715,16 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A3", "varId": 877 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A3", "varId": 877 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 878 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 875 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 879 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": false,
@@ -11631,11 +11856,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -11724,11 +11945,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -11796,11 +12013,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -11821,11 +12034,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -11932,7 +12141,16 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A3", "varId": 905 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A3", "varId": 905 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 906 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 903 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 908 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": false,
@@ -12269,7 +12487,8 @@
                     "is_infix": true,
                     "cnt": [
                       { "id": "const", "cnt": "::" },
-                      { "id": "var", "cnt": { "name": "A4", "varId": 933 } }
+                      { "id": "var", "cnt": { "name": "A4", "varId": 933 } },
+                      { "id": "var", "cnt": { "name": "A2", "varId": 937 } }
                     ]
                   },
                   { "id": "var", "cnt": { "name": "A5", "varId": 936 } }
@@ -12899,11 +13118,7 @@
                   { "id": "var", "cnt": { "name": "A5", "varId": 983 } }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
@@ -12977,11 +13192,7 @@
                   { "id": "var", "cnt": { "name": "A1", "varId": 986 } }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
@@ -13103,11 +13314,7 @@
                   { "id": "var", "cnt": { "name": "A5", "varId": 1006 } }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
@@ -13181,11 +13388,7 @@
                   { "id": "var", "cnt": { "name": "A1", "varId": 1009 } }
                 ]
               },
-              {
-                "id": "app",
-                "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
@@ -13339,7 +13542,16 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A3", "varId": 1030 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A3", "varId": 1030 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 1031 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 1027 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 1033 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": false,
@@ -13545,7 +13757,16 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A3", "varId": 1056 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A3", "varId": 1056 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 1057 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 1054 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 1058 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": false,
@@ -13677,11 +13898,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -13770,11 +13987,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -13842,11 +14055,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -13867,11 +14076,7 @@
       "cnt": {
         "id": "clause",
         "cnt": {
-          "hyp": {
-            "id": "app",
-            "is_infix": false,
-            "cnt": [{ "id": "const", "cnt": "!" }]
-          },
+          "hyp": { "id": "const", "cnt": "!" },
           "args": {
             "id": "app",
             "is_infix": false,
@@ -13978,7 +14183,16 @@
             "is_infix": true,
             "cnt": [
               { "id": "const", "cnt": "," },
-              { "id": "var", "cnt": { "name": "A3", "varId": 1084 } },
+              {
+                "id": "app",
+                "is_infix": false,
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A3", "varId": 1084 } },
+                  { "id": "var", "cnt": { "name": "A0", "varId": 1085 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 1082 } },
+                  { "id": "var", "cnt": { "name": "A2", "varId": 1087 } }
+                ]
+              },
               {
                 "id": "app",
                 "is_infix": false,
@@ -14315,7 +14529,8 @@
                     "is_infix": true,
                     "cnt": [
                       { "id": "const", "cnt": "::" },
-                      { "id": "var", "cnt": { "name": "A4", "varId": 1112 } }
+                      { "id": "var", "cnt": { "name": "A4", "varId": 1112 } },
+                      { "id": "var", "cnt": { "name": "A2", "varId": 1116 } }
                     ]
                   },
                   { "id": "var", "cnt": { "name": "A5", "varId": 1115 } }
@@ -14423,12 +14638,15 @@
                   { "id": "var", "cnt": { "name": "A0", "varId": 1118 } }
                 ]
               },
+              { "id": "const", "cnt": "!" },
               {
                 "id": "app",
                 "is_infix": false,
-                "cnt": [{ "id": "const", "cnt": "!" }]
-              },
-              { "id": "var", "cnt": { "name": "A0", "varId": 1118 } }
+                "cnt": [
+                  { "id": "var", "cnt": { "name": "A0", "varId": 1118 } },
+                  { "id": "var", "cnt": { "name": "A1", "varId": 1117 } }
+                ]
+              }
             ]
           },
           "args": {
@@ -14445,7 +14663,7 @@
     {
       "id": "card",
       "predicate": "x",
-      "title": "File \"/home/dfissore/Documents/github/elpi2html/elpi/a.elpi\", line 16, column 0, characters 123-142:",
+      "title": "File \"/home/dfissore/Documents/github/elpi2html/elpi/a.elpi\", line 16, column 0, characters 123-146:",
       "cnt": {
         "id": "clause",
         "cnt": {
@@ -14458,27 +14676,57 @@
                 "id": "quantification",
                 "cnt": {
                   "type": "binder",
-                  "names": [
-                    { "id": "var", "cnt": { "name": "c0", "varId": 1119 } }
-                  ],
+                  "names": {
+                    "id": "var",
+                    "cnt": { "name": "c0", "varId": 1119 }
+                  },
                   "body": [
                     {
                       "id": "app",
-                      "is_infix": true,
+                      "is_infix": false,
                       "cnt": [
-                        { "id": "const", "cnt": "=>" },
+                        { "id": "const", "cnt": "pi" },
                         {
-                          "id": "app",
-                          "is_infix": false,
-                          "cnt": [
-                            { "id": "const", "cnt": "q" },
-                            {
+                          "id": "quantification",
+                          "cnt": {
+                            "type": "binder",
+                            "names": {
                               "id": "var",
-                              "cnt": { "name": "c0", "varId": 1119 }
-                            }
-                          ]
-                        },
-                        { "id": "const", "cnt": "x" }
+                              "cnt": { "name": "c1", "varId": 1120 }
+                            },
+                            "body": [
+                              {
+                                "id": "app",
+                                "is_infix": true,
+                                "cnt": [
+                                  { "id": "const", "cnt": "=>" },
+                                  {
+                                    "id": "app",
+                                    "is_infix": false,
+                                    "cnt": [
+                                      { "id": "const", "cnt": "q" },
+                                      {
+                                        "id": "var",
+                                        "cnt": { "name": "c0", "varId": 1119 }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "app",
+                                    "is_infix": false,
+                                    "cnt": [
+                                      { "id": "const", "cnt": "q" },
+                                      {
+                                        "id": "var",
+                                        "cnt": { "name": "c1", "varId": 1120 }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
                       ]
                     }
                   ]
@@ -14493,7 +14741,7 @@
     {
       "id": "card",
       "predicate": "main",
-      "title": "File \"/home/dfissore/Documents/github/elpi2html/elpi/a.elpi\", line 18, column 0, characters 145-149:",
+      "title": "File \"/home/dfissore/Documents/github/elpi2html/elpi/a.elpi\", line 18, column 0, characters 149-153:",
       "cnt": {
         "id": "clause",
         "cnt": { "hyp": [], "args": { "id": "const", "cnt": "main" } }

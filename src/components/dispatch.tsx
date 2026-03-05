@@ -50,9 +50,9 @@ export function Var({ name, varId }: VarType) {
 
 // for 9823 in json
 // display λx1.λx2...λxn.Bo in the following way λx1 x2 ... xn.Bo
-const accumulateSameSymbol = (type: q, body: any, names: any[]): any => {
+const accumulateSameSymbol = (type: q, body: any, names: any): any => {
   if (body.length === 1 && body[0].id === "quantification" && body[0].cnt.type === type) {
-    names.push(...body[0].cnt.names)
+    names.push(body[0].cnt.names)
     return accumulateSameSymbol(type, body[0].cnt.body, names)
   }
   return body
@@ -65,7 +65,7 @@ export function Quantification({ type, body, names }: QuantificationType) {
     case "pi": symbol = "∀"; break
     case "sigma": symbol = "∃";
   }
-  var names1 = [...names];
+  var names1 = [names];
   var body1 = accumulateSameSymbol(type, body, names1);
   return (
     <span className='quantification'>
